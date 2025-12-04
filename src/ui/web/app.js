@@ -176,7 +176,7 @@ async function init() {
                     ctx.globalAlpha = 1;
                 }
                 
-                const primaryGroups = ['Organization', 'Profile', 'Person', 'Site'];
+                const primaryGroups = ['Organization', 'Profile', 'Person', 'Site', 'Event'];
                 const isPrimary = primaryGroups.includes(node.group);
                 const isSelected = node === selectedNode;
                 const isHovered = node === hoveredNode;
@@ -279,9 +279,9 @@ async function init() {
                     // Use a simplified rectangle for hit detection
                     ctx.fillRect(node.x - bckgDimensions[0] / 2, node.y - bckgDimensions[1] / 2, ...bckgDimensions);
                 } else {
-                    // Fallback - smaller hit area matching reduced sphere size
+                    // Fallback - larger hit area for small nodes (radius 12 instead of 6)
                     ctx.beginPath();
-                    ctx.arc(node.x, node.y, 6, 0, 2 * Math.PI, false);
+                    ctx.arc(node.x, node.y, 12, 0, 2 * Math.PI, false);
                     ctx.fill();
                 }
             })
