@@ -590,9 +590,12 @@ function updateDetails(node) {
                 candidates.push('/src/ui/static/' + src);
                 // Try raw GitHub as a last resort (public repo)
                 try {
-                    const ghBase = 'https://raw.githubusercontent.com/mkonefal2/russint/main/';
-                    const ghPath = src.replace(/^\//, '');
-                    candidates.push(ghBase + ghPath);
+                        const ghBase = 'https://raw.githubusercontent.com/mkonefal2/russint/main/';
+                        const ghPath = src.replace(/^\//, '');
+                        // Try raw path as `data/...` (if repo contains data/ at root)
+                        candidates.push(ghBase + ghPath);
+                        // Also try the repo's `src/ui/static/` copy where we mirror static assets
+                        candidates.push(ghBase + 'src/ui/static/' + ghPath);
                 } catch (e) {
                     // ignore
                 }
@@ -606,6 +609,8 @@ function updateDetails(node) {
                 try {
                     const ghBase = 'https://raw.githubusercontent.com/mkonefal2/russint/main/';
                     candidates.push(ghBase + src.replace(/^\//, ''));
+                    // Also try raw path under `src/ui/static/` which is where we keep the served copy
+                    candidates.push(ghBase + 'src/ui/static/' + src.replace(/^\//, ''));
                 } catch (e) {}
             }
 
