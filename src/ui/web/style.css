@@ -26,6 +26,7 @@ body {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    pointer-events: none; /* Ensure container doesn't block clicks */
 }
 
 #graph-container {
@@ -38,7 +39,7 @@ body {
     overflow: hidden;
     background: radial-gradient(circle at center, #161b22 0%, #0d1117 100%);
     z-index: 1;
-    pointer-events: auto;
+    pointer-events: auto; /* Re-enable clicks for graph */
 }
 
 #details-container {
@@ -57,6 +58,7 @@ body {
     left: 0;
     width: 100%;
     overflow: hidden; /* Ensure content doesn't spill out */
+    pointer-events: auto; /* Re-enable clicks for panel */
 }
 
 #resize-handle {

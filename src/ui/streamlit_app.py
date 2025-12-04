@@ -205,7 +205,7 @@ def prepare_html(css, js, graph_data):
     <body>
         <div class="container">
             <div id="graph-container"></div>
-            <div id="details-container">
+            <div id="details-container" class="collapsed">
                 <div id="resize-handle"></div>
                 <div class="details-header">
                     <div style="display: flex; align-items: center; gap: 10px;">

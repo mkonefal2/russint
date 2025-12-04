@@ -311,6 +311,16 @@ async function init() {
                     
                     try {
                         updateDetails(node);
+                        
+                        // Auto-expand panel if collapsed
+                        const detailsPanel = document.getElementById('details-container');
+                        if (detailsPanel && detailsPanel.classList.contains('collapsed')) {
+                            detailsPanel.classList.remove('collapsed');
+                            // Restore a reasonable height if it was collapsed
+                            if (detailsPanel.clientHeight < 100) {
+                                detailsPanel.style.height = '300px';
+                            }
+                        }
                     } catch (e) {
                         console.error("Error updating details:", e);
                         alert("Error showing details: " + e.message);
