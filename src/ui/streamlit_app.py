@@ -205,11 +205,6 @@ def prepare_html(css, js, graph_data):
     <body>
         <div class="container">
             <div id="graph-container"></div>
-            
-            <!-- Debug/Control Button -->
-            <button onclick="togglePanelVisibility()" style="position: fixed; top: 10px; right: 10px; z-index: 2000; background: #161b22; color: #c9d1d9; border: 1px solid #30363d; padding: 5px 10px; cursor: pointer; pointer-events: auto;">
-                👁️ Toggle UI
-            </button>
 
             <div id="details-container" class="collapsed">
                 <div id="resize-handle"></div>
