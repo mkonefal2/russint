@@ -694,4 +694,13 @@ function toggleDetailsPanel() {
 // Expose to global scope
 window.toggleDetailsPanel = toggleDetailsPanel;
 
+window.togglePanelVisibility = function() {
+    const el = document.getElementById('details-container');
+    if (el.style.display === 'none') {
+        el.style.display = 'flex';
+    } else {
+        el.style.display = 'none';
+    }
+};
+
 init();

@@ -53,7 +53,7 @@ body {
     box-shadow: 0 -5px 20px rgba(0,0,0,0.5);
     /* No transition - allows smooth manual resizing */
     z-index: 1000; /* High z-index to sit on top of graph */
-    position: absolute; /* Pinned to bottom */
+    position: fixed; /* Changed to fixed to ensure it sticks to viewport bottom */
     bottom: 0;
     left: 0;
     width: 100%;
