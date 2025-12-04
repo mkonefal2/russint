@@ -288,6 +288,9 @@ async function init() {
             .onNodeClick(node => {
                 console.log("Clicked node:", node);
                 if (node) {
+                    // Visual feedback for debugging
+                    showStatusBanner(`Selected: ${node.name}`, 'info');
+                    
                     selectedNode = node;
                     isEditing = false; // Reset edit mode on new selection
                     
