@@ -615,6 +615,22 @@ function updateDetails(node) {
                 if (seen.has(u)) return false; seen.add(u); return true;
             });
 
+            // If this is a symbol path, add a local SVG placeholder as last resort
+            // so the UI shows a clear placeholder instead of an empty box.
+            if (src.includes('data/evidence/symbols')) {
+                const placeholderCandidates = [
+                    '/app/static/data/evidence/symbols/symbol-placeholder.svg',
+                    '/static/data/evidence/symbols/symbol-placeholder.svg',
+                    '/src/ui/static/data/evidence/symbols/symbol-placeholder.svg'
+                ];
+                placeholderCandidates.forEach(p => {
+                    if (!seen.has(p)) {
+                        urls.push(p);
+                        seen.add(p);
+                    }
+                });
+            }
+
             let attempt = 0;
             const tryNext = () => {
                 if (attempt >= urls.length) {
