@@ -1,0 +1,2229 @@
+{
+  "meta": {
+    "generated_at": "2025-12-04T23:12:09.897303",
+    "type": "full_backup"
+  },
+  "nodes": [
+    {
+      "country": "PL",
+      "entity_type": "profile",
+      "first_seen": "2025-11-25",
+      "notes": "Wymienione jako powiązanie w profilu Jakuba Kuśpita",
+      "name": "FB: Bronimy Munduru - Dla Przyszłych Pokoleń",
+      "description": "Profil Bronimy Munduru - Dla Przyszłych Pokoleń",
+      "id": "profile-bronimy-munduru",
+      "url": "https://www.facebook.com/profile.php?id=100080248801478",
+      "platform": "facebook",
+      "labels": [
+        "Profile"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "post",
+      "first_seen": "2025-11-25",
+      "notes": "Post zapisany w surowych danych; data publikacji widoczna na zrzucie: 6 kwietnia 2024",
+      "date_posted": "2024-04-06",
+      "name": "Post: NOMINOWANY NA RUSKIEGO SZPIEGA (ABW zarekwiwrowała...)",
+      "description": "Post z treściami dotyczącymi rzekomej akcji ABW i napisem 'NOMINOWANY NA RUSKIEGO SZPIEGA' — zawiera link do YouTube.",
+      "id": "post-fb_BraterstwaLudziWolnych_pfbid0x8gsmiq27LtWbDkrAgYk8LAX2ucDZ54oDMfKTrh6oNjf47grdZLgj1We5dhp2P36l",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid0x8gsmiq27LtWbDkrAgYk8LAX2ucDZ54oDMfKTrh6oNjf47grdZLgj1We5dhp2P36l",
+      "platform": "facebook",
+      "labels": [
+        "Post"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "video",
+      "first_seen": "2025-11-25",
+      "notes": "Dodano na podstawie pola external_links w pliku posta",
+      "name": "YouTube: NOMINOWANY NA RUSKIEGO SZPIEGA (video)",
+      "description": "Wideo linkowane w poście Braterstwa Ludzi Wolnych (tytuł: 'NOMINOWANY NA RUSKIEGO SZPIEGA').",
+      "id": "page-youtube-AgxWYYvkfg8",
+      "url": "https://www.youtube.com/watch?v=AgxWYYvkfg8",
+      "platform": "youtube",
+      "labels": [
+        "Video"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "profile",
+      "first_seen": "2025-11-25",
+      "notes": "Kanał dodany na żądanie analizy; właściciel wymaga weryfikacji",
+      "name": "YT: Leszek Szymowski (@leszekszymowskitv)",
+      "description": "Kanał YouTube '@leszekszymowskitv' — wskazany jako powiązany profil/źródło.",
+      "id": "page-youtube-leszekszymowskitv",
+      "url": "https://www.youtube.com/@leszekszymowskitv",
+      "platform": "youtube",
+      "labels": [
+        "Profile"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "person",
+      "first_seen": "2025-11-25",
+      "notes": "Utworzono węzeł osoby na prośbę analityka; proszę zweryfikować publicznymi źródłami",
+      "name": "Leszek Szymowski",
+      "description": "Osoba powiązana z kanałem YouTube '@leszekszymowskitv' — wymaga weryfikacji (właściciel/prowadzący).",
+      "id": "ent-leszek-szymowski",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "organization",
+      "first_seen": "",
+      "notes": "",
+      "name": "Braterstwa Ludzi Wolnych",
+      "description": "Organizacja społeczna organizująca spotkania lokalne.",
+      "id": "org-braterstwa-ludzi-wolnych",
+      "category": "alternative_movement",
+      "labels": [
+        "Organization"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "profile",
+      "first_seen": "2025-11-25",
+      "notes": "Aktywny profil, publikuje informacje o wydarzeniach",
+      "name": "FB: Braterstwa Ludzi Wolnych",
+      "description": "Oficjalny profil Facebook organizacji Braterstwa Ludzi Wolnych",
+      "handle": "BraterstwaLudziWolnych",
+      "id": "profile-braterstwa-ludzi-wolnych",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych",
+      "platform": "facebook",
+      "parent_org_id": "org-braterstwa-ludzi-wolnych",
+      "labels": [
+        "Profile"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "post",
+      "first_seen": "",
+      "notes": "",
+      "date_posted": "2024-04-14",
+      "name": "Post: ABW przeszukała mój dom — zapowiedź rozprawy i zażaleń poszkodowanych",
+      "description": "Tekst posta: 'ABW przeszukała mój dom. Jutro (poniedziałek od 10:00) Sąd rozpatrzy zażalenia poszkodowanych.' (z linkiem do YouTube)",
+      "id": "fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl",
+      "platform": "facebook",
+      "labels": [
+        "Post"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "video",
+      "first_seen": "",
+      "notes": "",
+      "name": "YouTube: QcY2u58CtiA",
+      "description": "Wideo podlinkowane w poście",
+      "id": "page-youtube-QcY2u58CtiA",
+      "url": "https://www.youtube.com/watch?v=QcY2u58CtiA",
+      "platform": "youtube",
+      "labels": [
+        "Video"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "organization",
+      "first_seen": "",
+      "notes": "",
+      "name": "Agencja Bezpieczeństwa Wewnętrznego (ABW)",
+      "description": "Państwowa służba bezpieczeństwa (wzmianka w treści posta)",
+      "id": "org-abw",
+      "labels": [
+        "Organization"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "channel",
+      "first_seen": "",
+      "notes": "",
+      "name": "YouTube Channel: KonkretnyKanal",
+      "description": "Kanał YouTube, na którym znajduje się wideo powiązane z postem (użytkownik podał adres kanału).",
+      "id": "channel-konkretnykanal",
+      "url": "https://www.youtube.com/@KonkretnyKanal",
+      "platform": "youtube",
+      "labels": [
+        "Channel"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "screenshot",
+      "first_seen": "",
+      "notes": "",
+      "name": "Screenshot: klatka z wideo (post)",
+      "description": "Klatka z wideo widoczna w poście (użyte jako dowód wizualny)",
+      "id": "screenshot-fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl",
+      "labels": [
+        "Entity"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "person",
+      "first_seen": "2024-04-14",
+      "notes": "",
+      "name": "Anna Luiza Stec",
+      "description": "Osoba występująca w materiale wideo; właścicielka kanału KonkretnyKanal.",
+      "id": "ent-001",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "PL",
+      "date_start": "2025-07-04",
+      "entity_type": "event",
+      "first_seen": "2025-11-25",
+      "notes": "Coroczne spotkanie organizowane przez Braterstwa Ludzi Wolnych",
+      "name": "Spotkanie Rodzin Po Bratersku 2025",
+      "description": "Wydarzenie niebiletowane. Tematy: Niezależność zdrowotna, edukacyjna, finansowa, transportowa, łącznościowa, energetyczna. Widzenie pozamysłowe dla dzieci. Prawo stanowione - Prawo naturalne. Networking. Muzyka i zabawa.",
+      "date_end": "2025-07-06",
+      "location": "Wzgórze Wdzięczności, Smolnik gm. Komańcza",
+      "id": "evt-001",
+      "labels": [
+        "Event"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "post",
+      "first_seen": "2025-11-25",
+      "notes": "Post ogłaszający wydarzenie z listą prelegentów",
+      "date_posted": "2025-06-25",
+      "name": "Post: Harmonogram Spotkania Rodzin (25.06.2025)",
+      "description": "Harmonogram Spotkania Rodzin Po Bratersku już się skrystalizował, choć cały czas rozwija się lista rezerwowych wykładów i atrakcji...",
+      "id": "post-001",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid0219rwE34d48hfcTuUrccvvxgFizYcByeXwMTjzbrD9dX1ycUz9PvANH2Kw4KAJSN5l",
+      "platform": "facebook",
+      "labels": [
+        "Post"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "profile",
+      "first_seen": "",
+      "notes": "",
+      "name": "YT: KonkretnyKanal",
+      "description": "Kanał YouTube, na którym znajduje się wideo powiązane z postem (użytkownik podał adres kanału).",
+      "id": "channel-konkretnykanal",
+      "url": "https://www.youtube.com/@KonkretnyKanal",
+      "platform": "youtube",
+      "labels": [
+        "Profile"
+      ]
+    },
+    {
+      "country": "",
+      "image": "data/evidence/facebook/BraterstwaLudziWolnych/logo.png",
+      "entity_type": "symbol",
+      "first_seen": "",
+      "notes": "",
+      "name": "Logo: Orzeł BLW",
+      "description": "Stylizowany orzeł bez korony z tarczą w barwach narodowych.",
+      "id": "symbol-orzel-blw",
+      "labels": [
+        "Entity"
+      ]
+    },
+    {
+      "country": "",
+      "image": "data/evidence/facebook/BraterstwaLudziWolnych/bg_img.png",
+      "entity_type": "symbol",
+      "first_seen": "",
+      "notes": "",
+      "name": "Grafika: Peace-Pokój-Mir",
+      "description": "Grafika z trójjęzycznym napisem (EN/PL/RU) i hasłem 'Polska Wybiera Pokój'.",
+      "id": "symbol-peace-mir",
+      "labels": [
+        "Entity"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "site",
+      "first_seen": "",
+      "notes": "",
+      "name": "7777777BLOG",
+      "description": "Blog agregujący treści anty-systemowe i konspiracyjne.",
+      "id": "site-7777777blog",
+      "url": "https://7777777blog.wordpress.com",
+      "labels": [
+        "Site"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "post",
+      "first_seen": "",
+      "notes": "",
+      "date_posted": "2024-06-24",
+      "name": "Post: DZIEJE SIĘ (Red Pill News)",
+      "description": "Wpis promujący wideo Red Pill News 'Sojusz Vs. Oś zła'. Zawiera dane kontaktowe i finansowe Rafała Kędzierskiego.",
+      "id": "post-7777777blog-dzieje-sie",
+      "url": "https://7777777blog.wordpress.com/2024/06/24/dzieje-sie/",
+      "platform": "wordpress",
+      "labels": [
+        "Post"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "person",
+      "first_seen": "",
+      "notes": "Adres: Urle, Pieńkowa 8, 05-281. Email: ravandal@protonmail.com",
+      "name": "Rafał Kędzierski",
+      "description": "Twórca kanału Red Pill News. Prowadzi zbiórki finansowe na swoją działalność.",
+      "id": "ent-rafal-kedzierski",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "person",
+      "first_seen": "",
+      "notes": "",
+      "name": "Martyna Cyrych",
+      "description": "Odbiorca przelewów bankowych dla Red Pill News.",
+      "id": "ent-martyna-cyrych",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "profile",
+      "first_seen": "",
+      "notes": "",
+      "name": "YT: RedPillNews17",
+      "description": "",
+      "id": "profile-yt-redpillnews17",
+      "url": "https://youtube.com/@RedPillNews17",
+      "platform": "youtube",
+      "labels": [
+        "Profile"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "profile",
+      "first_seen": "",
+      "notes": "",
+      "name": "X: RedPillNews17",
+      "description": "",
+      "id": "profile-twitter-redpillnews17",
+      "url": "https://x.com/RedPillNews17",
+      "platform": "twitter",
+      "labels": [
+        "Profile"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "profile",
+      "first_seen": "",
+      "notes": "",
+      "name": "TG: RavQdzierskiOfficial",
+      "description": "",
+      "id": "profile-telegram-ravqdzierski",
+      "url": "https://t.me/RavQdzierskiOfficial",
+      "platform": "telegram",
+      "labels": [
+        "Profile"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "profile",
+      "first_seen": "",
+      "notes": "",
+      "name": "BitChute: Red Pill News",
+      "description": "",
+      "id": "profile-bitchute-redpillnews",
+      "url": "https://www.bitchute.com/channel/cyTkq8PifDdO/",
+      "platform": "bitchute",
+      "labels": [
+        "Profile"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "profile",
+      "first_seen": "",
+      "notes": "",
+      "name": "TvSuwerenni: Red Pill News",
+      "description": "",
+      "id": "profile-tvsuwerenni-redpillnews",
+      "url": "https://tv.suwerenni.org/a/red_pill_news/video-channels",
+      "platform": "tvsuwerenni",
+      "labels": [
+        "Profile"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "organization",
+      "first_seen": "",
+      "notes": "",
+      "name": "Red Pill News",
+      "description": "Niezależny kanał medialny o profilu anty-systemowym i panslawistycznym.",
+      "id": "org-red-pill-news",
+      "labels": [
+        "Organization"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "video",
+      "first_seen": "",
+      "notes": "",
+      "date_posted": "2024-06-22",
+      "name": "Video: Red Pill News | Sojusz Vs. Oś zła",
+      "description": "Wideo omawiające geopolitykę z perspektywy anty-zachodniej.",
+      "id": "video-rumble-v536bil",
+      "url": "https://rumble.com/v536bil-red-pill-news-wiadomoci-w-czerwonej-piguce-sojusz-vs.-o-za-22.06.2024.html",
+      "platform": "rumble",
+      "labels": [
+        "Video"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "post",
+      "first_seen": "",
+      "notes": "",
+      "date_posted": "2024-11-30",
+      "name": "Post: Metody demoralizacji dzieci i młodzieży - Zdzisława Piasecka",
+      "description": "Nagranie z cotygodniowego wewnętrznego spotkania inicjatywy Braterstwa Ludzi Wolnych. Wykład Zdzisławy Piaseckiej.",
+      "id": "fb_BraterstwaLudziWolnych_pfbid0WqfkZHUTKZkN82eXbK49FvN1AfS14KExdgFiP19NRkgD1Q1cZ3BjDfNsZdH1au7Vl",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid0WqfkZHUTKZkN82eXbK49FvN1AfS14KExdgFiP19NRkgD1Q1cZ3BjDfNsZdH1au7Vl",
+      "platform": "facebook",
+      "labels": [
+        "Post"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "person",
+      "first_seen": "2024-11-30",
+      "notes": "",
+      "name": "Zdzisława Piasecka",
+      "description": "Prelegentka, wypowiada się na temat edukacji i demoralizacji dzieci.",
+      "id": "ent-zdzislawa-piasecka",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "video",
+      "first_seen": "",
+      "notes": "",
+      "name": "Video: Metody demoralizacji dzieci i młodzieży na tle zmian w polskiej edukacji",
+      "description": "Wykład Zdzisławy Piaseckiej.",
+      "id": "video-youtube-N2IZIyD73iw",
+      "url": "https://youtu.be/N2IZIyD73iw?si=mQEHI7uBbEp8tg24",
+      "platform": "youtube",
+      "labels": [
+        "Video"
+      ]
+    },
+    {
+      "country": "",
+      "date_start": "2024-11-30",
+      "entity_type": "event",
+      "first_seen": "",
+      "notes": "",
+      "name": "Cotygodniowe spotkanie wewnętrzne Braterstwa Ludzi Wolnych",
+      "description": "Cykliczne spotkanie członków inicjatywy.",
+      "id": "evt-spotkanie-wewnetrzne-blw-2024-11",
+      "labels": [
+        "Event"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "profile",
+      "first_seen": "",
+      "notes": "",
+      "name": "YT: Jakub Kuśpit",
+      "description": "",
+      "id": "profile-yt-jakub-kuspit",
+      "url": "https://www.youtube.com/@JakubKuspit",
+      "platform": "youtube",
+      "labels": [
+        "Profile"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "post",
+      "first_seen": "",
+      "notes": "",
+      "date_posted": "2024-04-20",
+      "name": "Post: Braterskie Usługi - Karol Janik Masaż i Kinezjologia",
+      "description": "Post udostępniający wpis Mateusza Jarosiewicza o spotkaniu z Karolem Janikiem (Kinezjologia). Promocja usług w ramach inicjatywy Braterstw.",
+      "id": "fb_BraterstwaLudziWolnych_pfbid0zAJpVEKPoR6nfBkGRyXby4uGFPVZaLYaAH6XzzvyA6uVAY3oCpZy6D8Vuen8Pa2Al",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid0zAJpVEKPoR6nfBkGRyXby4uGFPVZaLYaAH6XzzvyA6uVAY3oCpZy6D8Vuen8Pa2Al",
+      "platform": "facebook",
+      "labels": [
+        "Post"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "profile",
+      "first_seen": "2024-04-20",
+      "notes": "",
+      "name": "FB: Mateusz Jarosiewicz",
+      "description": "Profil Mateusza Jarosiewicza, autora udostępnionego posta.",
+      "id": "profile-fb-mateusz-jarosiewicz",
+      "url": "https://www.facebook.com/MattJarosPL",
+      "platform": "facebook",
+      "labels": [
+        "Profile"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "person",
+      "first_seen": "2024-04-20",
+      "notes": "",
+      "name": "Mateusz Jarosiewicz",
+      "description": "Osoba fizyczna, właściciel profilu FB: Mateusz Jarosiewicz.",
+      "id": "ent-mateusz-jarosiewicz",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "profile",
+      "first_seen": "2024-04-20",
+      "notes": "",
+      "name": "YT: Mateusz Jarosiewicz",
+      "description": "Kanał YouTube Mateusza Jarosiewicza.",
+      "id": "profile-yt-mateusz-jarosiewicz",
+      "url": "https://www.youtube.com/@mateuszjarosiewicz",
+      "platform": "youtube",
+      "labels": [
+        "Profile"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "person",
+      "first_seen": "2024-04-20",
+      "notes": "",
+      "name": "Karol Janik",
+      "description": "Masażysta, zajmuje się kinezjologią. Promowany w ramach 'Braterskich Usług'.",
+      "id": "ent-karol-janik",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "video",
+      "first_seen": "",
+      "notes": "",
+      "name": "Video: Braterskie Usługi - Karol Janik Masaż i Kinezjologia",
+      "description": "Materiał wideo promujący usługi Karola Janika.",
+      "id": "video-youtube-BmLVdf4Fmjg",
+      "url": "https://youtu.be/BmLVdf4Fmjg?si=a9yT6llBlPuLnFGh",
+      "platform": "youtube",
+      "labels": [
+        "Video"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "post",
+      "first_seen": "",
+      "notes": "",
+      "date_posted": "2025-11-26",
+      "name": "Post: Kalendarz trasy Jakuba Kuśpita (30.11.2025 - 01.02.2026)",
+      "description": "Ogłoszenie trasy spotkań otwartych Jakuba Kuśpita po Polsce (Warszawa, Krosno, Rawa Mazowiecka, Elbląg, Szczecin, Kraków).",
+      "id": "fb_jakub.kuspit.7_pfbid0GX21FVswfCZxERkS9xZencW3Hd9pkuisd74sTukdaop1gFgMtMN3KXbJExRPmh25l",
+      "url": "https://www.facebook.com/jakub.kuspit.7/posts/pfbid0GX21FVswfCZxERkS9xZencW3Hd9pkuisd74sTukdaop1gFgMtMN3KXbJExRPmh25l",
+      "platform": "facebook",
+      "labels": [
+        "Post"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "profile",
+      "first_seen": "",
+      "notes": "",
+      "name": "FB: Jakub Kuśpit",
+      "description": "",
+      "handle": "jakub.kuspit.7",
+      "id": "profile-fb-jakub-kuspit-7",
+      "url": "https://www.facebook.com/jakub.kuspit.7",
+      "platform": "facebook",
+      "labels": [
+        "Profile"
+      ]
+    },
+    {
+      "country": "",
+      "date_start": "2025-11-30",
+      "entity_type": "event",
+      "first_seen": "",
+      "notes": "Harmonogram trasy:\n- 30.11.2025: Warszawa (Warszawa Bemowo, ul. Księdza Bronisława Markiewicza 3) - Inicjacja społeczności lokalnej oraz zapisy do BLW.\n- 14.12.2025: Krosno\n- 20.12.2025: Rawa Mazowiecka\n- 18.01.2026: Elbląg\n- 24.01.2026: Szczecin\n- 31.01.2026 - 01.02.2026: Kraków",
+      "name": "Trasa spotkań otwartych Jakuba Kuśpita (2025-2026)",
+      "description": "Cykl spotkań otwartych Jakuba Kuśpita w różnych miastach Polski.",
+      "date_end": "2026-02-01",
+      "location": "Polska (wiele miast)",
+      "id": "evt-trasa-jakuba-kuspita-2025-2026",
+      "labels": [
+        "Event"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "site",
+      "first_seen": "",
+      "notes": "",
+      "name": "Ideowo: BLW Mazowieckie",
+      "description": "",
+      "id": "page-ideowo-blw-mazowieckie",
+      "url": "https://ideowo.com/blw-mazowieckie",
+      "labels": [
+        "Site"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "site",
+      "first_seen": "",
+      "notes": "",
+      "name": "BuyCoffee: Jakub Kuśpit",
+      "description": "",
+      "id": "page-buycoffee-jakubkuspit",
+      "url": "https://buycoffee.to/jakubkuspit",
+      "labels": [
+        "Site"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "video",
+      "first_seen": "",
+      "notes": "",
+      "date_posted": "2025-06-16",
+      "name": "Video: Co sie NAPRAWDĘ działo i przede wszystkim DLACZEGO... 16.06.2025",
+      "description": "Materiał omawiający wydarzenia z 16 czerwca 2025. Miniatura sugeruje kontekst wojenny/geopolityczny (Trump, Netanjahu).",
+      "id": "video-rumble-co-sie-naprawde-dzialo",
+      "platform": "rumble",
+      "labels": [
+        "Video"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "video",
+      "first_seen": "",
+      "notes": "",
+      "date_posted": "2025-06-01",
+      "name": "Video: WYBORY 2025",
+      "description": "Materiał dotyczący wyborów prezydenckich w Polsce 2025. Na miniaturze Rafał Trzaskowski.",
+      "id": "video-rumble-wybory-2025",
+      "platform": "rumble",
+      "labels": [
+        "Video"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "video",
+      "first_seen": "",
+      "notes": "",
+      "date_posted": "2025-06-01",
+      "name": "Video: W tych szaleństwach JEST metoda (Seria)",
+      "description": "Seria materiałów o 'Wielkim Resecie', wojnie z Iranem i pokoju na Ukrainie. Promuje teorie spiskowe RV/GCR.",
+      "id": "video-rumble-w-tych-szalenstwach-jest-metoda",
+      "platform": "rumble",
+      "labels": [
+        "Video"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "person",
+      "first_seen": "",
+      "notes": "",
+      "name": "Rafał Trzaskowski",
+      "description": "Polityk, prezydent Warszawy. Widoczny na miniaturze wideo o wyborach 2025.",
+      "id": "ent-rafal-trzaskowski",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "US",
+      "entity_type": "person",
+      "first_seen": "",
+      "notes": "",
+      "name": "Donald Trump",
+      "description": "Były prezydent USA. Częsty bohater materiałów Red Pill News.",
+      "id": "ent-donald-trump",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "IL",
+      "entity_type": "person",
+      "first_seen": "",
+      "notes": "",
+      "name": "Benjamin Netanjahu",
+      "description": "Premier Izraela. Widoczny na miniaturach w kontekście wojny.",
+      "id": "ent-benjamin-netanjahu",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "RU",
+      "entity_type": "person",
+      "first_seen": "",
+      "notes": "",
+      "name": "Władimir Putin",
+      "description": "Prezydent Rosji. Przedstawiany w materiałach geopolitycznych.",
+      "id": "ent-vladimir-putin",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "CN",
+      "entity_type": "person",
+      "first_seen": "",
+      "notes": "",
+      "name": "Xi Jinping",
+      "description": "Przewodniczący ChRL. Widoczny na miniaturach serii o 'Wielkim Resecie'.",
+      "id": "ent-xi-jinping",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "narrative",
+      "first_seen": "",
+      "notes": "",
+      "name": "Narracja: Wielki Reset (Great Reset)",
+      "description": "Teoria spiskowa o globalnym planie przebudowy społeczeństwa i gospodarki przez elity.",
+      "id": "narrative-great-reset",
+      "labels": [
+        "Entity"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "narrative",
+      "first_seen": "",
+      "notes": "",
+      "name": "Narracja: RV/GCR (Global Currency Reset)",
+      "description": "Teoria spiskowa o globalnym resetowaniu walut i powrocie do standardu złota/nowego systemu finansowego.",
+      "id": "narrative-rv-gcr",
+      "labels": [
+        "Entity"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "video",
+      "first_seen": "",
+      "notes": "",
+      "date_posted": "2025-11-26",
+      "name": "Video: Niezależność finansowa i dieta informacyjna.",
+      "description": "Wideo autorstwa Jakuba Kuśpita. W opisie linki do materiałów o Zełeńskim (Rumble) oraz do wRealu24 (Banbye).",
+      "id": "video-youtube-Ctnu7WUzXyc",
+      "url": "https://www.youtube.com/watch?v=Ctnu7WUzXyc",
+      "platform": "youtube",
+      "labels": [
+        "Video"
+      ]
+    },
+    {
+      "country": "UA",
+      "entity_type": "person",
+      "first_seen": "",
+      "notes": "",
+      "name": "Wołodymir Zełeński",
+      "description": "Prezydent Ukrainy, wspomniany w opisie wideo w kontekście materiałów na Rumble.",
+      "id": "ent-wolodymyr-zelenski",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "person",
+      "first_seen": "",
+      "notes": "",
+      "name": "Marek Skowroński",
+      "description": "Redaktor wRealu24, wspomniany w opisie wideo.",
+      "id": "ent-marek-skowronski",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "organization",
+      "first_seen": "",
+      "notes": "",
+      "name": "wRealu24",
+      "description": "Telewizja internetowa/portal, wspomniany w opisie wideo.",
+      "id": "org-wrealu24",
+      "labels": [
+        "Organization"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "video",
+      "first_seen": "",
+      "notes": "",
+      "name": "Video: Śniadaniówka wRealu24 z redaktorem Markiem Skowrońskim",
+      "description": "Materiał wideo na platformie Banbye: Naloty ABW, preparaty, wojna itd.",
+      "id": "video-banbye-v_Y198fTyXMu8f",
+      "url": "https://banbye.com/watch/v_Y198fTyXMu8f",
+      "platform": "banbye",
+      "labels": [
+        "Video"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "profile",
+      "first_seen": "",
+      "notes": "",
+      "name": "Rumble: Red Pill News",
+      "description": "Kanał na Rumble publikujący materiały o Zełeńskim.",
+      "id": "profile-rumble-red-pill-news",
+      "url": "https://rumble.com/c/c-945427",
+      "platform": "rumble",
+      "labels": [
+        "Profile"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "symbol",
+      "first_seen": "",
+      "notes": "",
+      "name": "Kołowrót (Swarzyca)",
+      "description": "Słowiański symbol solarny (ośmioramienna swastyka). Współcześnie używany przez ruchy rodzimowiercze, panslawistyczne oraz tzw. Turbosłowian.",
+      "id": "symbol-kolowrot",
+      "labels": [
+        "Entity"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "video",
+      "first_seen": "",
+      "notes": "",
+      "date_posted": "2024-04-05",
+      "name": "Video: Zełenski Zdemaskowany część 1 | Kim jest Wołodymyr Zełenski?",
+      "description": "Część 1 serii o Zełeńskim na kanale Red Pill News.",
+      "id": "video-rumble-v4sbpat",
+      "url": "https://rumble.com/v4sbpat-zeenski-zdrajca-narodu-ukraiskiego-cz.1.html",
+      "platform": "rumble",
+      "labels": [
+        "Video"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "video",
+      "first_seen": "",
+      "notes": "",
+      "date_posted": "2024-04-18",
+      "name": "Video: Zełenski Zdemaskowany część 2 | Zełenski największy celebryta świata?",
+      "description": "Część 2 serii o Zełeńskim na kanale Red Pill News.",
+      "id": "video-rumble-v4shmn2",
+      "url": "https://rumble.com/v4shmn2-zeenski-zdrajca-narodu-ukraiskiego-cz.2.html",
+      "platform": "rumble",
+      "labels": [
+        "Video"
+      ]
+    },
+    {
+      "country": "",
+      "entity_type": "person",
+      "first_seen": "",
+      "notes": "",
+      "name": "Jakub Kuśpit",
+      "description": "",
+      "id": "ent-jakub-kuspit",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "person",
+      "first_seen": "2025-11-25",
+      "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025",
+      "name": "Mieczysław Bielak",
+      "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+      "id": "ent-003",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "person",
+      "first_seen": "2025-11-25",
+      "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025",
+      "name": "Tomasz Kosiński",
+      "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+      "id": "ent-004",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "person",
+      "first_seen": "2025-11-25",
+      "notes": "Prelegentka - Spotkanie Rodzin Po Bratersku 2025",
+      "name": "Katarzyna Tarnawa-Gwóźdź",
+      "description": "Prelegentka na wydarzeniach Braterstwa Ludzi Wolnych",
+      "id": "ent-005",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "person",
+      "first_seen": "2025-11-25",
+      "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025",
+      "name": "Jacek Falkowski",
+      "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+      "id": "ent-006",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "person",
+      "first_seen": "2025-11-25",
+      "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025",
+      "name": "Bogusław Okulski",
+      "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+      "id": "ent-007",
+      "labels": [
+        "Person"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "site",
+      "first_seen": "2025-11-25",
+      "notes": "Główna strona www organizacji",
+      "name": "braterstwa.pl",
+      "description": "Oficjalna strona internetowa organizacji Braterstwa Ludzi Wolnych",
+      "id": "website-001",
+      "url": "https://braterstwa.pl/",
+      "parent_org_id": "org-braterstwa-ludzi-wolnych",
+      "labels": [
+        "Site"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "post",
+      "first_seen": "2024-04-18",
+      "notes": "Zrzut ekranu dostarczony przez analityka; wymaga weryfikacji treści artykułu",
+      "date_posted": "2024-04-18",
+      "name": "Post: ABW wtargnęła do naszych domów o 6 rano",
+      "description": "Wpis odsyłający do artykułu PL1.TV: 'ABW wtargnęła do naszych domów o 6 rano'",
+      "id": "post-002",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/20240418",
+      "platform": "facebook",
+      "labels": [
+        "Post"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "post",
+      "first_seen": "2024-01-13",
+      "notes": "Zrzut ekranu dostarczony przez analityka; wymaga weryfikacji treści artykułu",
+      "date_posted": "2024-01-13",
+      "name": "Post: To jest zamach na polskie rodziny",
+      "description": "Wpis z linkiem do artykułu PL1.TV: 'To jest zamach na polskie rodziny'",
+      "id": "post-003",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/20240113",
+      "platform": "facebook",
+      "labels": [
+        "Post"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "post",
+      "first_seen": "2025-11-25",
+      "notes": "Repost — oryginalny autor: Jakub Kuśpit (encja ent-002). Treść ma charakter spiskowy i wymaga weryfikacji; nie przechowujemy informacji o screenshotach w węzłach.",
+      "date_posted": "2024-01-01",
+      "name": "Repost: twierdzenia o 'PsyOp' i 'pseudo-elity' (udostępnienie Jakuba Kuśpita)",
+      "description": "Repost treści autorstwa Jakuba Kuśpita — fragment odnosi się do 'PsyOp' i 'pseudo-elity'.",
+      "id": "post-004",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid02S7DuXzZkjeeod95uhipsAvELgdLk5rL4Tgstt2qAv85WJhotUZgdjn7csi1HWziyl",
+      "platform": "facebook",
+      "labels": [
+        "Post"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "post",
+      "first_seen": "2024-01-01",
+      "notes": "Oryginalny post zidentyfikowany; wymaga weryfikacji treści",
+      "date_posted": "2024-01-01",
+      "name": "Post: Jakub Kuśpit — twierdzenia o 'PsyOp'",
+      "description": "Fragment treści zacytowany w repost: 'Z jednego PsyOp w drugi. Zgniłe pseudo-elity zorganizowały największą operacje psychologiczną w historii...'",
+      "id": "post-005",
+      "url": "https://www.facebook.com/watch/?v=373266508895810",
+      "platform": "facebook",
+      "labels": [
+        "Post"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "post",
+      "first_seen": "2025-11-25",
+      "notes": "Zawiera link do kanału YouTube Strumieniownia; screenshot zapisany w evidence",
+      "name": "Post: Zlot Braterstw Ludzi Wolnych — dzień 4 (wideo)",
+      "description": "[2025] Zlot Braterstw Ludzi Wolnych - dzień 4; post zawiera link do wideo na YouTube",
+      "id": "post-006",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid029XSpGTnfbFiUH4SiVRZ1Ahhu9FszHT958rdDE2dwk3xgp3YVfgpe6ev4MYMTQQ5l",
+      "platform": "facebook",
+      "labels": [
+        "Post"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "profile",
+      "first_seen": "2025-11-25",
+      "notes": "Utworzono na podstawie external_links w pliku posta",
+      "name": "YouTube: Strumieniownia (@Strumieniownia)",
+      "description": "Kanał YouTube 'Strumieniownia' — zawiera relacje i nagrania z Zlotu Braterstw Ludzi Wolnych",
+      "id": "page-youtube-strumieniownia",
+      "url": "https://www.youtube.com/@Strumieniownia",
+      "labels": [
+        "Profile"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "site",
+      "first_seen": "2025-11-25",
+      "notes": "Dodano na podstawie załączonych materiałów",
+      "name": "Strumieniownia.pl — strona kanału",
+      "description": "Strona projektu Strumieniownia (informacje o zespole i kontakt)",
+      "id": "page-strumieniownia-site",
+      "url": "https://strumieniownia.pl/",
+      "labels": [
+        "Site"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "site",
+      "first_seen": "2025-11-25",
+      "notes": "Wymienione jako sojusznik na stronie Strumieniownia",
+      "name": "Festiwal Wdzięczności - Bieszczady",
+      "description": "Strona Festiwalu Wdzięczności (Bieszczady)",
+      "id": "page-festiwal-wdziecznosci",
+      "url": "https://festiwalwdziecznosci-bieszczady.pl/",
+      "labels": [
+        "Site"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "profile",
+      "first_seen": "2025-11-25",
+      "notes": "Wymienione jako sojusznik na stronie Strumieniownia",
+      "name": "FB: Jarex Technika Estradowa",
+      "description": "Profil Facebook Jarex Technika Estradowa",
+      "id": "profile-jarex-fb",
+      "url": "https://www.facebook.com/JarexTechnikaEstradowa/",
+      "platform": "facebook",
+      "labels": [
+        "Profile"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "site",
+      "first_seen": "2025-11-25",
+      "notes": "Wymienione jako sojusznik na stronie Strumieniownia",
+      "name": "Kooperatywa Lubelska",
+      "description": "Strona Kooperatywy Lubelskiej",
+      "id": "page-kooperatywa-lbn",
+      "url": "https://kooperatywalubelska.com.pl/",
+      "labels": [
+        "Site"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "site",
+      "first_seen": "2025-11-25",
+      "notes": "Wymienione jako sojusznik na stronie Strumieniownia",
+      "name": "Siedlisko Stasin",
+      "description": "Strona Siedlisko Stasin",
+      "id": "page-siedliskostasin",
+      "url": "https://siedliskostasin.pl/",
+      "labels": [
+        "Site"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "site",
+      "first_seen": "2025-11-25",
+      "notes": "Dodano na podstawie zawartości strony braterstwa.pl i screenu",
+      "name": "PL1.TV",
+      "description": "Platforma VOD / portal PL1 (embedy w serwisie)",
+      "id": "website-pl1vod",
+      "url": "https://pl1vod.com/",
+      "labels": [
+        "Site"
+      ]
+    },
+    {
+      "country": "PL",
+      "entity_type": "profile",
+      "first_seen": "2025-11-25",
+      "notes": "Wymienione jako powiązanie w profilu Jakuba Kuśpita",
+      "name": "FB: Braterskie Kruszce",
+      "description": "Profil Braterskie Kruszce",
+      "id": "profile-braterskie-kruszce",
+      "url": "https://www.facebook.com/profile.php?id=61574751779293",
+      "platform": "facebook",
+      "labels": [
+        "Profile"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "date": "2024-04-06",
+      "evidence": "external_links: https://www.youtube.com/watch?v=AgxWYYvkfg8 (JSON)",
+      "target_name": "YouTube: NOMINOWANY NA RUSKIEGO SZPIEGA (video)",
+      "confidence": 1.0,
+      "source_name": "Post: NOMINOWANY NA RUSKIEGO SZPIEGA (ABW zarekwiwrowała...)",
+      "source_id": "post-fb_BraterstwaLudziWolnych_pfbid0x8gsmiq27LtWbDkrAgYk8LAX2ucDZ54oDMfKTrh6oNjf47grdZLgj1We5dhp2P36l",
+      "target_id": "page-youtube-AgxWYYvkfg8",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "date": "2024-04-06",
+      "evidence": "Kanał powiązany przez podany handle: https://www.youtube.com/@leszekszymowskitv (wymaga weryfikacji na stronie wideo)",
+      "target_name": "YT: Leszek Szymowski (@leszekszymowskitv)",
+      "confidence": 0.8,
+      "source_name": "YouTube: NOMINOWANY NA RUSKIEGO SZPIEGA (video)",
+      "source_id": "page-youtube-AgxWYYvkfg8",
+      "target_id": "page-youtube-leszekszymowskitv",
+      "relationship_type": "UPLOADED_BY"
+    },
+    {
+      "date": "2025-11-25",
+      "evidence": "Kanał: https://www.youtube.com/@leszekszymowskitv — przypisanie właściciela wymaga potwierdzenia publicznymi źródłami",
+      "target_name": "Leszek Szymowski",
+      "confidence": 0.75,
+      "source_name": "YT: Leszek Szymowski (@leszekszymowskitv)",
+      "source_id": "page-youtube-leszekszymowskitv",
+      "target_id": "ent-leszek-szymowski",
+      "relationship_type": "OWNED_BY"
+    },
+    {
+      "date": "2024-04-14",
+      "evidence": "Nazwa organizacji i profil Facebook (handle) wskazują na powiązanie",
+      "target_name": "FB: Braterstwa Ludzi Wolnych",
+      "confidence": 1.0,
+      "source_name": "Braterstwa Ludzi Wolnych",
+      "source_id": "org-braterstwa-ludzi-wolnych",
+      "target_id": "profile-braterstwa-ludzi-wolnych",
+      "relationship_type": "HAS_PROFILE"
+    },
+    {
+      "date": "2025-07-04",
+      "evidence": "Główny organizator wydarzenia",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "confidence": 1.0,
+      "source_name": "Braterstwa Ludzi Wolnych",
+      "source_id": "org-braterstwa-ludzi-wolnych",
+      "target_id": "evt-001",
+      "relationship_type": "ORGANIZES"
+    },
+    {
+      "date": "",
+      "evidence": "Spotkanie 'naszej inicjatywy' na profilu organizacji",
+      "target_name": "Spotkanie wewnętrzne BLW",
+      "confidence": 1.0,
+      "source_name": "Braterstwa Ludzi Wolnych",
+      "source_id": "org-braterstwa-ludzi-wolnych",
+      "target_id": "evt-spotkanie-wewnetrzne-blw-2024-11",
+      "relationship_type": "ORGANIZES"
+    },
+    {
+      "date": "",
+      "evidence": "",
+      "target_name": "",
+      "confidence": 1.0,
+      "source_name": "",
+      "source_id": "org-braterstwa-ludzi-wolnych",
+      "target_id": "evt-trasa-jakuba-kuspita-2025-2026",
+      "relationship_type": "ORGANIZES"
+    },
+    {
+      "date": "2025-11-25",
+      "evidence": "Oficjalna strona www organizacji",
+      "target_name": "braterstwa.pl",
+      "confidence": 1.0,
+      "source_name": "Braterstwa Ludzi Wolnych",
+      "source_id": "org-braterstwa-ludzi-wolnych",
+      "target_id": "website-001",
+      "relationship_type": "HAS_WEBSITE"
+    },
+    {
+      "date": "",
+      "evidence": "Oficjalne logo organizacji",
+      "target_name": "Logo: Orzeł BLW",
+      "confidence": 1.0,
+      "source_name": "Braterstwa Ludzi Wolnych",
+      "source_id": "org-braterstwa-ludzi-wolnych",
+      "target_id": "symbol-orzel-blw",
+      "relationship_type": "USES_SYMBOL"
+    },
+    {
+      "date": "",
+      "evidence": "Grafika promocyjna używana przez organizację",
+      "target_name": "Grafika: Peace-Pokój-Mir",
+      "confidence": 1.0,
+      "source_name": "Braterstwa Ludzi Wolnych",
+      "source_id": "org-braterstwa-ludzi-wolnych",
+      "target_id": "symbol-peace-mir",
+      "relationship_type": "USES_SYMBOL"
+    },
+    {
+      "date": "2024-04-06",
+      "evidence": "JSON: data/raw/facebook/fb_BraterstwaLudziWolnych_pfbid0x8gsmiq27LtWbDkrAgYk8LAX2ucDZ54oDMfKTrh6oNjf47grdZLgj1We5dhp2P36l.json",
+      "target_name": "Post: NOMINOWANY NA RUSKIEGO SZPIEGA (ABW zarekwiwrowała...)",
+      "confidence": 1.0,
+      "source_name": "FB: Braterstwa Ludzi Wolnych",
+      "source_id": "profile-braterstwa-ludzi-wolnych",
+      "target_id": "post-fb_BraterstwaLudziWolnych_pfbid0x8gsmiq27LtWbDkrAgYk8LAX2ucDZ54oDMfKTrh6oNjf47grdZLgj1We5dhp2P36l",
+      "relationship_type": "PUBLISHED"
+    },
+    {
+      "date": "2024-04-14",
+      "evidence": "Post opublikowany na profilu (link do posta i screenshot)",
+      "target_name": "Post: ABW przeszukała mój dom",
+      "confidence": 1.0,
+      "source_name": "FB: Braterstwa Ludzi Wolnych",
+      "source_id": "profile-braterstwa-ludzi-wolnych",
+      "target_id": "fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl",
+      "relationship_type": "PUBLISHED"
+    },
+    {
+      "date": "2025-06-25",
+      "evidence": "Post opublikowany na profilu FB",
+      "target_name": "Post: Harmonogram Spotkania Rodzin (25.06.2025)",
+      "confidence": 1.0,
+      "source_name": "FB: Braterstwa Ludzi Wolnych",
+      "source_id": "profile-braterstwa-ludzi-wolnych",
+      "target_id": "post-001",
+      "relationship_type": "PUBLISHED"
+    },
+    {
+      "date": "2024-11-30",
+      "evidence": "Post opublikowany na profilu",
+      "target_name": "Post: Metody demoralizacji dzieci...",
+      "confidence": 1.0,
+      "source_name": "FB: Braterstwa Ludzi Wolnych",
+      "source_id": "profile-braterstwa-ludzi-wolnych",
+      "target_id": "fb_BraterstwaLudziWolnych_pfbid0WqfkZHUTKZkN82eXbK49FvN1AfS14KExdgFiP19NRkgD1Q1cZ3BjDfNsZdH1au7Vl",
+      "relationship_type": "PUBLISHED"
+    },
+    {
+      "date": "2024-04-20",
+      "evidence": "Post opublikowany na profilu",
+      "target_name": "Post: Braterskie Usługi - Karol Janik",
+      "confidence": 1.0,
+      "source_name": "FB: Braterstwa Ludzi Wolnych",
+      "source_id": "profile-braterstwa-ludzi-wolnych",
+      "target_id": "fb_BraterstwaLudziWolnych_pfbid0zAJpVEKPoR6nfBkGRyXby4uGFPVZaLYaAH6XzzvyA6uVAY3oCpZy6D8Vuen8Pa2Al",
+      "relationship_type": "PUBLISHED"
+    },
+    {
+      "date": "2024-04-18",
+      "evidence": "Zrzut ekranu udostępniony przez analityka",
+      "target_name": "Post: ABW wtargnęła do naszych domów o 6 rano",
+      "confidence": 0.9,
+      "source_name": "FB: Braterstwa Ludzi Wolnych",
+      "source_id": "profile-braterstwa-ludzi-wolnych",
+      "target_id": "post-002",
+      "relationship_type": "PUBLISHED"
+    },
+    {
+      "date": "2024-01-13",
+      "evidence": "Zrzut ekranu udostępniony przez analityka",
+      "target_name": "Post: To jest zamach na polskie rodziny",
+      "confidence": 0.9,
+      "source_name": "FB: Braterstwa Ludzi Wolnych",
+      "source_id": "profile-braterstwa-ludzi-wolnych",
+      "target_id": "post-003",
+      "relationship_type": "PUBLISHED"
+    },
+    {
+      "date": "2024-01-01",
+      "evidence": "Zrzut ekranu w zbiorze evidence",
+      "target_name": "Repost: twierdzenia o 'PsyOp' i 'pseudo-elity' (udostępnienie Jakuba Kuśpita)",
+      "confidence": 0.9,
+      "source_name": "FB: Braterstwa Ludzi Wolnych",
+      "source_id": "profile-braterstwa-ludzi-wolnych",
+      "target_id": "post-004",
+      "relationship_type": "PUBLISHED"
+    },
+    {
+      "date": "2025-11-25",
+      "evidence": "screenshot:data/evidence/facebook/BraterstwaLudziWolnych/fb_BraterstwaLudziWolnych_pfbid029XSpGTnfbFiUH4SiVRZ1Ahhu9FszHT958rdDE2dwk3xgp3YVfgpe6ev4MYMTQQ5l.png",
+      "target_name": "Post: Zlot Braterstw Ludzi Wolnych — dzień 4 (wideo)",
+      "confidence": 1.0,
+      "source_name": "FB: Braterstwa Ludzi Wolnych",
+      "source_id": "profile-braterstwa-ludzi-wolnych",
+      "target_id": "post-006",
+      "relationship_type": "PUBLISHED"
+    },
+    {
+      "date": "",
+      "evidence": "Zewnętrzny link do YouTube jest widoczny w treści posta i metadanych JSON",
+      "target_name": "YouTube: QcY2u58CtiA",
+      "confidence": 1.0,
+      "source_name": "Post: ABW przeszukała mój dom",
+      "source_id": "fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl",
+      "target_id": "page-youtube-QcY2u58CtiA",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "date": "",
+      "evidence": "Treść posta: 'ABW przeszukała mój dom.' — bezpośrednia wzmianka o ABW",
+      "target_name": "Agencja Bezpieczeństwa Wewnętrznego (ABW)",
+      "confidence": 0.9,
+      "source_name": "Post: ABW przeszukała mój dom",
+      "source_id": "fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl",
+      "target_id": "org-abw",
+      "relationship_type": "MENTIONS"
+    },
+    {
+      "date": "",
+      "evidence": "Kanał podany przez użytkownika: https://www.youtube.com/@KonkretnyKanal",
+      "target_name": "YT: KonkretnyKanal",
+      "confidence": 1.0,
+      "source_name": "YouTube: QcY2u58CtiA",
+      "source_id": "page-youtube-QcY2u58CtiA",
+      "target_id": "channel-konkretnykanal",
+      "relationship_type": "UPLOADED_BY"
+    },
+    {
+      "date": "",
+      "evidence": "Kanał podany przez użytkownika: https://www.youtube.com/@KonkretnyKanal",
+      "target_name": "YT: KonkretnyKanal",
+      "confidence": 1.0,
+      "source_name": "YouTube: QcY2u58CtiA",
+      "source_id": "page-youtube-QcY2u58CtiA",
+      "target_id": "channel-konkretnykanal",
+      "relationship_type": "UPLOADED_BY"
+    },
+    {
+      "date": "",
+      "evidence": "Screenshot załączony do metadanych JSON i pliku evidence",
+      "target_name": "Post: ABW przeszukała mój dom",
+      "confidence": 1.0,
+      "source_name": "Screenshot (post)",
+      "source_id": "screenshot-fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl",
+      "target_id": "fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl",
+      "relationship_type": "EVIDENCE_FOR"
+    },
+    {
+      "date": "",
+      "evidence": "Osoba rozpoznana na screenshot (użytkownik potwierdził obecność osoby w wideo).",
+      "target_name": "Anna Luiza Stec",
+      "confidence": 0.95,
+      "source_name": "Screenshot (post)",
+      "source_id": "screenshot-fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl",
+      "target_id": "ent-001",
+      "relationship_type": "DEPICTS"
+    },
+    {
+      "date": "",
+      "evidence": "Właścicielka kanału",
+      "target_name": "YT: KonkretnyKanal",
+      "confidence": 1.0,
+      "source_name": "Anna Luiza Stec",
+      "source_id": "ent-001",
+      "target_id": "channel-konkretnykanal",
+      "relationship_type": "HAS_PROFILE"
+    },
+    {
+      "date": "",
+      "evidence": "Właścicielka kanału",
+      "target_name": "YT: KonkretnyKanal",
+      "confidence": 1.0,
+      "source_name": "Anna Luiza Stec",
+      "source_id": "ent-001",
+      "target_id": "channel-konkretnykanal",
+      "relationship_type": "HAS_PROFILE"
+    },
+    {
+      "date": "",
+      "evidence": "Osoba występuje w materiale wideo (screenshot potwierdza obecność).",
+      "target_name": "YouTube: QcY2u58CtiA",
+      "confidence": 0.95,
+      "source_name": "Anna Luiza Stec",
+      "source_id": "ent-001",
+      "target_id": "page-youtube-QcY2u58CtiA",
+      "relationship_type": "FEATURED_ON"
+    },
+    {
+      "date": "2025-06-25",
+      "evidence": "Post ogłasza wydarzenie",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "confidence": 1.0,
+      "source_name": "Post: Harmonogram Spotkania Rodzin (25.06.2025)",
+      "source_id": "post-001",
+      "target_id": "evt-001",
+      "relationship_type": "ANNOUNCES"
+    },
+    {
+      "date": "",
+      "evidence": "Bezpośredni link",
+      "target_name": "Post: DZIEJE SIĘ...",
+      "confidence": 1.0,
+      "source_name": "7777777BLOG",
+      "source_id": "site-7777777blog",
+      "target_id": "post-7777777blog-dzieje-sie",
+      "relationship_type": "PUBLISHED"
+    },
+    {
+      "date": "",
+      "evidence": "Embed wideo",
+      "target_name": "Video: Sojusz Vs. Oś zła",
+      "confidence": 1.0,
+      "source_name": "Post: DZIEJE SIĘ...",
+      "source_id": "post-7777777blog-dzieje-sie",
+      "target_id": "video-rumble-v536bil",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "date": "",
+      "evidence": "Link w opisie autora",
+      "target_name": "YT: RedPillNews17",
+      "confidence": 1.0,
+      "source_name": "Rafał Kędzierski",
+      "source_id": "ent-rafal-kedzierski",
+      "target_id": "profile-yt-redpillnews17",
+      "relationship_type": "HAS_PROFILE"
+    },
+    {
+      "date": "",
+      "evidence": "Link w opisie autora",
+      "target_name": "X: RedPillNews17",
+      "confidence": 1.0,
+      "source_name": "Rafał Kędzierski",
+      "source_id": "ent-rafal-kedzierski",
+      "target_id": "profile-twitter-redpillnews17",
+      "relationship_type": "HAS_PROFILE"
+    },
+    {
+      "date": "",
+      "evidence": "Link w opisie autora",
+      "target_name": "TG: RavQdzierskiOfficial",
+      "confidence": 1.0,
+      "source_name": "Rafał Kędzierski",
+      "source_id": "ent-rafal-kedzierski",
+      "target_id": "profile-telegram-ravqdzierski",
+      "relationship_type": "HAS_PROFILE"
+    },
+    {
+      "date": "",
+      "evidence": "Link w opisie autora",
+      "target_name": "BitChute: Red Pill News",
+      "confidence": 1.0,
+      "source_name": "Rafał Kędzierski",
+      "source_id": "ent-rafal-kedzierski",
+      "target_id": "profile-bitchute-redpillnews",
+      "relationship_type": "HAS_PROFILE"
+    },
+    {
+      "date": "",
+      "evidence": "Link w opisie autora",
+      "target_name": "TvSuwerenni: Red Pill News",
+      "confidence": 1.0,
+      "source_name": "Rafał Kędzierski",
+      "source_id": "ent-rafal-kedzierski",
+      "target_id": "profile-tvsuwerenni-redpillnews",
+      "relationship_type": "HAS_PROFILE"
+    },
+    {
+      "date": "",
+      "evidence": "Link w opisie autora (RUMBLE: https://rumble.com/c/c-945427)",
+      "target_name": "Rumble: Red Pill News",
+      "confidence": 1.0,
+      "source_name": "Rafał Kędzierski",
+      "source_id": "ent-rafal-kedzierski",
+      "target_id": "profile-rumble-red-pill-news",
+      "relationship_type": "HAS_PROFILE"
+    },
+    {
+      "date": "",
+      "evidence": "Deklaracja 'MEDIA KTÓRE PROWADZĘ'",
+      "target_name": "Red Pill News",
+      "confidence": 1.0,
+      "source_name": "Rafał Kędzierski",
+      "source_id": "ent-rafal-kedzierski",
+      "target_id": "org-red-pill-news",
+      "relationship_type": "OWNED_BY"
+    },
+    {
+      "date": "",
+      "evidence": "Odbiorca wpłat na konto bankowe",
+      "target_name": "Red Pill News",
+      "confidence": 1.0,
+      "source_name": "Martyna Cyrych",
+      "source_id": "ent-martyna-cyrych",
+      "target_id": "org-red-pill-news",
+      "relationship_type": "AFFILIATED_WITH"
+    },
+    {
+      "date": "",
+      "evidence": "Tożsamość nazwy i marki",
+      "target_name": "Rumble: Red Pill News",
+      "confidence": 1.0,
+      "source_name": "Red Pill News",
+      "source_id": "org-red-pill-news",
+      "target_id": "profile-rumble-red-pill-news",
+      "relationship_type": "HAS_PROFILE"
+    },
+    {
+      "date": "",
+      "evidence": "Logo kanału zawiera Kołowrót na tle polskiej flagi (widoczne na bannerze Rumble)",
+      "target_name": "Kołowrót (Swarzyca)",
+      "confidence": 1.0,
+      "source_name": "Red Pill News",
+      "source_id": "org-red-pill-news",
+      "target_id": "symbol-kolowrot",
+      "relationship_type": "USES_SYMBOL"
+    },
+    {
+      "date": "",
+      "evidence": "Wideo firmowane marką",
+      "target_name": "Video: Sojusz Vs. Oś zła",
+      "confidence": 1.0,
+      "source_name": "Red Pill News",
+      "source_id": "org-red-pill-news",
+      "target_id": "video-rumble-v536bil",
+      "relationship_type": "PRODUCED"
+    },
+    {
+      "date": "",
+      "evidence": "Link w poście",
+      "target_name": "Video: Metody demoralizacji...",
+      "confidence": 1.0,
+      "source_name": "Post: Metody demoralizacji dzieci...",
+      "source_id": "fb_BraterstwaLudziWolnych_pfbid0WqfkZHUTKZkN82eXbK49FvN1AfS14KExdgFiP19NRkgD1Q1cZ3BjDfNsZdH1au7Vl",
+      "target_id": "video-youtube-N2IZIyD73iw",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "date": "",
+      "evidence": "Post opisuje nagranie ze spotkania",
+      "target_name": "Spotkanie wewnętrzne BLW",
+      "confidence": 1.0,
+      "source_name": "Zdzisława Piasecka",
+      "source_id": "ent-zdzislawa-piasecka",
+      "target_id": "evt-spotkanie-wewnetrzne-blw-2024-11",
+      "relationship_type": "SPEAKER_AT"
+    },
+    {
+      "date": "",
+      "evidence": "Główna prelegentka (tytuł wideo)",
+      "target_name": "Video: Metody demoralizacji...",
+      "confidence": 1.0,
+      "source_name": "Zdzisława Piasecka",
+      "source_id": "ent-zdzislawa-piasecka",
+      "target_id": "video-youtube-N2IZIyD73iw",
+      "relationship_type": "FEATURED_ON"
+    },
+    {
+      "date": "",
+      "evidence": "Wideo znajduje się na tym kanale",
+      "target_name": "YT: Jakub Kuśpit",
+      "confidence": 1.0,
+      "source_name": "Video: Metody demoralizacji...",
+      "source_id": "video-youtube-N2IZIyD73iw",
+      "target_id": "profile-yt-jakub-kuspit",
+      "relationship_type": "UPLOADED_BY"
+    },
+    {
+      "date": "",
+      "evidence": "Treść posta: 'Nagranie z... spotkania'",
+      "target_name": "Spotkanie wewnętrzne BLW",
+      "confidence": 1.0,
+      "source_name": "Video: Metody demoralizacji...",
+      "source_id": "video-youtube-N2IZIyD73iw",
+      "target_id": "evt-spotkanie-wewnetrzne-blw-2024-11",
+      "relationship_type": "RECORDING_OF"
+    },
+    {
+      "date": "",
+      "evidence": "Link do YouTube w poście",
+      "target_name": "Video: Braterskie Usługi - Karol Janik",
+      "confidence": 1.0,
+      "source_name": "Post: Braterskie Usługi - Karol Janik",
+      "source_id": "fb_BraterstwaLudziWolnych_pfbid0zAJpVEKPoR6nfBkGRyXby4uGFPVZaLYaAH6XzzvyA6uVAY3oCpZy6D8Vuen8Pa2Al",
+      "target_id": "video-youtube-BmLVdf4Fmjg",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "date": "",
+      "evidence": "Wymieniony w treści posta i tytule wideo",
+      "target_name": "Karol Janik",
+      "confidence": 1.0,
+      "source_name": "Post: Braterskie Usługi - Karol Janik",
+      "source_id": "fb_BraterstwaLudziWolnych_pfbid0zAJpVEKPoR6nfBkGRyXby4uGFPVZaLYaAH6XzzvyA6uVAY3oCpZy6D8Vuen8Pa2Al",
+      "target_id": "ent-karol-janik",
+      "relationship_type": "MENTIONS"
+    },
+    {
+      "date": "",
+      "evidence": "Post jest udostępnieniem wpisu Mateusza Jarosiewicza",
+      "target_name": "FB: Mateusz Jarosiewicz",
+      "confidence": 1.0,
+      "source_name": "Post: Braterskie Usługi - Karol Janik",
+      "source_id": "fb_BraterstwaLudziWolnych_pfbid0zAJpVEKPoR6nfBkGRyXby4uGFPVZaLYaAH6XzzvyA6uVAY3oCpZy6D8Vuen8Pa2Al",
+      "target_id": "profile-fb-mateusz-jarosiewicz",
+      "relationship_type": "SHARES_CONTENT_FROM"
+    },
+    {
+      "date": "",
+      "evidence": "Profil osobisty",
+      "target_name": "FB: Mateusz Jarosiewicz",
+      "confidence": 1.0,
+      "source_name": "Mateusz Jarosiewicz",
+      "source_id": "ent-mateusz-jarosiewicz",
+      "target_id": "profile-fb-mateusz-jarosiewicz",
+      "relationship_type": "HAS_PROFILE"
+    },
+    {
+      "date": "",
+      "evidence": "Kanał YouTube osoby",
+      "target_name": "YT: Mateusz Jarosiewicz",
+      "confidence": 1.0,
+      "source_name": "Mateusz Jarosiewicz",
+      "source_id": "ent-mateusz-jarosiewicz",
+      "target_id": "profile-yt-mateusz-jarosiewicz",
+      "relationship_type": "HAS_PROFILE"
+    },
+    {
+      "date": "",
+      "evidence": "Widoczny na miniaturze wideo (rozmawia z Karolem)",
+      "target_name": "Video: Braterskie Usługi - Karol Janik",
+      "confidence": 1.0,
+      "source_name": "Mateusz Jarosiewicz",
+      "source_id": "ent-mateusz-jarosiewicz",
+      "target_id": "video-youtube-BmLVdf4Fmjg",
+      "relationship_type": "FEATURED_ON"
+    },
+    {
+      "date": "",
+      "evidence": "Główny bohater wideo",
+      "target_name": "Video: Braterskie Usługi - Karol Janik",
+      "confidence": 1.0,
+      "source_name": "Karol Janik",
+      "source_id": "ent-karol-janik",
+      "target_id": "video-youtube-BmLVdf4Fmjg",
+      "relationship_type": "FEATURED_ON"
+    },
+    {
+      "date": "",
+      "evidence": "Wideo znajduje się na tym kanale",
+      "target_name": "YT: Mateusz Jarosiewicz",
+      "confidence": 1.0,
+      "source_name": "Video: Braterskie Usługi - Karol Janik",
+      "source_id": "video-youtube-BmLVdf4Fmjg",
+      "target_id": "profile-yt-mateusz-jarosiewicz",
+      "relationship_type": "UPLOADED_BY"
+    },
+    {
+      "date": "",
+      "evidence": "",
+      "target_name": "",
+      "confidence": 1.0,
+      "source_name": "",
+      "source_id": "fb_jakub.kuspit.7_pfbid0GX21FVswfCZxERkS9xZencW3Hd9pkuisd74sTukdaop1gFgMtMN3KXbJExRPmh25l",
+      "target_id": "evt-trasa-jakuba-kuspita-2025-2026",
+      "relationship_type": "ANNOUNCES"
+    },
+    {
+      "date": "",
+      "evidence": "",
+      "target_name": "",
+      "confidence": 1.0,
+      "source_name": "",
+      "source_id": "fb_jakub.kuspit.7_pfbid0GX21FVswfCZxERkS9xZencW3Hd9pkuisd74sTukdaop1gFgMtMN3KXbJExRPmh25l",
+      "target_id": "page-ideowo-blw-mazowieckie",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "date": "",
+      "evidence": "",
+      "target_name": "",
+      "confidence": 1.0,
+      "source_name": "",
+      "source_id": "fb_jakub.kuspit.7_pfbid0GX21FVswfCZxERkS9xZencW3Hd9pkuisd74sTukdaop1gFgMtMN3KXbJExRPmh25l",
+      "target_id": "page-buycoffee-jakubkuspit",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "date": "2025-11-26",
+      "evidence": "",
+      "target_name": "",
+      "confidence": 1.0,
+      "source_name": "",
+      "source_id": "profile-fb-jakub-kuspit-7",
+      "target_id": "fb_jakub.kuspit.7_pfbid0GX21FVswfCZxERkS9xZencW3Hd9pkuisd74sTukdaop1gFgMtMN3KXbJExRPmh25l",
+      "relationship_type": "PUBLISHED"
+    },
+    {
+      "date": "",
+      "evidence": "Wizerunek na miniaturze",
+      "target_name": "Donald Trump",
+      "confidence": 1.0,
+      "source_name": "Video: Co sie NAPRAWDĘ działo...",
+      "source_id": "video-rumble-co-sie-naprawde-dzialo",
+      "target_id": "ent-donald-trump",
+      "relationship_type": "FEATURED_ON"
+    },
+    {
+      "date": "",
+      "evidence": "Wizerunek na miniaturze",
+      "target_name": "Benjamin Netanjahu",
+      "confidence": 1.0,
+      "source_name": "Video: Co sie NAPRAWDĘ działo...",
+      "source_id": "video-rumble-co-sie-naprawde-dzialo",
+      "target_id": "ent-benjamin-netanjahu",
+      "relationship_type": "FEATURED_ON"
+    },
+    {
+      "date": "",
+      "evidence": "Wizerunek na miniaturze",
+      "target_name": "Rafał Trzaskowski",
+      "confidence": 1.0,
+      "source_name": "Video: WYBORY 2025",
+      "source_id": "video-rumble-wybory-2025",
+      "target_id": "ent-rafal-trzaskowski",
+      "relationship_type": "FEATURED_ON"
+    },
+    {
+      "date": "",
+      "evidence": "Wizerunek na miniaturze",
+      "target_name": "Władimir Putin",
+      "confidence": 1.0,
+      "source_name": "Video: W tych szaleństwach...",
+      "source_id": "video-rumble-w-tych-szalenstwach-jest-metoda",
+      "target_id": "ent-vladimir-putin",
+      "relationship_type": "FEATURED_ON"
+    },
+    {
+      "date": "",
+      "evidence": "Wizerunek na miniaturze",
+      "target_name": "Xi Jinping",
+      "confidence": 1.0,
+      "source_name": "Video: W tych szaleństwach...",
+      "source_id": "video-rumble-w-tych-szalenstwach-jest-metoda",
+      "target_id": "ent-xi-jinping",
+      "relationship_type": "FEATURED_ON"
+    },
+    {
+      "date": "",
+      "evidence": "Napis na miniaturze: RESET WIELKIEGO RESETU",
+      "target_name": "Narracja: Wielki Reset",
+      "confidence": 1.0,
+      "source_name": "Video: W tych szaleństwach...",
+      "source_id": "video-rumble-w-tych-szalenstwach-jest-metoda",
+      "target_id": "narrative-great-reset",
+      "relationship_type": "PROMOTES"
+    },
+    {
+      "date": "",
+      "evidence": "Napis na miniaturze: RV/GCR?",
+      "target_name": "Narracja: RV/GCR",
+      "confidence": 1.0,
+      "source_name": "Video: W tych szaleństwach...",
+      "source_id": "video-rumble-w-tych-szalenstwach-jest-metoda",
+      "target_id": "narrative-rv-gcr",
+      "relationship_type": "PROMOTES"
+    },
+    {
+      "date": "",
+      "evidence": "Link w opisie wideo",
+      "target_name": "Video: Śniadaniówka wRealu24...",
+      "confidence": 1.0,
+      "source_name": "Video: Niezależność finansowa...",
+      "source_id": "video-youtube-Ctnu7WUzXyc",
+      "target_id": "video-banbye-v_Y198fTyXMu8f",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "date": "",
+      "evidence": "Link w opisie wideo",
+      "target_name": "Video: Zełenski Zdemaskowany część 1...",
+      "confidence": 1.0,
+      "source_name": "Video: Niezależność finansowa...",
+      "source_id": "video-youtube-Ctnu7WUzXyc",
+      "target_id": "video-rumble-v4sbpat",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "date": "",
+      "evidence": "Link w opisie wideo",
+      "target_name": "Video: Zełenski Zdemaskowany część 2...",
+      "confidence": 1.0,
+      "source_name": "Video: Niezależność finansowa...",
+      "source_id": "video-youtube-Ctnu7WUzXyc",
+      "target_id": "video-rumble-v4shmn2",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "date": "",
+      "evidence": "Dane z YouTube oembed",
+      "target_name": "YT: Jakub Kuśpit",
+      "confidence": 1.0,
+      "source_name": "Video: Niezależność finansowa...",
+      "source_id": "video-youtube-Ctnu7WUzXyc",
+      "target_id": "profile-yt-jakub-kuspit",
+      "relationship_type": "UPLOADED_BY"
+    },
+    {
+      "date": "",
+      "evidence": "Wspomniany w opisie wideo (linki do materiałów)",
+      "target_name": "Wołodymir Zełeński",
+      "confidence": 1.0,
+      "source_name": "Video: Niezależność finansowa...",
+      "source_id": "video-youtube-Ctnu7WUzXyc",
+      "target_id": "ent-wolodymyr-zelenski",
+      "relationship_type": "MENTIONS"
+    },
+    {
+      "date": "",
+      "evidence": "Wspomniany w opisie wideo (wRealu24)",
+      "target_name": "Marek Skowroński",
+      "confidence": 1.0,
+      "source_name": "Video: Niezależność finansowa...",
+      "source_id": "video-youtube-Ctnu7WUzXyc",
+      "target_id": "ent-marek-skowronski",
+      "relationship_type": "MENTIONS"
+    },
+    {
+      "date": "",
+      "evidence": "Wspomniane w opisie wideo",
+      "target_name": "wRealu24",
+      "confidence": 1.0,
+      "source_name": "Video: Niezależność finansowa...",
+      "source_id": "video-youtube-Ctnu7WUzXyc",
+      "target_id": "org-wrealu24",
+      "relationship_type": "MENTIONS"
+    },
+    {
+      "date": "",
+      "evidence": "Temat wideo",
+      "target_name": "Video: Zełenski Zdemaskowany część 1...",
+      "confidence": 1.0,
+      "source_name": "Wołodymir Zełeński",
+      "source_id": "ent-wolodymyr-zelenski",
+      "target_id": "video-rumble-v4sbpat",
+      "relationship_type": "FEATURED_ON"
+    },
+    {
+      "date": "",
+      "evidence": "Temat wideo",
+      "target_name": "Video: Zełenski Zdemaskowany część 2...",
+      "confidence": 1.0,
+      "source_name": "Wołodymir Zełeński",
+      "source_id": "ent-wolodymyr-zelenski",
+      "target_id": "video-rumble-v4shmn2",
+      "relationship_type": "FEATURED_ON"
+    },
+    {
+      "date": "",
+      "evidence": "Opisany jako redaktor wRealu24",
+      "target_name": "wRealu24",
+      "confidence": 1.0,
+      "source_name": "Marek Skowroński",
+      "source_id": "ent-marek-skowronski",
+      "target_id": "org-wrealu24",
+      "relationship_type": "WORKS_AT"
+    },
+    {
+      "date": "",
+      "evidence": "Wymieniony w tytule/opisie wideo",
+      "target_name": "Video: Śniadaniówka wRealu24...",
+      "confidence": 1.0,
+      "source_name": "Marek Skowroński",
+      "source_id": "ent-marek-skowronski",
+      "target_id": "video-banbye-v_Y198fTyXMu8f",
+      "relationship_type": "FEATURED_ON"
+    },
+    {
+      "date": "",
+      "evidence": "Widoczne na liście filmów kanału",
+      "target_name": "Video: Co sie NAPRAWDĘ działo...",
+      "confidence": 1.0,
+      "source_name": "Rumble: Red Pill News",
+      "source_id": "profile-rumble-red-pill-news",
+      "target_id": "video-rumble-co-sie-naprawde-dzialo",
+      "relationship_type": "UPLOADED"
+    },
+    {
+      "date": "",
+      "evidence": "Widoczne na liście filmów kanału",
+      "target_name": "Video: WYBORY 2025",
+      "confidence": 1.0,
+      "source_name": "Rumble: Red Pill News",
+      "source_id": "profile-rumble-red-pill-news",
+      "target_id": "video-rumble-wybory-2025",
+      "relationship_type": "UPLOADED"
+    },
+    {
+      "date": "",
+      "evidence": "Widoczne na liście filmów kanału",
+      "target_name": "Video: W tych szaleństwach JEST metoda...",
+      "confidence": 1.0,
+      "source_name": "Rumble: Red Pill News",
+      "source_id": "profile-rumble-red-pill-news",
+      "target_id": "video-rumble-w-tych-szalenstwach-jest-metoda",
+      "relationship_type": "UPLOADED"
+    },
+    {
+      "date": "",
+      "evidence": "Właściciel kanału",
+      "target_name": "Video: Zełenski Zdemaskowany część 1...",
+      "confidence": 1.0,
+      "source_name": "Rumble: Red Pill News",
+      "source_id": "profile-rumble-red-pill-news",
+      "target_id": "video-rumble-v4sbpat",
+      "relationship_type": "UPLOADED"
+    },
+    {
+      "date": "",
+      "evidence": "Właściciel kanału",
+      "target_name": "Video: Zełenski Zdemaskowany część 2...",
+      "confidence": 1.0,
+      "source_name": "Rumble: Red Pill News",
+      "source_id": "profile-rumble-red-pill-news",
+      "target_id": "video-rumble-v4shmn2",
+      "relationship_type": "UPLOADED"
+    },
+    {
+      "date": "",
+      "evidence": "Kanał YouTube osoby",
+      "target_name": "YT: Jakub Kuśpit",
+      "confidence": 1.0,
+      "source_name": "Jakub Kuśpit",
+      "source_id": "ent-jakub-kuspit",
+      "target_id": "profile-yt-jakub-kuspit",
+      "relationship_type": "HAS_PROFILE"
+    },
+    {
+      "date": "",
+      "evidence": "",
+      "target_name": "",
+      "confidence": 1.0,
+      "source_name": "",
+      "source_id": "ent-jakub-kuspit",
+      "target_id": "profile-fb-jakub-kuspit-7",
+      "relationship_type": "HAS_PROFILE"
+    },
+    {
+      "date": "2025-07-04",
+      "evidence": "Post na FB z 25.06.2025 - lista prelegentów",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "confidence": 1.0,
+      "source_name": "Jakub Kuśpit",
+      "source_id": "ent-jakub-kuspit",
+      "target_id": "evt-001",
+      "relationship_type": "SPEAKER_AT"
+    },
+    {
+      "date": "",
+      "evidence": "",
+      "target_name": "",
+      "confidence": 1.0,
+      "source_name": "",
+      "source_id": "ent-jakub-kuspit",
+      "target_id": "evt-trasa-jakuba-kuspita-2025-2026",
+      "relationship_type": "SPEAKER_AT"
+    },
+    {
+      "date": "2025-11-25",
+      "evidence": "screenshot:data/evidence/facebook/JakubKuspit/jakub_kuspit_profile_20251125.png",
+      "target_name": "Braterstwa Ludzi Wolnych",
+      "confidence": 0.9,
+      "source_name": "Jakub Kuśpit",
+      "source_id": "ent-jakub-kuspit",
+      "target_id": "org-braterstwa-ludzi-wolnych",
+      "relationship_type": "WORKS_AT"
+    },
+    {
+      "date": "2025-11-25",
+      "evidence": "screenshot:data/evidence/facebook/JakubKuspit/jakub_kuspit_profile_20251125.png",
+      "target_name": "FB: Bronimy Munduru - Dla Przyszłych Pokoleń",
+      "confidence": 0.85,
+      "source_name": "Jakub Kuśpit",
+      "source_id": "ent-jakub-kuspit",
+      "target_id": "profile-bronimy-munduru",
+      "relationship_type": "AFFILIATED_WITH"
+    },
+    {
+      "date": "2025-11-25",
+      "evidence": "Reposty i obecność na liście prelegentów na wydarzeniach Braterstwa Ludzi Wolnych oraz udostępnienia — wskazuje na powiązanie (screenshoty i posty w zbiorze).",
+      "target_name": "FB: Braterstwa Ludzi Wolnych",
+      "confidence": 0.9,
+      "source_name": "Jakub Kuśpit",
+      "source_id": "ent-jakub-kuspit",
+      "target_id": "profile-braterstwa-ludzi-wolnych",
+      "relationship_type": "AFFILIATED_WITH"
+    },
+    {
+      "date": "2025-11-25",
+      "evidence": "screenshot:data/evidence/facebook/JakubKuspit/jakub_kuspit_profile_20251125.png",
+      "target_name": "FB: Braterskie Kruszce",
+      "confidence": 0.85,
+      "source_name": "Jakub Kuśpit",
+      "source_id": "ent-jakub-kuspit",
+      "target_id": "profile-braterskie-kruszce",
+      "relationship_type": "AFFILIATED_WITH"
+    },
+    {
+      "date": "",
+      "evidence": "Autor kanału i wideo",
+      "target_name": "Video: Niezależność finansowa...",
+      "confidence": 0.9,
+      "source_name": "Jakub Kuśpit",
+      "source_id": "ent-jakub-kuspit",
+      "target_id": "video-youtube-Ctnu7WUzXyc",
+      "relationship_type": "FEATURED_ON"
+    },
+    {
+      "date": "2025-11-25",
+      "evidence": "screenshot:data/evidence/facebook/JakubKuspit/braterstwa_pl1_20251125.png",
+      "target_name": "PL1.TV",
+      "confidence": 0.9,
+      "source_name": "Jakub Kuśpit",
+      "source_id": "ent-jakub-kuspit",
+      "target_id": "website-pl1vod",
+      "relationship_type": "FEATURED_ON"
+    },
+    {
+      "date": "",
+      "evidence": "Post promuje zapisy do BLW, autor jest prelegentem",
+      "target_name": "",
+      "confidence": 1.0,
+      "source_name": "",
+      "source_id": "ent-jakub-kuspit",
+      "target_id": "org-braterstwa-ludzi-wolnych",
+      "relationship_type": "MEMBER_OF"
+    },
+    {
+      "date": "2025-07-04",
+      "evidence": "Post na FB z 25.06.2025 - lista prelegentów",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "confidence": 1.0,
+      "source_name": "Mieczysław Bielak",
+      "source_id": "ent-003",
+      "target_id": "evt-001",
+      "relationship_type": "SPEAKER_AT"
+    },
+    {
+      "date": "2025-07-04",
+      "evidence": "Post na FB z 25.06.2025 - lista prelegentów",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "confidence": 1.0,
+      "source_name": "Tomasz Kosiński",
+      "source_id": "ent-004",
+      "target_id": "evt-001",
+      "relationship_type": "SPEAKER_AT"
+    },
+    {
+      "date": "2025-07-04",
+      "evidence": "Post na FB z 25.06.2025 - lista prelegentów",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "confidence": 1.0,
+      "source_name": "Katarzyna Tarnawa-Gwóźdź",
+      "source_id": "ent-005",
+      "target_id": "evt-001",
+      "relationship_type": "SPEAKER_AT"
+    },
+    {
+      "date": "2025-07-04",
+      "evidence": "Post na FB z 25.06.2025 - lista prelegentów",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "confidence": 1.0,
+      "source_name": "Jacek Falkowski",
+      "source_id": "ent-006",
+      "target_id": "evt-001",
+      "relationship_type": "SPEAKER_AT"
+    },
+    {
+      "date": "2025-07-04",
+      "evidence": "Post na FB z 25.06.2025 - lista prelegentów",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "confidence": 1.0,
+      "source_name": "Bogusław Okulski",
+      "source_id": "ent-007",
+      "target_id": "evt-001",
+      "relationship_type": "SPEAKER_AT"
+    },
+    {
+      "date": "2024-04-18",
+      "evidence": "Post zawiera link/ogłoszenie artykułu PL1.TV (zrzut ekranu)",
+      "target_name": "PL1.TV",
+      "confidence": 0.8,
+      "source_name": "Post: ABW wtargnęła do naszych domów o 6 rano",
+      "source_id": "post-002",
+      "target_id": "website-pl1vod",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "date": "2024-01-13",
+      "evidence": "Post zawiera link/ogłoszenie artykułu PL1.TV (zrzut ekranu)",
+      "target_name": "PL1.TV",
+      "confidence": 0.8,
+      "source_name": "Post: To jest zamach na polskie rodziny",
+      "source_id": "post-003",
+      "target_id": "website-pl1vod",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "date": "2024-01-01",
+      "evidence": "Repost zawiera fragment oryginalnego tekstu; autor oryginału rozpoznany z podglądu",
+      "target_name": "Post: Jakub Kuśpit — twierdzenia o 'PsyOp'",
+      "confidence": 0.8,
+      "source_name": "Repost: twierdzenia o 'PsyOp' i 'pseudo-elity' (udostępnienie Jakuba Kuśpita)",
+      "source_id": "post-004",
+      "target_id": "post-005",
+      "relationship_type": "SHARES"
+    },
+    {
+      "date": "2024-01-01",
+      "evidence": "Autor zidentyfikowany w podglądzie tekstu (raw_text_preview)",
+      "target_name": "Jakub Kuśpit",
+      "confidence": 0.9,
+      "source_name": "Post: Jakub Kuśpit — twierdzenia o 'PsyOp'",
+      "source_id": "post-005",
+      "target_id": "ent-jakub-kuspit",
+      "relationship_type": "AUTHORED_BY"
+    },
+    {
+      "date": "2025-11-25",
+      "evidence": "external_links: https://www.youtube.com/watch?v=a7jZFILxRJo",
+      "target_name": "YouTube: Strumieniownia (@Strumieniownia)",
+      "confidence": 0.9,
+      "source_name": "Post: Zlot Braterstw Ludzi Wolnych — dzień 4 (wideo)",
+      "source_id": "post-006",
+      "target_id": "page-youtube-strumieniownia",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "date": "2025-11-25",
+      "evidence": "Widziany kanał i strona w opisie materiału / załączone zrzuty",
+      "target_name": "Strumieniownia.pl — strona kanału",
+      "confidence": 0.8,
+      "source_name": "Post: Zlot Braterstw Ludzi Wolnych — dzień 4 (wideo)",
+      "source_id": "post-006",
+      "target_id": "page-strumieniownia-site",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "date": "2025-11-25",
+      "evidence": "screenshot:data/evidence/strumieniownia/strumieniownia_site_20251125_01.placeholder.txt",
+      "target_name": "braterstwa.pl",
+      "confidence": 0.9,
+      "source_name": "Strumieniownia.pl — strona kanału",
+      "source_id": "page-strumieniownia-site",
+      "target_id": "website-001",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "date": "2025-11-25",
+      "evidence": "screenshot:data/evidence/sites/strumieniownia/strumieniownia_links_sojusznicy.png",
+      "target_name": "Festiwal Wdzięczności - Bieszczady",
+      "confidence": 0.9,
+      "source_name": "Strumieniownia.pl — strona kanału",
+      "source_id": "page-strumieniownia-site",
+      "target_id": "page-festiwal-wdziecznosci",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "date": "2025-11-25",
+      "evidence": "screenshot:data/evidence/sites/strumieniownia/strumieniownia_links_sojusznicy.png",
+      "target_name": "FB: Jarex Technika Estradowa",
+      "confidence": 0.9,
+      "source_name": "Strumieniownia.pl — strona kanału",
+      "source_id": "page-strumieniownia-site",
+      "target_id": "profile-jarex-fb",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "date": "2025-11-25",
+      "evidence": "screenshot:data/evidence/sites/strumieniownia/strumieniownia_links_sojusznicy.png",
+      "target_name": "Kooperatywa Lubelska",
+      "confidence": 0.9,
+      "source_name": "Strumieniownia.pl — strona kanału",
+      "source_id": "page-strumieniownia-site",
+      "target_id": "page-kooperatywa-lbn",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "date": "2025-11-25",
+      "evidence": "screenshot:data/evidence/sites/strumieniownia/strumieniownia_links_sojusznicy.png",
+      "target_name": "Siedlisko Stasin",
+      "confidence": 0.9,
+      "source_name": "Strumieniownia.pl — strona kanału",
+      "source_id": "page-strumieniownia-site",
+      "target_id": "page-siedliskostasin",
+      "relationship_type": "LINKS_TO"
+    }
+  ]
+}

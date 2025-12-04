@@ -183,7 +183,7 @@
   {
     "id": "page-youtube-strumieniownia",
     "name": "YouTube: Strumieniownia (@Strumieniownia)",
-    "entity_type": "profile",
+    "entity_type": "channel",
     "url": "https://www.youtube.com/@Strumieniownia",
     "description": "Kanał YouTube 'Strumieniownia' — zawiera relacje i nagrania z Zlotu Braterstw Ludzi Wolnych",
     "country": "PL",

@@ -60,6 +60,22 @@ def find_evidence_files():
     return files
 
 
+def find_raw_facebook_jsons():
+    raws = []
+    fb_root = ROOT / 'static' / 'data' / 'raw' / 'facebook'
+    # also check src/ui/static mirror and data/raw
+    candidates = [
+        fb_root,
+        ROOT / 'data' / 'raw' / 'facebook',
+        ROOT / 'src' / 'ui' / 'static' / 'data' / 'raw' / 'facebook'
+    ]
+    for d in candidates:
+        if d and d.exists():
+            for p in d.rglob('*.json'):
+                raws.append(p)
+    return raws
+
+
 def normalize_repo_path(path: Path) -> str:
     # Return path starting with 'data/...', used in JSON properties
     s = str(path).replace('\\', '/')
@@ -76,6 +92,7 @@ def normalize_repo_path(path: Path) -> str:
 def main():
     node_ids = load_node_ids()
     files = find_evidence_files()
+    fb_jsons = find_raw_facebook_jsons()
 
     matches = []
     unmatched = []
@@ -134,6 +151,31 @@ def main():
         if 'screenshot' in m:
             node['screenshot'] = m['screenshot']
         out['nodes'].append(node)
+
+    # Also parse raw facebook JSONs to ensure posts link to their screenshots
+    parsed = 0
+    for j in fb_jsons:
+        try:
+            with j.open('r', encoding='utf-8') as fh:
+                jd = json.load(fh)
+                pid = jd.get('id')
+                shot = jd.get('screenshot') or jd.get('file')
+                if pid and shot:
+                    # normalize separators
+                    shot = shot.replace('\\', '/').lstrip('/')
+                    # create entries for post-, id, and screenshot- nodes
+                    post_node = {'id': f'post-{pid}', 'evidence': shot}
+                    bare_node = {'id': pid, 'screenshot': shot}
+                    screenshot_node = {'id': f'screenshot-{pid}', 'file': shot}
+                    out['nodes'].append(post_node)
+                    out['nodes'].append(bare_node)
+                    out['nodes'].append(screenshot_node)
+                    parsed += 1
+        except Exception:
+            continue
+
+    if parsed:
+        out['meta']['fb_jsons_parsed'] = parsed
 
     out_path = OUT_DIR / f'analysis_match_images_by_id_{ts}.json'
     with out_path.open('w', encoding='utf-8') as f:

@@ -341,8 +341,8 @@ async function init() {
         // document.addEventListener('mousemove', (e) => { ... });
 
         // Configure forces after graph is created for better spacing
-        Graph.d3Force('charge').strength(-200);
-        Graph.d3Force('link').distance(100);
+        Graph.d3Force('charge').strength(-500);
+        Graph.d3Force('link').distance(150);
 
         // --- Drag behavior improvements ---
         // Keep the dragged node fixed to the pointer while dragging

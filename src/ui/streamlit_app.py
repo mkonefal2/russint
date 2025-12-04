@@ -210,7 +210,6 @@ def prepare_html(css, js, graph_data):
                 <div id="resize-handle"></div>
                 <div class="details-header">
                     <div style="display: flex; align-items: center; gap: 10px;">
-                        <button id="toggle-details-btn" onclick="toggleDetailsPanel()" title="Toggle Panel">▼</button>
                         <h2 id="details-title">Select a node</h2>
                     </div>
                     <div class="details-controls">
