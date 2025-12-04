@@ -308,6 +308,28 @@ async function init() {
                             highlightNodes.add(link.target);
                         }
                     });
+
+                    // Also include any links where BOTH endpoints are in the highlighted set
+                    // This makes edges between neighbors (not directly adjacent to the clicked node)
+                    // visible when in focus mode.
+                    links.forEach(link => {
+                        try {
+                            if (highlightNodes.has(link.source) && highlightNodes.has(link.target)) {
+                                highlightLinks.add(link);
+                            }
+                        } catch (e) {
+                            // Defensive: some links may reference ids instead of node objects
+                            // In that case compare by id fields if available
+                            const sId = (link.source && link.source.id) || link.source;
+                            const tId = (link.target && link.target.id) || link.target;
+                            if (sId && tId) {
+                                const nodeIds = new Set(Array.from(highlightNodes).map(n => n.id || n));
+                                if (nodeIds.has(sId) && nodeIds.has(tId)) {
+                                    highlightLinks.add(link);
+                                }
+                            }
+                        }
+                    });
                     
                     try {
                         updateDetails(node);
@@ -326,7 +348,6 @@ async function init() {
                         alert("Error showing details: " + e.message);
                     }
                     
-                    // Fit view to highlighted nodes (clicked node + neighbors)
                     // If the highlighted group is larger than the current view, zoom out to fit.
                     // Otherwise, just center the view without zooming in.
                     (function() {
