@@ -48,8 +48,6 @@ body {
     max-height: 80vh;
     background-color: var(--panel-bg);
     border-top: 1px solid var(--border-color);
-    /* DEBUG BORDER */
-    border: 2px solid red; 
     display: flex;
     flex-direction: column;
     box-shadow: 0 -5px 20px rgba(0,0,0,0.5);
@@ -61,6 +59,10 @@ body {
     width: 100%;
     overflow: hidden; /* Ensure content doesn't spill out */
     pointer-events: none; /* CRITICAL: Let clicks pass through the container itself */
+}
+
+#details-container.collapsed .details-content {
+    display: none; /* Completely hide content when collapsed to prevent blocking */
 }
 
 /* Re-enable pointer events for the interactive parts of the panel */
