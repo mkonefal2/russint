@@ -26,7 +26,7 @@ body {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    pointer-events: none; /* Ensure container doesn't block clicks */
+    /* pointer-events: none; REMOVED - this was blocking the button */
 }
 
 #graph-container {
