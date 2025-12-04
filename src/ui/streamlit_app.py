@@ -51,12 +51,28 @@ st.markdown("""
 
 # --- BACKEND: Neo4j Data Fetching ---
 def get_neo4j_driver():
+    # Try environment variables first, then Streamlit secrets
     uri = os.getenv("NEO4J_URI")
     user = os.getenv("NEO4J_USER")
     password = os.getenv("NEO4J_PASSWORD")
+    
+    # Fallback to st.secrets if available
+    if not uri and "NEO4J_URI" in st.secrets:
+        uri = st.secrets["NEO4J_URI"]
+    if not user and "NEO4J_USER" in st.secrets:
+        user = st.secrets["NEO4J_USER"]
+    if not password and "NEO4J_PASSWORD" in st.secrets:
+        password = st.secrets["NEO4J_PASSWORD"]
+
     if not uri or not user or not password:
+        st.error("Missing credentials! Please set NEO4J_URI, NEO4J_USER, and NEO4J_PASSWORD in Streamlit Secrets.")
         return None
-    return GraphDatabase.driver(uri, auth=(user, password))
+        
+    try:
+        return GraphDatabase.driver(uri, auth=(user, password))
+    except Exception as e:
+        st.error(f"Connection failed: {e}")
+        return None
 
 @st.cache_data(ttl=60)
 def get_graph_data():
