@@ -339,8 +339,17 @@ async function init() {
         
         // Debug mouse events
         document.addEventListener('mousemove', (e) => {
-            // Optional: Uncomment to debug mouse position vs graph
-            // showStatusBanner(`Mouse: ${e.clientX}, ${e.clientY}`, 'info');
+            const el = document.elementFromPoint(e.clientX, e.clientY);
+            const elInfo = el ? `${el.tagName} ${el.id || ''} ${el.className || ''}` : 'null';
+            
+            // Only show if not canvas
+            if (el && el.tagName !== 'CANVAS') {
+                 showStatusBanner(`BLOCKER: ${elInfo}`, 'error');
+            } else {
+                 // Clear banner if hovering canvas
+                 const banner = document.getElementById('status-banner');
+                 if (banner && banner.innerText.startsWith('BLOCKER')) banner.style.display = 'none';
+            }
         });
 
         // Configure forces after graph is created for better spacing
