@@ -327,7 +327,36 @@ async function init() {
                     }
                     
                     // Fit view to highlighted nodes (clicked node + neighbors)
-                    Graph.zoomToFit(1000, 100, n => highlightNodes.has(n));
+                    // If the highlighted group is larger than the current view, zoom out to fit.
+                    // Otherwise, just center the view without zooming in.
+                    (function() {
+                        const nodesToFit = Array.from(highlightNodes);
+                        if (nodesToFit.length === 0) nodesToFit.push(node);
+
+                        const xs = nodesToFit.map(n => n.x || 0);
+                        const ys = nodesToFit.map(n => n.y || 0);
+                        const minX = Math.min(...xs);
+                        const maxX = Math.max(...xs);
+                        const minY = Math.min(...ys);
+                        const maxY = Math.max(...ys);
+
+                        const bboxW = Math.max(1, maxX - minX);
+                        const bboxH = Math.max(1, maxY - minY);
+
+                        const currentZoom = Graph.zoom() || 1;
+                        const viewW = Graph.width() / currentZoom;
+                        const viewH = Graph.height() / currentZoom;
+
+                        // If bounding box is bigger than most of the view, zoom-to-fit (zoom out).
+                        if (bboxW > viewW * 0.9 || bboxH > viewH * 0.9) {
+                            Graph.zoomToFit(1000, 40, n => highlightNodes.has(n));
+                        } else {
+                            // Center the view on the group's center but keep current zoom (do not zoom in).
+                            const centerX = (minX + maxX) / 2;
+                            const centerY = (minY + maxY) / 2;
+                            Graph.centerAt(centerX, centerY, 1000);
+                        }
+                    })();
                 }
             })
             .onBackgroundClick(() => {
