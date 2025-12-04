@@ -1,0 +1,66 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440000",
+  "entity_type": "organization",
+  "name": "Przykładowa Fundacja X",
+  "aliases": ["Fundacja X", "PFX"],
+  "description": "Organizacja promująca narracje anty-zachodnie pod płaszczykiem działalności kulturowej.",
+  "country_of_origin": "PL",
+  "status": "active",
+  "risk_level": "high",
+  "leadership": [
+    {
+      "role": "Prezes",
+      "name": "Jan Kowalski",
+      "person_id": "uuid-of-jan-kowalski"
+    }
+  ],
+  "online_presence": [
+    {
+      "platform": "Facebook",
+      "url": "https://facebook.com/fundacjax",
+      "handle": "@fundacjax",
+      "status": "active",
+      "followers_count": 15000
+    },
+    {
+      "platform": "Website",
+      "url": "https://fundacjax.pl",
+      "archive_url": "https://web.archive.org/web/2024.../fundacjax.pl"
+    }
+  ],
+  "narratives": [
+    "anty-NATO",
+    "negowanie suwerenności Ukrainy",
+    "promowanie 'tradycyjnych wartości' w kontekście rosyjskim"
+  ],
+  "connections": [
+    {
+      "entity_id": "uuid-another-org",
+      "relationship_type": "partner",
+      "description": "Współorganizator konferencji w 2024"
+    },
+    {
+      "entity_id": "uuid-funder",
+      "relationship_type": "financial_support",
+      "description": "Otrzymano grant w wysokości 50k PLN"
+    }
+  ],
+  "evidence": [
+    {
+      "type": "article",
+      "url": "https://news.pl/artykul-o-fundacji",
+      "title": "Kto stoi za Fundacją X?",
+      "date": "2024-05-12"
+    },
+    {
+      "type": "screenshot",
+      "path": "data/evidence/fundacjax_post_20240512.png",
+      "description": "Zrzut ekranu usuniętego wpisu nawołującego do nienawiści"
+    }
+  ],
+  "metadata": {
+    "created_at": "2025-11-24T10:00:00Z",
+    "updated_at": "2025-11-24T10:00:00Z",
+    "source": "manual_investigation"
+  }
+}

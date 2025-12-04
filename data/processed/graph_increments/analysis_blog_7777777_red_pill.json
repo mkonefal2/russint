@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "source": "7777777blog.wordpress.com",
+    "generated_at": "2025-11-26T15:30:00",
+    "description": "Analysis of blog post linking Red Pill News to Rafał Kędzierski"
+  },
+  "nodes": [
+    {
+      "id": "site-7777777blog",
+      "entity_type": "site",
+      "name": "7777777BLOG",
+      "url": "https://7777777blog.wordpress.com",
+      "description": "Blog agregujący treści anty-systemowe i konspiracyjne."
+    },
+    {
+      "id": "post-7777777blog-dzieje-sie",
+      "entity_type": "post",
+      "name": "Post: DZIEJE SIĘ (Red Pill News)",
+      "platform": "wordpress",
+      "url": "https://7777777blog.wordpress.com/2024/06/24/dzieje-sie/",
+      "date_posted": "2024-06-24",
+      "description": "Wpis promujący wideo Red Pill News 'Sojusz Vs. Oś zła'. Zawiera dane kontaktowe i finansowe Rafała Kędzierskiego."
+    },
+    {
+      "id": "ent-rafal-kedzierski",
+      "entity_type": "person",
+      "name": "Rafał Kędzierski",
+      "description": "Twórca kanału Red Pill News. Prowadzi zbiórki finansowe na swoją działalność.",
+      "country": "PL",
+      "notes": "Adres: Urle, Pieńkowa 8, 05-281. Email: ravandal@protonmail.com"
+    },
+    {
+      "id": "ent-martyna-cyrych",
+      "entity_type": "person",
+      "name": "Martyna Cyrych",
+      "description": "Odbiorca przelewów bankowych dla Red Pill News.",
+      "country": "PL"
+    },
+    {
+      "id": "profile-yt-redpillnews17",
+      "entity_type": "profile",
+      "name": "YT: RedPillNews17",
+      "platform": "youtube",
+      "url": "https://youtube.com/@RedPillNews17"
+    },
+    {
+      "id": "profile-twitter-redpillnews17",
+      "entity_type": "profile",
+      "name": "X: RedPillNews17",
+      "platform": "twitter",
+      "url": "https://x.com/RedPillNews17"
+    },
+    {
+      "id": "profile-telegram-ravqdzierski",
+      "entity_type": "profile",
+      "name": "TG: RavQdzierskiOfficial",
+      "platform": "telegram",
+      "url": "https://t.me/RavQdzierskiOfficial"
+    },
+    {
+      "id": "profile-bitchute-redpillnews",
+      "entity_type": "profile",
+      "name": "BitChute: Red Pill News",
+      "platform": "bitchute",
+      "url": "https://www.bitchute.com/channel/cyTkq8PifDdO/"
+    },
+    {
+      "id": "profile-tvsuwerenni-redpillnews",
+      "entity_type": "profile",
+      "name": "TvSuwerenni: Red Pill News",
+      "platform": "tvsuwerenni",
+      "url": "https://tv.suwerenni.org/a/red_pill_news/video-channels"
+    },
+    {
+      "id": "org-red-pill-news",
+      "entity_type": "organization",
+      "name": "Red Pill News",
+      "description": "Niezależny kanał medialny o profilu anty-systemowym i panslawistycznym.",
+      "country": "PL"
+    },
+    {
+      "id": "video-rumble-v536bil",
+      "entity_type": "video",
+      "name": "Video: Red Pill News | Sojusz Vs. Oś zła",
+      "platform": "rumble",
+      "url": "https://rumble.com/v536bil-red-pill-news-wiadomoci-w-czerwonej-piguce-sojusz-vs.-o-za-22.06.2024.html",
+      "date_posted": "2024-06-22",
+      "description": "Wideo omawiające geopolitykę z perspektywy anty-zachodniej."
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "site-7777777blog",
+      "target_id": "post-7777777blog-dzieje-sie",
+      "relationship_type": "PUBLISHED",
+      "source_name": "7777777BLOG",
+      "target_name": "Post: DZIEJE SIĘ...",
+      "confidence": 1.0,
+      "evidence": "Bezpośredni link"
+    },
+    {
+      "source_id": "post-7777777blog-dzieje-sie",
+      "target_id": "video-rumble-v536bil",
+      "relationship_type": "LINKS_TO",
+      "source_name": "Post: DZIEJE SIĘ...",
+      "target_name": "Video: Sojusz Vs. Oś zła",
+      "confidence": 1.0,
+      "evidence": "Embed wideo"
+    },
+    {
+      "source_id": "ent-rafal-kedzierski",
+      "target_id": "org-red-pill-news",
+      "relationship_type": "OWNED_BY",
+      "source_name": "Rafał Kędzierski",
+      "target_name": "Red Pill News",
+      "confidence": 1.0,
+      "evidence": "Deklaracja 'MEDIA KTÓRE PROWADZĘ'"
+    },
+    {
+      "source_id": "ent-rafal-kedzierski",
+      "target_id": "profile-yt-redpillnews17",
+      "relationship_type": "HAS_PROFILE",
+      "source_name": "Rafał Kędzierski",
+      "target_name": "YT: RedPillNews17",
+      "confidence": 1.0,
+      "evidence": "Link w opisie autora"
+    },
+    {
+      "source_id": "ent-rafal-kedzierski",
+      "target_id": "profile-twitter-redpillnews17",
+      "relationship_type": "HAS_PROFILE",
+      "source_name": "Rafał Kędzierski",
+      "target_name": "X: RedPillNews17",
+      "confidence": 1.0,
+      "evidence": "Link w opisie autora"
+    },
+    {
+      "source_id": "ent-rafal-kedzierski",
+      "target_id": "profile-telegram-ravqdzierski",
+      "relationship_type": "HAS_PROFILE",
+      "source_name": "Rafał Kędzierski",
+      "target_name": "TG: RavQdzierskiOfficial",
+      "confidence": 1.0,
+      "evidence": "Link w opisie autora"
+    },
+    {
+      "source_id": "ent-rafal-kedzierski",
+      "target_id": "profile-bitchute-redpillnews",
+      "relationship_type": "HAS_PROFILE",
+      "source_name": "Rafał Kędzierski",
+      "target_name": "BitChute: Red Pill News",
+      "confidence": 1.0,
+      "evidence": "Link w opisie autora"
+    },
+    {
+      "source_id": "ent-rafal-kedzierski",
+      "target_id": "profile-tvsuwerenni-redpillnews",
+      "relationship_type": "HAS_PROFILE",
+      "source_name": "Rafał Kędzierski",
+      "target_name": "TvSuwerenni: Red Pill News",
+      "confidence": 1.0,
+      "evidence": "Link w opisie autora"
+    },
+    {
+      "source_id": "ent-rafal-kedzierski",
+      "target_id": "profile-rumble-red-pill-news",
+      "relationship_type": "HAS_PROFILE",
+      "source_name": "Rafał Kędzierski",
+      "target_name": "Rumble: Red Pill News",
+      "confidence": 1.0,
+      "evidence": "Link w opisie autora (RUMBLE: https://rumble.com/c/c-945427)"
+    },
+    {
+      "source_id": "ent-martyna-cyrych",
+      "target_id": "org-red-pill-news",
+      "relationship_type": "AFFILIATED_WITH",
+      "source_name": "Martyna Cyrych",
+      "target_name": "Red Pill News",
+      "confidence": 1.0,
+      "evidence": "Odbiorca wpłat na konto bankowe"
+    },
+    {
+      "source_id": "org-red-pill-news",
+      "target_id": "video-rumble-v536bil",
+      "relationship_type": "PRODUCED",
+      "source_name": "Red Pill News",
+      "target_name": "Video: Sojusz Vs. Oś zła",
+      "confidence": 1.0,
+      "evidence": "Wideo firmowane marką"
+    }
+  ]
+}

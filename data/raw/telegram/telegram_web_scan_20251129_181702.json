@@ -1,0 +1,135 @@
+[
+  {
+    "channel_title": "Wroclaw / Вроцлав - Подработка",
+    "channel_url": "https://t.me/wroclaw_time",
+    "preview_url": "https://t.me/s/wroclaw_time",
+    "findings": [
+      {
+        "date": "2025-11-27T13:03:49+00:00",
+        "url": "https://t.me/wroclaw_time/17820",
+        "risk_score": 70,
+        "matched_keywords": [
+          "praca dorywcza",
+          "подработка"
+        ],
+        "matched_tags": [
+          "RUSSIAN_UKRAINIAN_RECRUITMENT",
+          "RECRUITMENT_PAYMENT"
+        ],
+        "snippet": "❄️ Praca dorywcza – odśnieżanie ❄️\nPoszukujemy osób chętnych do pracy dorywczej przy odśnieżaniu w sezonie zimowym.\n\nOferujemy:\nelastyczną pracę dodatkową\nwcześniejsze powiadomienia o mobilizacjach,\nm"
+      },
+      {
+        "date": "2025-11-27T16:14:39+00:00",
+        "url": "https://t.me/wroclaw_time/17823",
+        "risk_score": 60,
+        "matched_keywords": [
+          "подработка",
+          "объект"
+        ],
+        "matched_tags": [
+          "RUSSIAN_UKRAINIAN_RECRUITMENT"
+        ],
+        "snippet": "От завтра и до конца недели нужна женщина, на уборку домиков после стройки , оплата 25 злотых в час работа с 7-00 . Объект на ul. Strażacka только звонить 574 732 203\n#подработка"
+      },
+      {
+        "date": "2025-11-28T13:13:48+00:00",
+        "url": "https://t.me/wroclaw_time/17825",
+        "risk_score": 60,
+        "matched_keywords": [
+          "zadanie",
+          "подработка"
+        ],
+        "matched_tags": [
+          "RUSSIAN_UKRAINIAN_RECRUITMENT"
+        ],
+        "snippet": "Inwentaryzacje nocne - praca dodatkowa – Wrocław i okolice\n\nSpotkania organizacyjne w grudniu! Rozpoczęcie od stycznia!\n\nZgłoś się przez „Aplikuj” lub SMS – szczegóły na końcu ogłoszenia.\n\nMasz wolne "
+      }
+    ]
+  },
+  {
+    "channel_title": "Daniel Mikusek. Kanał informacyjny. Даниэль Микусек. Информационный канал. 🇵🇱🇷🇺 🇧🇾 https://t.me/danielmikusekpolska",
+    "channel_url": "https://t.me/danielmikusekpolska",
+    "preview_url": "https://t.me/s/danielmikusekpolska",
+    "findings": [
+      {
+        "date": "2025-11-28T11:54:55+00:00",
+        "url": "https://t.me/danielmikusekpolska/14907",
+        "risk_score": 60,
+        "matched_keywords": [
+          "obiekt",
+          "объект"
+        ],
+        "matched_tags": [
+          "RUSSIAN_UKRAINIAN_RECRUITMENT"
+        ],
+        "snippet": "Totalitarny reżim UE, przygotowuje uderzenie w Rosję - cyberataki i manewry NATO.\n\nWedług informacji Politico, kraje UE opracowują agresywny plan przeciwko Rosji. Obejmuje on:\n\nCyberataki na kluczowe "
+      }
+    ]
+  },
+  {
+    "channel_title": "Związek Żołnierzy NSZ",
+    "channel_url": "https://t.me/zznsz",
+    "preview_url": "https://t.me/s/zznsz",
+    "findings": [
+      {
+        "date": "2023-02-14T08:21:35+00:00",
+        "url": "https://t.me/zznsz/1385",
+        "risk_score": 65,
+        "matched_keywords": [
+          "NSZ",
+          "sabotaż",
+          "14"
+        ],
+        "matched_tags": [
+          "DIRECT",
+          "SYMBOLS_CODES",
+          "HISTORICAL_MARKERS",
+          "SABOTAGE_EUPHEMISMS"
+        ],
+        "snippet": "Nasz Bohater urodził się 15.05.1921 roku w Szczuczynie (dziś to miasto w powiecie grajewskim). Był synem Piotra i Franciszki z domu Ekstowicz.\nW czasie okupacji niemieckiej był żołnierzem Narodowych S"
+      }
+    ]
+  },
+  {
+    "channel_title": "KDP - Marek Stiller 🎯",
+    "channel_url": "https://t.me/kdpwiadomosci",
+    "preview_url": "https://t.me/s/kdpwiadomosci",
+    "findings": [
+      {
+        "date": "2025-11-25T12:20:57+00:00",
+        "url": "https://t.me/kdpwiadomosci/4696",
+        "risk_score": 100,
+        "matched_keywords": [
+          "jednostka",
+          "BTC"
+        ],
+        "matched_tags": [
+          "RECRUITMENT_PAYMENT",
+          "INFRASTRUCTURE_TARGETS"
+        ],
+        "snippet": "Ciekawa analiza od FrontRunners \n✅\n\n20 listopada napisali, że przez ostatnie dwa tygodnie mieliśmy do czynienia z konsekwentnym sprzedawaniem Bitcoina\n\nKażdego dnia idealnie na otworzeniu się giełdy w"
+      }
+    ]
+  },
+  {
+    "channel_title": "Narodowe Odrodzenie Polski (NOP) - Nacjonalistyczna Opozycja",
+    "channel_url": "https://t.me/nacjonalizmNOP",
+    "preview_url": "https://t.me/s/nacjonalizmNOP",
+    "findings": [
+      {
+        "date": "2025-11-25T19:21:55+00:00",
+        "url": "https://t.me/nacjonalizmNOP/12760",
+        "risk_score": 100,
+        "matched_keywords": [
+          "dorobek",
+          "magazyn"
+        ],
+        "matched_tags": [
+          "RECRUITMENT_PAYMENT",
+          "INFRASTRUCTURE_TARGETS"
+        ],
+        "snippet": "\"Najpopularniejsze polskie pismo nacjonalistyczne - sprzedanych kilkaset tysięcy egzemplarzy, które pojawiło się na rynku po raz pierwszy w 1991 roku, niezmiennie bezkompromisowe i narodowo-radykalne."
+      }
+    ]
+  }
+]

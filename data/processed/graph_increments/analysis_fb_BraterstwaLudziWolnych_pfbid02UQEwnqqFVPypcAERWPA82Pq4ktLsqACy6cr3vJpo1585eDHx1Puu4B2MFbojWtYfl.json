@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "source": "split_script",
+    "generated_at": "2025-11-26T13:00:42.096704",
+    "description": "Split data for fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl"
+  },
+  "nodes": [
+    {
+      "id": "page-youtube-QcY2u58CtiA",
+      "entity_type": "video",
+      "name": "YouTube: QcY2u58CtiA",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=QcY2u58CtiA",
+      "description": "Wideo podlinkowane w poście"
+    },
+    {
+      "id": "fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl",
+      "entity_type": "post",
+      "name": "Post: ABW przeszukała mój dom — zapowiedź rozprawy i zażaleń poszkodowanych",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl",
+      "description": "Tekst posta: 'ABW przeszukała mój dom. Jutro (poniedziałek od 10:00) Sąd rozpatrzy zażalenia poszkodowanych.' (z linkiem do YouTube)",
+      "date_posted": "2024-04-14",
+      "date_posted_confidence": 0.9
+    },
+    {
+      "id": "profile-braterstwa-ludzi-wolnych",
+      "entity_type": "profile",
+      "name": "FB: Braterstwa Ludzi Wolnych",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych",
+      "handle": "BraterstwaLudziWolnych",
+      "parent_org_id": "org-braterstwa-ludzi-wolnych"
+    },
+    {
+      "id": "org-abw",
+      "entity_type": "organization",
+      "name": "Agencja Bezpieczeństwa Wewnętrznego (ABW)",
+      "description": "Państwowa służba bezpieczeństwa (wzmianka w treści posta)",
+      "country": "PL"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "profile-braterstwa-ludzi-wolnych",
+      "target_id": "fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl",
+      "relationship_type": "PUBLISHED",
+      "source_name": "FB: Braterstwa Ludzi Wolnych",
+      "target_name": "Post: ABW przeszukała mój dom",
+      "date": "2024-04-14",
+      "confidence": 1.0,
+      "evidence": "Post opublikowany na profilu (link do posta i screenshot)",
+      "id": "profile-braterstwa-ludzi-wolnych-PUBLISHED-fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl"
+    },
+    {
+      "source_id": "fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl",
+      "target_id": "page-youtube-QcY2u58CtiA",
+      "relationship_type": "LINKS_TO",
+      "source_name": "Post: ABW przeszukała mój dom",
+      "target_name": "YouTube: QcY2u58CtiA",
+      "confidence": 1.0,
+      "evidence": "Zewnętrzny link do YouTube jest widoczny w treści posta i metadanych JSON",
+      "id": "fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl-LINKS_TO-page-youtube-QcY2u58CtiA"
+    },
+    {
+      "source_id": "fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl",
+      "target_id": "org-abw",
+      "relationship_type": "MENTIONS",
+      "source_name": "Post: ABW przeszukała mój dom",
+      "target_name": "Agencja Bezpieczeństwa Wewnętrznego (ABW)",
+      "confidence": 0.9,
+      "evidence": "Treść posta: 'ABW przeszukała mój dom.' — bezpośrednia wzmianka o ABW",
+      "id": "fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl-MENTIONS-org-abw"
+    }
+  ]
+}

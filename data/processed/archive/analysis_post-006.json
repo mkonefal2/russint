@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "source": "seed_migration",
+    "description": "Post: Post: Zlot Braterstw Ludzi Wolnych — dzień 4 (wideo)",
+    "generated_at": "2025-11-26T11:57:46.219427"
+  },
+  "nodes": [
+    {
+      "id": "post-006",
+      "name": "Post: Zlot Braterstw Ludzi Wolnych — dzień 4 (wideo)",
+      "entity_type": "post",
+      "platform": "facebook",
+      "profile_id": "profile-001",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid029XSpGTnfbFiUH4SiVRZ1Ahhu9FszHT958rdDE2dwk3xgp3YVfgpe6ev4MYMTQQ5l",
+      "date_posted": null,
+      "description": "[2025] Zlot Braterstw Ludzi Wolnych - dzień 4; post zawiera link do wideo na YouTube",
+      "engagement": {
+        "reactions": 78,
+        "comments": 3,
+        "shares": 7
+      },
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Zawiera link do kanału YouTube Strumieniownia; screenshot zapisany w evidence"
+    },
+    {
+      "id": "profile-001",
+      "name": "FB: Braterstwa Ludzi Wolnych",
+      "entity_type": "profile",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych",
+      "handle": "BraterstwaLudziWolnych",
+      "parent_org_id": "org-001",
+      "description": "Oficjalny profil Facebook organizacji Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Aktywny profil, publikuje informacje o wydarzeniach"
+    },
+    {
+      "id": "page-youtube-strumieniownia",
+      "name": "YouTube: Strumieniownia (@Strumieniownia)",
+      "entity_type": "profile",
+      "url": "https://www.youtube.com/@Strumieniownia",
+      "description": "Kanał YouTube 'Strumieniownia' — zawiera relacje i nagrania z Zlotu Braterstw Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Utworzono na podstawie external_links w pliku posta"
+    },
+    {
+      "id": "page-strumieniownia-site",
+      "name": "Strumieniownia.pl — strona kanału",
+      "entity_type": "page",
+      "url": "https://strumieniownia.pl/",
+      "description": "Strona projektu Strumieniownia (informacje o zespole i kontakt)",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Dodano na podstawie załączonych materiałów"
+    }
+  ],
+  "edges": [
+    {
+      "id": "rel-profile-post-006",
+      "source_id": "profile-001",
+      "source_name": "FB: Braterstwa Ludzi Wolnych",
+      "target_id": "post-006",
+      "target_name": "Post: Zlot Braterstw Ludzi Wolnych — dzień 4 (wideo)",
+      "relationship_type": "PUBLISHED",
+      "date": "2025-11-25",
+      "confidence": 1.0,
+      "evidence": "screenshot:data/evidence/facebook/BraterstwaLudziWolnych/fb_BraterstwaLudziWolnych_pfbid029XSpGTnfbFiUH4SiVRZ1Ahhu9FszHT958rdDE2dwk3xgp3YVfgpe6ev4MYMTQQ5l.png"
+    },
+    {
+      "id": "rel-post-links-youtube-strumieniownia",
+      "source_id": "post-006",
+      "source_name": "Post: Zlot Braterstw Ludzi Wolnych — dzień 4 (wideo)",
+      "target_id": "page-youtube-strumieniownia",
+      "target_name": "YouTube: Strumieniownia (@Strumieniownia)",
+      "relationship_type": "LINKS_TO",
+      "date": "2025-11-25",
+      "confidence": 0.9,
+      "evidence": "external_links: https://www.youtube.com/watch?v=a7jZFILxRJo"
+    },
+    {
+      "id": "rel-post-links-site-strumieniownia",
+      "source_id": "post-006",
+      "source_name": "Post: Zlot Braterstw Ludzi Wolnych — dzień 4 (wideo)",
+      "target_id": "page-strumieniownia-site",
+      "target_name": "Strumieniownia.pl — strona kanału",
+      "relationship_type": "LINKS_TO",
+      "date": "2025-11-25",
+      "confidence": 0.8,
+      "evidence": "Widziany kanał i strona w opisie materiału / załączone zrzuty"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #1a1a2e;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#e74c3c", "font": {"color": "white"}, "id": "org-001", "label": "Braterstwa Ludzi Wolnych", "shape": "dot", "size": 40, "title": "\ud83c\udfe2 ORGANIZATION\nBraterstwa Ludzi Wolnych\nKategoria: alternative_movement"}, {"color": "#2ecc71", "font": {"color": "white"}, "id": "profile-001", "label": "FB: Braterstwa Ludzi Wolnych", "shape": "box", "size": 30, "title": "\ud83d\udcf1 PROFILE\nFB: Braterstwa Ludzi Wolnych\nKategoria: unknown"}, {"color": "#1abc9c", "font": {"color": "white"}, "id": "evt-001", "label": "Spotkanie Rodzin Po Bratersku 2025", "shape": "diamond", "size": 35, "title": "\ud83d\udcc5 EVENT\nSpotkanie Rodzin Po Bratersku 2025\nKategoria: unknown"}, {"color": "#f1c40f", "font": {"color": "white"}, "id": "post-001", "label": "Post: Harmonogram Spotkania Rodzin (25.06.2025)", "shape": "square", "size": 20, "title": "\ud83d\udcdd POST\nPost: Harmonogram Spotkania Rodzin (25.06.2025)\nKategoria: unknown"}, {"color": "#3498db", "font": {"color": "white"}, "id": "ent-002", "label": "Jakub Ku\u015bpit", "shape": "dot", "size": 25, "title": "\ud83d\udc64 PERSON\nJakub Ku\u015bpit\nKategoria: unknown"}, {"color": "#3498db", "font": {"color": "white"}, "id": "ent-003", "label": "Mieczys\u0142aw Bielak", "shape": "dot", "size": 25, "title": "\ud83d\udc64 PERSON\nMieczys\u0142aw Bielak\nKategoria: unknown"}, {"color": "#3498db", "font": {"color": "white"}, "id": "ent-004", "label": "Tomasz Kosi\u0144ski", "shape": "dot", "size": 25, "title": "\ud83d\udc64 PERSON\nTomasz Kosi\u0144ski\nKategoria: unknown"}, {"color": "#3498db", "font": {"color": "white"}, "id": "ent-005", "label": "Katarzyna Tarnawa-Gw\u00f3\u017ad\u017a", "shape": "dot", "size": 25, "title": "\ud83d\udc64 PERSON\nKatarzyna Tarnawa-Gw\u00f3\u017ad\u017a\nKategoria: unknown"}, {"color": "#3498db", "font": {"color": "white"}, "id": "ent-006", "label": "Jacek Falkowski", "shape": "dot", "size": 25, "title": "\ud83d\udc64 PERSON\nJacek Falkowski\nKategoria: unknown"}, {"color": "#3498db", "font": {"color": "white"}, "id": "ent-007", "label": "Bogus\u0142aw Okulski", "shape": "dot", "size": 25, "title": "\ud83d\udc64 PERSON\nBogus\u0142aw Okulski\nKategoria: unknown"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#2ecc71", "from": "org-001", "title": "HAS_PROFILE\n", "to": "profile-001"}, {"arrows": "to", "color": "#9b59b6", "from": "org-001", "title": "ORGANIZES\n", "to": "evt-001"}, {"arrows": "to", "color": "#3498db", "from": "profile-001", "title": "PUBLISHED\n", "to": "post-001"}, {"arrows": "to", "color": "#1abc9c", "from": "post-001", "title": "ANNOUNCES\n", "to": "evt-001"}, {"arrows": "to", "color": "#e74c3c", "from": "ent-002", "title": "SPEAKER_AT\n", "to": "evt-001"}, {"arrows": "to", "color": "#e74c3c", "from": "ent-003", "title": "SPEAKER_AT\n", "to": "evt-001"}, {"arrows": "to", "color": "#e74c3c", "from": "ent-004", "title": "SPEAKER_AT\n", "to": "evt-001"}, {"arrows": "to", "color": "#e74c3c", "from": "ent-005", "title": "SPEAKER_AT\n", "to": "evt-001"}, {"arrows": "to", "color": "#e74c3c", "from": "ent-006", "title": "SPEAKER_AT\n", "to": "evt-001"}, {"arrows": "to", "color": "#e74c3c", "from": "ent-007", "title": "SPEAKER_AT\n", "to": "evt-001"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.3,
+            "damping": 0.09,
+            "gravitationalConstant": -5000,
+            "springConstant": 0.05,
+            "springLength": 200
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

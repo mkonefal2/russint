@@ -1,0 +1,403 @@
+[
+
+  {
+    "id": "evt-001",
+    "name": "Spotkanie Rodzin Po Bratersku 2025",
+    "entity_type": "event",
+    "date_start": "2025-07-04",
+    "date_end": "2025-07-06",
+    "location": "Wzgórze Wdzięczności, Smolnik gm. Komańcza",
+    "description": "Wydarzenie niebiletowane. Tematy: Niezależność zdrowotna, edukacyjna, finansowa, transportowa, łącznościowa, energetyczna. Widzenie pozamysłowe dla dzieci. Prawo stanowione - Prawo naturalne. Networking. Muzyka i zabawa.",
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Coroczne spotkanie organizowane przez Braterstwa Ludzi Wolnych"
+  },
+  {
+    "id": "post-001",
+    "name": "Post: Harmonogram Spotkania Rodzin (25.06.2025)",
+    "entity_type": "post",
+    "platform": "facebook",
+    "profile_id": "profile-braterstwa-ludzi-wolnych",
+    "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid0219rwE34d48hfcTuUrccvvxgFizYcByeXwMTjzbrD9dX1ycUz9PvANH2Kw4KAJSN5l",
+    "date_posted": "2025-06-25",
+    "description": "Harmonogram Spotkania Rodzin Po Bratersku już się skrystalizował, choć cały czas rozwija się lista rezerwowych wykładów i atrakcji...",
+    "engagement": {
+      "reactions": 53,
+      "comments": 6,
+      "shares": 33
+    },
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Post ogłaszający wydarzenie z listą prelegentów"
+  },
+  {
+    "id": "ent-jakub-kuspit",
+    "name": "Jakub Kuśpit",
+    "entity_type": "person",
+    "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025",
+    "roles": [
+      "influencer"
+    ],
+    "audience": {
+      "approx_followers": 24000
+    },
+    "confidence_notes": "Na podstawie dostarczonych screenów i materiałów medialnych można uznać go także za influencera/publicznego rzecznika; brak potwierdzenia formalnego tytułu"
+  },
+  {
+    "id": "ent-003",
+    "name": "Mieczysław Bielak",
+    "entity_type": "person",
+    "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025"
+  },
+  {
+    "id": "ent-004",
+    "name": "Tomasz Kosiński",
+    "entity_type": "person",
+    "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025"
+  },
+  {
+    "id": "ent-005",
+    "name": "Katarzyna Tarnawa-Gwóźdź",
+    "entity_type": "person",
+    "description": "Prelegentka na wydarzeniach Braterstwa Ludzi Wolnych",
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Prelegentka - Spotkanie Rodzin Po Bratersku 2025"
+  },
+  {
+    "id": "ent-006",
+    "name": "Jacek Falkowski",
+    "entity_type": "person",
+    "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025"
+  },
+  {
+    "id": "ent-007",
+    "name": "Bogusław Okulski",
+    "entity_type": "person",
+    "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025"
+  },
+  {
+    "id": "website-001",
+    "name": "braterstwa.pl",
+    "entity_type": "page",
+    "url": "https://braterstwa.pl/",
+    "parent_org_id": "org-braterstwa-ludzi-wolnych",
+    "description": "Oficjalna strona internetowa organizacji Braterstwa Ludzi Wolnych",
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Główna strona www organizacji"
+  },
+  {
+    "id": "post-002",
+    "name": "Post: ABW wtargnęła do naszych domów o 6 rano",
+    "entity_type": "post",
+    "platform": "facebook",
+    "profile_id": "profile-braterstwa-ludzi-wolnych",
+    "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/20240418",
+    "date_posted": "2024-04-18",
+    "description": "Wpis odsyłający do artykułu PL1.TV: 'ABW wtargnęła do naszych domów o 6 rano'",
+    "engagement": {
+      "reactions": 68
+    },
+    "country": "PL",
+    "first_seen": "2024-04-18",
+    "notes": "Zrzut ekranu dostarczony przez analityka; wymaga weryfikacji treści artykułu"
+  },
+  {
+    "id": "post-003",
+    "name": "Post: To jest zamach na polskie rodziny",
+    "entity_type": "post",
+    "platform": "facebook",
+    "profile_id": "profile-braterstwa-ludzi-wolnych",
+    "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/20240113",
+    "date_posted": "2024-01-13",
+    "description": "Wpis z linkiem do artykułu PL1.TV: 'To jest zamach na polskie rodziny'",
+    "engagement": {
+      "reactions": 33
+    },
+    "country": "PL",
+    "first_seen": "2024-01-13",
+    "notes": "Zrzut ekranu dostarczony przez analityka; wymaga weryfikacji treści artykułu"
+  },
+  {
+    "id": "post-004",
+    "name": "Repost: twierdzenia o 'PsyOp' i 'pseudo-elity' (udostępnienie Jakuba Kuśpita)",
+    "entity_type": "post",
+    "platform": "facebook",
+    "profile_id": "profile-braterstwa-ludzi-wolnych",
+    "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid02S7DuXzZkjeeod95uhipsAvELgdLk5rL4Tgstt2qAv85WJhotUZgdjn7csi1HWziyl",
+    "date_posted": "2024-01-01",
+    "description": "Repost treści autorstwa Jakuba Kuśpita — fragment odnosi się do 'PsyOp' i 'pseudo-elity'.",
+    "engagement": {},
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Repost — oryginalny autor: Jakub Kuśpit (encja ent-jakub-kuspit). Treść ma charakter spiskowy i wymaga weryfikacji; nie przechowujemy informacji o screenshotach w węzłach."
+  },
+  {
+    "id": "post-005",
+    "name": "Post: Jakub Kuśpit — twierdzenia o 'PsyOp'",
+    "entity_type": "post",
+    "platform": "facebook",
+    "profile_id": "ent-jakub-kuspit",
+    "url": "https://www.facebook.com/watch/?v=373266508895810",
+    "date_posted": "2024-01-01",
+    "description": "Fragment treści zacytowany w repost: 'Z jednego PsyOp w drugi. Zgniłe pseudo-elity zorganizowały największą operacje psychologiczną w historii...'",
+    "engagement": {},
+    "country": "PL",
+    "first_seen": "2024-01-01",
+    "notes": "Oryginalny post zidentyfikowany; wymaga weryfikacji treści"
+  },
+  {
+    "id": "post-006",
+    "name": "Post: Zlot Braterstw Ludzi Wolnych — dzień 4 (wideo)",
+    "entity_type": "post",
+    "platform": "facebook",
+    "profile_id": "profile-braterstwa-ludzi-wolnych",
+    "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid029XSpGTnfbFiUH4SiVRZ1Ahhu9FszHT958rdDE2dwk3xgp3YVfgpe6ev4MYMTQQ5l",
+    "date_posted": null,
+    "description": "[2025] Zlot Braterstw Ludzi Wolnych - dzień 4; post zawiera link do wideo na YouTube",
+    "engagement": {
+      "reactions": 78,
+      "comments": 3,
+      "shares": 7
+    },
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Zawiera link do kanału YouTube Strumieniownia; screenshot zapisany w evidence"
+  },
+  {
+    "id": "page-youtube-strumieniownia",
+    "name": "YouTube: Strumieniownia (@Strumieniownia)",
+    "entity_type": "profile",
+    "url": "https://www.youtube.com/@Strumieniownia",
+    "description": "Kanał YouTube 'Strumieniownia' — zawiera relacje i nagrania z Zlotu Braterstw Ludzi Wolnych",
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Utworzono na podstawie external_links w pliku posta"
+  },
+  {
+    "id": "page-strumieniownia-site",
+    "name": "Strumieniownia.pl — strona kanału",
+    "entity_type": "page",
+    "url": "https://strumieniownia.pl/",
+    "description": "Strona projektu Strumieniownia (informacje o zespole i kontakt)",
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Dodano na podstawie załączonych materiałów"
+  },
+  {
+    "id": "page-festiwal-wdziecznosci",
+    "name": "Festiwal Wdzięczności - Bieszczady",
+    "entity_type": "page",
+    "url": "https://festiwalwdziecznosci-bieszczady.pl/",
+    "description": "Strona Festiwalu Wdzięczności (Bieszczady)",
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Wymienione jako sojusznik na stronie Strumieniownia"
+  },
+  {
+    "id": "profile-jarex-fb",
+    "name": "FB: Jarex Technika Estradowa",
+    "entity_type": "profile",
+    "platform": "facebook",
+    "url": "https://www.facebook.com/JarexTechnikaEstradowa/",
+    "description": "Profil Facebook Jarex Technika Estradowa",
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Wymienione jako sojusznik na stronie Strumieniownia"
+  },
+  {
+    "id": "page-kooperatywa-lbn",
+    "name": "Kooperatywa Lubelska",
+    "entity_type": "page",
+    "url": "https://kooperatywalubelska.com.pl/",
+    "description": "Strona Kooperatywy Lubelskiej",
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Wymienione jako sojusznik na stronie Strumieniownia"
+  },
+  {
+    "id": "page-siedliskostasin",
+    "name": "Siedlisko Stasin",
+    "entity_type": "page",
+    "url": "https://siedliskostasin.pl/",
+    "description": "Strona Siedlisko Stasin",
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Wymienione jako sojusznik na stronie Strumieniownia"
+  },
+  {
+    "id": "website-pl1vod",
+    "name": "PL1.TV",
+    "entity_type": "page",
+    "url": "https://pl1vod.com/",
+    "description": "Platforma VOD / portal PL1 (embedy w serwisie)",
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Dodano na podstawie zawartości strony braterstwa.pl i screenu",
+    "other_urls": [
+      "https://pl1.tv/",
+      "https://pl1vod.com/",
+      "https://pl1.tv"
+    ],
+    "example_article": "https://pl1vod.com/video/braterstwa-ludzi-wolnych-jak-zacznie-sie-cyrk-bedziemy-gotowi/",
+    "canonical_id": "website-pl1vod",
+    "merged_with": [
+      "website-pl1tv"
+    ]
+  },
+  {
+    "id": "profile-braterskie-kruszce",
+    "name": "FB: Braterskie Kruszce",
+    "entity_type": "profile",
+    "platform": "facebook",
+    "url": "https://www.facebook.com/profile.php?id=61574751779293",
+    "description": "Profil Braterskie Kruszce",
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Wymienione jako powiązanie w profilu Jakuba Kuśpita"
+  },
+  {
+    "id": "profile-bronimy-munduru",
+    "name": "FB: Bronimy Munduru - Dla Przyszłych Pokoleń",
+    "entity_type": "profile",
+    "platform": "facebook",
+    "url": "https://www.facebook.com/profile.php?id=100080248801478",
+    "description": "Profil Bronimy Munduru - Dla Przyszłych Pokoleń",
+    "country": "PL",
+    "first_seen": "2025-11-25",
+    "notes": "Wymienione jako powiązanie w profilu Jakuba Kuśpita"
+  },
+  {
+    "id": "post-fb_BraterstwaLudziWolnych_pfbid0x8gsmiq27LtWbDkrAgYk8LAX2ucDZ54oDMfKTrh6oNjf47grdZLgj1We5dhp2P36l",
+    "name": "Post: NOMINOWANY NA RUSKIEGO SZPIEGA (ABW zarekwiwrowała...)",
+    "entity_type": "post",
+    "platform": "facebook",
+    "profile_id": "profile-braterstwa-ludzi-wolnych",
+    "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid0x8gsmiq27LtWbDkrAgYk8LAX2ucDZ54oDMfKTrh6oNjf47grdZLgj1We5dhp2P36l",
+    "date_posted": "2024-04-06",
+    "description": "Post z treściami dotyczącymi rzekomej akcji ABW i napisem 'NOMINOWANY NA RUSKIEGO SZPIEGA' — zawiera link do YouTube.",
+    "evidence": "data/evidence/facebook/BraterstwaLudziWolnych/fb_BraterstwaLudziWolnych_pfbid0x8gsmiq27LtWbDkrAgYk8LAX2ucDZ54oDMfKTrh6oNjf47grdZLgj1We5dhp2P36l.png",
+    "first_seen": "2025-11-25",
+    "notes": "Post zapisany w surowych danych; data publikacji widoczna na zrzucie: 6 kwietnia 2024"
+  },
+  {
+    "id": "page-youtube-AgxWYYvkfg8",
+    "name": "YouTube: NOMINOWANY NA RUSKIEGO SZPIEGA (video)",
+    "entity_type": "video",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=AgxWYYvkfg8",
+    "description": "Wideo linkowane w poście Braterstwa Ludzi Wolnych (tytuł: 'NOMINOWANY NA RUSKIEGO SZPIEGA').",
+    "first_seen": "2025-11-25",
+    "notes": "Dodano na podstawie pola external_links w pliku posta"
+  },
+  {
+    "id": "page-youtube-leszekszymowskitv",
+    "name": "YouTube: Leszek Szymowski (@leszekszymowskitv)",
+    "entity_type": "profile",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/@leszekszymowskitv",
+    "description": "Kanał YouTube '@leszekszymowskitv' — wskazany jako powiązany profil/źródło.",
+    "first_seen": "2025-11-25",
+    "notes": "Kanał dodany na żądanie analizy; właściciel wymaga weryfikacji"
+  },
+  {
+    "id": "ent-leszek-szymowski",
+    "name": "Leszek Szymowski",
+    "entity_type": "person",
+    "description": "Osoba powiązana z kanałem YouTube '@leszekszymowskitv' — wymaga weryfikacji (właściciel/prowadzący).",
+    "first_seen": "2025-11-25",
+    "roles": [
+      "host",
+      "journalist"
+    ],
+    "notes": "Utworzono węzeł osoby na prośbę analityka; proszę zweryfikować publicznymi źródłami"
+  },
+  {
+    "id": "org-braterstwa-ludzi-wolnych",
+    "entity_type": "organization",
+    "name": "Braterstwa Ludzi Wolnych",
+    "description": "Ruch/organizacja promująca 'niezależność' w różnych aspektach życia (zdrowotna, edukacyjna, finansowa). Organizator wydarzeń typu 'Spotkanie Rodzin Po Bratersku'.",
+    "category": "alternative_movement",
+    "country": "PL",
+    "first_seen": "2024-04-14",
+    "notes": "Organizacja z obecnością na FB, organizuje coroczne wydarzenia. Autor posta i profilu."
+  },
+  {
+    "id": "profile-braterstwa-ludzi-wolnych",
+    "entity_type": "profile",
+    "name": "FB: Braterstwa Ludzi Wolnych",
+    "platform": "facebook",
+    "url": "https://www.facebook.com/BraterstwaLudziWolnych",
+    "handle": "BraterstwaLudziWolnych",
+    "parent_org_id": "org-braterstwa-ludzi-wolnych",
+    "description": "Oficjalny profil Facebook organizacji Braterstwa Ludzi Wolnych",
+    "country": "PL",
+    "first_seen": "2024-04-14",
+    "notes": "Aktywny profil, publikuje informacje o wydarzeniach"
+  },
+  {
+    "id": "fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl",
+    "entity_type": "post",
+    "name": "Post: ABW przeszukała mój dom — zapowiedź rozprawy i zażaleń poszkodowanych",
+    "platform": "facebook",
+    "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl",
+    "description": "Tekst posta: 'ABW przeszukała mój dom. Jutro (poniedziałek od 10:00) Sąd rozpatrzy zażalenia poszkodowanych.' (z linkiem do YouTube)",
+    "date_posted": "2024-04-14",
+    "date_posted_confidence": 0.9
+  },
+  {
+    "id": "page-youtube-QcY2u58CtiA",
+    "entity_type": "video",
+    "name": "YouTube: QcY2u58CtiA",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=QcY2u58CtiA",
+    "description": "Wideo podlinkowane w poście"
+  },
+  {
+    "id": "org-abw",
+    "entity_type": "organization",
+    "name": "Agencja Bezpieczeństwa Wewnętrznego (ABW)",
+    "description": "Państwowa służba bezpieczeństwa (wzmianka w treści posta)",
+    "country": "PL"
+  },
+  {
+    "id": "channel-konkretnykanal",
+    "entity_type": "channel",
+    "name": "YouTube Channel: KonkretnyKanal",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/@KonkretnyKanal",
+    "description": "Kanał YouTube, na którym znajduje się wideo powiązane z postem (użytkownik podał adres kanału)."
+  },
+  {
+    "id": "screenshot-fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl",
+    "entity_type": "screenshot",
+    "name": "Screenshot: klatka z wideo (post)",
+    "file": "data/evidence/facebook/BraterstwaLudziWolnych/fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl.png",
+    "source_post_id": "fb_BraterstwaLudziWolnych_pfbid02UQEwnqqFVPypcAERWPA82Pq4ktLsqACy6cr3vJpo1585eDHx1Puu4B2MFbojWtYfl",
+    "description": "Klatka z wideo widoczna w poście (użyte jako dowód wizualny)"
+  },
+  {
+    "id": "ent-001",
+    "entity_type": "person",
+    "name": "Anna Luiza Stec",
+    "description": "Osoba występująca w materiale wideo; zidentyfikowana na screenshot.",
+    "country": "PL",
+    "first_seen": "2024-04-14"
+  }
+]

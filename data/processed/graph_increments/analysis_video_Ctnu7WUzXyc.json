@@ -1,0 +1,246 @@
+{
+  "meta": {
+    "source": "copilot_analysis",
+    "generated_at": "2025-11-26T15:00:00",
+    "description": "Analysis of YouTube video Ctnu7WUzXyc and linked Rumble content",
+    "visual_analysis_report": "data/processed/visual_analysis/2025-11-26_RedPillNews_Rumble.md"
+  },
+  "nodes": [
+    {
+      "id": "video-youtube-Ctnu7WUzXyc",
+      "entity_type": "video",
+      "name": "Video: Niezależność finansowa i dieta informacyjna.",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=Ctnu7WUzXyc",
+      "description": "Wideo autorstwa Jakuba Kuśpita. W opisie linki do materiałów o Zełeńskim (Rumble) oraz do wRealu24 (Banbye).",
+      "date_posted": "2025-11-26",
+      "country": "PL"
+    },
+    {
+      "id": "profile-yt-jakub-kuspit",
+      "entity_type": "profile",
+      "name": "YT: Jakub Kuśpit",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/@JakubKuspit"
+    },
+    {
+      "id": "ent-jakub-kuspit",
+      "entity_type": "person",
+      "name": "Jakub Kuśpit"
+    },
+    {
+      "id": "ent-wolodymyr-zelenski",
+      "entity_type": "person",
+      "name": "Wołodymir Zełeński",
+      "description": "Prezydent Ukrainy, wspomniany w opisie wideo w kontekście materiałów na Rumble.",
+      "country": "UA"
+    },
+    {
+      "id": "ent-marek-skowronski",
+      "entity_type": "person",
+      "name": "Marek Skowroński",
+      "description": "Redaktor wRealu24, wspomniany w opisie wideo.",
+      "country": "PL"
+    },
+    {
+      "id": "org-wrealu24",
+      "entity_type": "organization",
+      "name": "wRealu24",
+      "description": "Telewizja internetowa/portal, wspomniany w opisie wideo.",
+      "country": "PL"
+    },
+    {
+      "id": "video-banbye-v_Y198fTyXMu8f",
+      "entity_type": "video",
+      "name": "Video: Śniadaniówka wRealu24 z redaktorem Markiem Skowrońskim",
+      "platform": "banbye",
+      "url": "https://banbye.com/watch/v_Y198fTyXMu8f",
+      "description": "Materiał wideo na platformie Banbye: Naloty ABW, preparaty, wojna itd."
+    },
+    {
+      "id": "profile-rumble-red-pill-news",
+      "entity_type": "profile",
+      "name": "Rumble: Red Pill News",
+      "platform": "rumble",
+      "url": "https://rumble.com/c/c-945427",
+      "description": "Kanał na Rumble publikujący materiały o Zełeńskim."
+    },
+    {
+      "id": "org-red-pill-news",
+      "entity_type": "organization",
+      "name": "Red Pill News",
+      "description": "Niezależny kanał medialny o profilu anty-systemowym i panslawistycznym.",
+      "country": "PL"
+    },
+    {
+      "id": "symbol-kolowrot",
+      "entity_type": "symbol",
+      "name": "Kołowrót (Swarzyca)",
+      "description": "Słowiański symbol solarny (ośmioramienna swastyka). Współcześnie używany przez ruchy rodzimowiercze, panslawistyczne oraz tzw. Turbosłowian."
+    },
+    {
+      "id": "video-rumble-v4sbpat",
+      "entity_type": "video",
+      "name": "Video: Zełenski Zdemaskowany część 1 | Kim jest Wołodymyr Zełenski?",
+      "platform": "rumble",
+      "url": "https://rumble.com/v4sbpat-zeenski-zdrajca-narodu-ukraiskiego-cz.1.html",
+      "description": "Część 1 serii o Zełeńskim na kanale Red Pill News.",
+      "date_posted": "2024-04-05"
+    },
+    {
+      "id": "video-rumble-v4shmn2",
+      "entity_type": "video",
+      "name": "Video: Zełenski Zdemaskowany część 2 | Zełenski największy celebryta świata?",
+      "platform": "rumble",
+      "url": "https://rumble.com/v4shmn2-zeenski-zdrajca-narodu-ukraiskiego-cz.2.html",
+      "description": "Część 2 serii o Zełeńskim na kanale Red Pill News.",
+      "date_posted": "2024-04-18"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "video-youtube-Ctnu7WUzXyc",
+      "target_id": "profile-yt-jakub-kuspit",
+      "relationship_type": "UPLOADED_BY",
+      "source_name": "Video: Niezależność finansowa...",
+      "target_name": "YT: Jakub Kuśpit",
+      "confidence": 1.0,
+      "evidence": "Dane z YouTube oembed"
+    },
+    {
+      "source_id": "ent-jakub-kuspit",
+      "target_id": "video-youtube-Ctnu7WUzXyc",
+      "relationship_type": "FEATURED_ON",
+      "source_name": "Jakub Kuśpit",
+      "target_name": "Video: Niezależność finansowa...",
+      "confidence": 0.9,
+      "evidence": "Autor kanału i wideo"
+    },
+    {
+      "source_id": "video-youtube-Ctnu7WUzXyc",
+      "target_id": "ent-wolodymyr-zelenski",
+      "relationship_type": "MENTIONS",
+      "source_name": "Video: Niezależność finansowa...",
+      "target_name": "Wołodymir Zełeński",
+      "confidence": 1.0,
+      "evidence": "Wspomniany w opisie wideo (linki do materiałów)"
+    },
+    {
+      "source_id": "video-youtube-Ctnu7WUzXyc",
+      "target_id": "ent-marek-skowronski",
+      "relationship_type": "MENTIONS",
+      "source_name": "Video: Niezależność finansowa...",
+      "target_name": "Marek Skowroński",
+      "confidence": 1.0,
+      "evidence": "Wspomniany w opisie wideo (wRealu24)"
+    },
+    {
+      "source_id": "video-youtube-Ctnu7WUzXyc",
+      "target_id": "org-wrealu24",
+      "relationship_type": "MENTIONS",
+      "source_name": "Video: Niezależność finansowa...",
+      "target_name": "wRealu24",
+      "confidence": 1.0,
+      "evidence": "Wspomniane w opisie wideo"
+    },
+    {
+      "source_id": "video-youtube-Ctnu7WUzXyc",
+      "target_id": "video-banbye-v_Y198fTyXMu8f",
+      "relationship_type": "LINKS_TO",
+      "source_name": "Video: Niezależność finansowa...",
+      "target_name": "Video: Śniadaniówka wRealu24...",
+      "confidence": 1.0,
+      "evidence": "Link w opisie wideo"
+    },
+    {
+      "source_id": "video-youtube-Ctnu7WUzXyc",
+      "target_id": "video-rumble-v4sbpat",
+      "relationship_type": "LINKS_TO",
+      "source_name": "Video: Niezależność finansowa...",
+      "target_name": "Video: Zełenski Zdemaskowany część 1...",
+      "confidence": 1.0,
+      "evidence": "Link w opisie wideo"
+    },
+    {
+      "source_id": "video-youtube-Ctnu7WUzXyc",
+      "target_id": "video-rumble-v4shmn2",
+      "relationship_type": "LINKS_TO",
+      "source_name": "Video: Niezależność finansowa...",
+      "target_name": "Video: Zełenski Zdemaskowany część 2...",
+      "confidence": 1.0,
+      "evidence": "Link w opisie wideo"
+    },
+    {
+      "source_id": "ent-marek-skowronski",
+      "target_id": "org-wrealu24",
+      "relationship_type": "WORKS_AT",
+      "source_name": "Marek Skowroński",
+      "target_name": "wRealu24",
+      "confidence": 1.0,
+      "evidence": "Opisany jako redaktor wRealu24"
+    },
+    {
+      "source_id": "ent-marek-skowronski",
+      "target_id": "video-banbye-v_Y198fTyXMu8f",
+      "relationship_type": "FEATURED_ON",
+      "source_name": "Marek Skowroński",
+      "target_name": "Video: Śniadaniówka wRealu24...",
+      "confidence": 1.0,
+      "evidence": "Wymieniony w tytule/opisie wideo"
+    },
+    {
+      "source_id": "ent-wolodymyr-zelenski",
+      "target_id": "video-rumble-v4sbpat",
+      "relationship_type": "FEATURED_ON",
+      "source_name": "Wołodymir Zełeński",
+      "target_name": "Video: Zełenski Zdemaskowany część 1...",
+      "confidence": 1.0,
+      "evidence": "Temat wideo"
+    },
+    {
+      "source_id": "ent-wolodymyr-zelenski",
+      "target_id": "video-rumble-v4shmn2",
+      "relationship_type": "FEATURED_ON",
+      "source_name": "Wołodymir Zełeński",
+      "target_name": "Video: Zełenski Zdemaskowany część 2...",
+      "confidence": 1.0,
+      "evidence": "Temat wideo"
+    },
+    {
+      "source_id": "profile-rumble-red-pill-news",
+      "target_id": "video-rumble-v4sbpat",
+      "relationship_type": "UPLOADED",
+      "source_name": "Rumble: Red Pill News",
+      "target_name": "Video: Zełenski Zdemaskowany część 1...",
+      "confidence": 1.0,
+      "evidence": "Właściciel kanału"
+    },
+    {
+      "source_id": "profile-rumble-red-pill-news",
+      "target_id": "video-rumble-v4shmn2",
+      "relationship_type": "UPLOADED",
+      "source_name": "Rumble: Red Pill News",
+      "target_name": "Video: Zełenski Zdemaskowany część 2...",
+      "confidence": 1.0,
+      "evidence": "Właściciel kanału"
+    },
+    {
+      "source_id": "org-red-pill-news",
+      "target_id": "profile-rumble-red-pill-news",
+      "relationship_type": "HAS_PROFILE",
+      "source_name": "Red Pill News",
+      "target_name": "Rumble: Red Pill News",
+      "confidence": 1.0,
+      "evidence": "Tożsamość nazwy i marki"
+    },
+    {
+      "source_id": "org-red-pill-news",
+      "target_id": "symbol-kolowrot",
+      "relationship_type": "USES_SYMBOL",
+      "source_name": "Red Pill News",
+      "target_name": "Kołowrót (Swarzyca)",
+      "confidence": 1.0,
+      "evidence": "Logo kanału zawiera Kołowrót na tle polskiej flagi (widoczne na bannerze Rumble)"
+    }
+  ]
+}

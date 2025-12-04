@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "source": "split_script",
+    "generated_at": "2025-11-26T13:00:42.094413",
+    "description": "Split data for post-004"
+  },
+  "nodes": [
+    {
+      "id": "post-004",
+      "name": "Repost: twierdzenia o 'PsyOp' i 'pseudo-elity' (udostępnienie Jakuba Kuśpita)",
+      "entity_type": "post",
+      "platform": "facebook",
+      "profile_id": "profile-braterstwa-ludzi-wolnych",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid02S7DuXzZkjeeod95uhipsAvELgdLk5rL4Tgstt2qAv85WJhotUZgdjn7csi1HWziyl",
+      "date_posted": "2024-01-01",
+      "description": "Repost treści autorstwa Jakuba Kuśpita — fragment odnosi się do 'PsyOp' i 'pseudo-elity'.",
+      "engagement": {},
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Repost — oryginalny autor: Jakub Kuśpit (encja ent-002). Treść ma charakter spiskowy i wymaga weryfikacji; nie przechowujemy informacji o screenshotach w węzłach."
+    },
+    {
+      "id": "post-005",
+      "name": "Post: Jakub Kuśpit — twierdzenia o 'PsyOp'",
+      "entity_type": "post",
+      "platform": "facebook",
+      "profile_id": "ent-jakub-kuspit",
+      "url": "https://www.facebook.com/watch/?v=373266508895810",
+      "date_posted": "2024-01-01",
+      "description": "Fragment treści zacytowany w repost: 'Z jednego PsyOp w drugi. Zgniłe pseudo-elity zorganizowały największą operacje psychologiczną w historii...'",
+      "engagement": {},
+      "country": "PL",
+      "first_seen": "2024-01-01",
+      "notes": "Oryginalny post zidentyfikowany; wymaga weryfikacji treści"
+    },
+    {
+      "id": "profile-braterstwa-ludzi-wolnych",
+      "name": "FB: Braterstwa Ludzi Wolnych",
+      "entity_type": "profile",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych",
+      "handle": "BraterstwaLudziWolnych",
+      "parent_org_id": "org-braterstwa-ludzi-wolnych",
+      "description": "Oficjalny profil Facebook organizacji Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Aktywny profil, publikuje informacje o wydarzeniach"
+    }
+  ],
+  "edges": [
+    {
+      "id": "rel-profile-repost-pfbid02S7Du",
+      "source_id": "profile-braterstwa-ludzi-wolnych",
+      "source_name": "FB: Braterstwa Ludzi Wolnych",
+      "target_id": "post-004",
+      "target_name": "Repost: twierdzenia o 'PsyOp' i 'pseudo-elity' (udostępnienie Jakuba Kuśpita)",
+      "relationship_type": "PUBLISHED",
+      "date": "2024-01-01",
+      "confidence": 0.9,
+      "evidence": "Zrzut ekranu w zbiorze evidence"
+    },
+    {
+      "id": "rel-repost-shares-orig-001",
+      "source_id": "post-004",
+      "source_name": "Repost: twierdzenia o 'PsyOp' i 'pseudo-elity' (udostępnienie Jakuba Kuśpita)",
+      "target_id": "post-005",
+      "target_name": "Post: Jakub Kuśpit — twierdzenia o 'PsyOp'",
+      "relationship_type": "SHARES",
+      "date": "2024-01-01",
+      "confidence": 0.8,
+      "evidence": "Repost zawiera fragment oryginalnego tekstu; autor oryginału rozpoznany z podglądu"
+    }
+  ]
+}

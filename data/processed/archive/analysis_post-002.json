@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "source": "seed_migration",
+    "description": "Post: Post: ABW wtargnęła do naszych domów o 6 rano",
+    "generated_at": "2025-11-26T11:57:46.217006"
+  },
+  "nodes": [
+    {
+      "id": "website-pl1vod",
+      "name": "PL1.TV",
+      "entity_type": "page",
+      "url": "https://pl1vod.com/",
+      "description": "Platforma VOD / portal PL1 (embedy w serwisie)",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Dodano na podstawie zawartości strony braterstwa.pl i screenu",
+      "other_urls": [
+        "https://pl1.tv/",
+        "https://pl1vod.com/",
+        "https://pl1.tv"
+      ],
+      "example_article": "https://pl1vod.com/video/braterstwa-ludzi-wolnych-jak-zacznie-sie-cyrk-bedziemy-gotowi/",
+      "canonical_id": "website-pl1vod",
+      "merged_with": [
+        "website-pl1tv"
+      ]
+    },
+    {
+      "id": "post-002",
+      "name": "Post: ABW wtargnęła do naszych domów o 6 rano",
+      "entity_type": "post",
+      "platform": "facebook",
+      "profile_id": "profile-001",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/20240418",
+      "date_posted": "2024-04-18",
+      "description": "Wpis odsyłający do artykułu PL1.TV: 'ABW wtargnęła do naszych domów o 6 rano'",
+      "engagement": {
+        "reactions": 68
+      },
+      "country": "PL",
+      "first_seen": "2024-04-18",
+      "notes": "Zrzut ekranu dostarczony przez analityka; wymaga weryfikacji treści artykułu"
+    },
+    {
+      "id": "profile-001",
+      "name": "FB: Braterstwa Ludzi Wolnych",
+      "entity_type": "profile",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych",
+      "handle": "BraterstwaLudziWolnych",
+      "parent_org_id": "org-001",
+      "description": "Oficjalny profil Facebook organizacji Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Aktywny profil, publikuje informacje o wydarzeniach"
+    }
+  ],
+  "edges": [
+    {
+      "id": "rel-profile-post-20240418",
+      "source_id": "profile-001",
+      "source_name": "FB: Braterstwa Ludzi Wolnych",
+      "target_id": "post-002",
+      "target_name": "Post: ABW wtargnęła do naszych domów o 6 rano",
+      "relationship_type": "PUBLISHED",
+      "date": "2024-04-18",
+      "confidence": 0.9,
+      "evidence": "Zrzut ekranu udostępniony przez analityka"
+    },
+    {
+      "id": "rel-post-pl1tv-20240418",
+      "source_id": "post-002",
+      "source_name": "Post: ABW wtargnęła do naszych domów o 6 rano",
+      "target_id": "website-pl1vod",
+      "target_name": "PL1.TV",
+      "relationship_type": "LINKS_TO",
+      "date": "2024-04-18",
+      "confidence": 0.8,
+      "evidence": "Post zawiera link/ogłoszenie artykułu PL1.TV (zrzut ekranu)"
+    }
+  ]
+}

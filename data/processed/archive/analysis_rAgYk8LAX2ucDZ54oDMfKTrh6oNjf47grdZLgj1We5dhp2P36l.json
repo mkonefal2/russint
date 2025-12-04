@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "source": "seed_migration",
+    "description": "Post: Post: NOMINOWANY NA RUSKIEGO SZPIEGA (ABW zarekwiwrowała...)",
+    "generated_at": "2025-11-26T11:57:46.219427"
+  },
+  "nodes": [
+    {
+      "id": "page-youtube-AgxWYYvkfg8",
+      "name": "YouTube: NOMINOWANY NA RUSKIEGO SZPIEGA (video)",
+      "entity_type": "page",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=AgxWYYvkfg8",
+      "description": "Wideo linkowane w poście Braterstwa Ludzi Wolnych (tytuł: 'NOMINOWANY NA RUSKIEGO SZPIEGA').",
+      "first_seen": "2025-11-25",
+      "notes": "Dodano na podstawie pola external_links w pliku posta"
+    },
+    {
+      "id": "profile-001",
+      "name": "FB: Braterstwa Ludzi Wolnych",
+      "entity_type": "profile",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych",
+      "handle": "BraterstwaLudziWolnych",
+      "parent_org_id": "org-001",
+      "description": "Oficjalny profil Facebook organizacji Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Aktywny profil, publikuje informacje o wydarzeniach"
+    },
+    {
+      "id": "post-fb_BraterstwaLudziWolnych_pfbid0x8gsmiq27LtWbDkrAgYk8LAX2ucDZ54oDMfKTrh6oNjf47grdZLgj1We5dhp2P36l",
+      "name": "Post: NOMINOWANY NA RUSKIEGO SZPIEGA (ABW zarekwiwrowała...)",
+      "entity_type": "post",
+      "platform": "facebook",
+      "profile_id": "profile-001",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid0x8gsmiq27LtWbDkrAgYk8LAX2ucDZ54oDMfKTrh6oNjf47grdZLgj1We5dhp2P36l",
+      "date_posted": "2024-04-06",
+      "description": "Post z treściami dotyczącymi rzekomej akcji ABW i napisem 'NOMINOWANY NA RUSKIEGO SZPIEGA' — zawiera link do YouTube.",
+      "evidence": "data/evidence/facebook/BraterstwaLudziWolnych/fb_BraterstwaLudziWolnych_pfbid0x8gsmiq27LtWbDkrAgYk8LAX2ucDZ54oDMfKTrh6oNjf47grdZLgj1We5dhp2P36l.png",
+      "first_seen": "2025-11-25",
+      "notes": "Post zapisany w surowych danych; data publikacji widoczna na zrzucie: 6 kwietnia 2024"
+    }
+  ],
+  "edges": [
+    {
+      "id": "rel-profile-post-pfbid0x8gs",
+      "source_id": "profile-001",
+      "source_name": "FB: Braterstwa Ludzi Wolnych",
+      "target_id": "post-fb_BraterstwaLudziWolnych_pfbid0x8gsmiq27LtWbDkrAgYk8LAX2ucDZ54oDMfKTrh6oNjf47grdZLgj1We5dhp2P36l",
+      "target_name": "Post: NOMINOWANY NA RUSKIEGO SZPIEGA (ABW zarekwiwrowała...)",
+      "relationship_type": "PUBLISHED",
+      "date": "2024-04-06",
+      "confidence": 1.0,
+      "evidence": "JSON: data/raw/facebook/fb_BraterstwaLudziWolnych_pfbid0x8gsmiq27LtWbDkrAgYk8LAX2ucDZ54oDMfKTrh6oNjf47grdZLgj1We5dhp2P36l.json"
+    },
+    {
+      "id": "rel-post-links-youtube-AgxWYY",
+      "source_id": "post-fb_BraterstwaLudziWolnych_pfbid0x8gsmiq27LtWbDkrAgYk8LAX2ucDZ54oDMfKTrh6oNjf47grdZLgj1We5dhp2P36l",
+      "source_name": "Post: NOMINOWANY NA RUSKIEGO SZPIEGA (ABW zarekwiwrowała...)",
+      "target_id": "page-youtube-AgxWYYvkfg8",
+      "target_name": "YouTube: NOMINOWANY NA RUSKIEGO SZPIEGA (video)",
+      "relationship_type": "LINKS_TO",
+      "date": "2024-04-06",
+      "confidence": 1.0,
+      "evidence": "external_links: https://www.youtube.com/watch?v=AgxWYYvkfg8 (JSON)"
+    }
+  ]
+}

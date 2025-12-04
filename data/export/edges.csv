@@ -1,0 +1,11 @@
+Source,Target,Type,Label,Weight
+org-001,profile-001,HAS_PROFILE,,1.00
+profile-001,post-001,PUBLISHED,,1.00
+post-001,evt-001,ANNOUNCES,,1.00
+org-001,evt-001,ORGANIZES,,1.00
+ent-002,evt-001,SPEAKER_AT,,1.00
+ent-003,evt-001,SPEAKER_AT,,1.00
+ent-004,evt-001,SPEAKER_AT,,1.00
+ent-005,evt-001,SPEAKER_AT,,1.00
+ent-006,evt-001,SPEAKER_AT,,1.00
+ent-007,evt-001,SPEAKER_AT,,1.00

@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "source": "seed_migration",
+    "description": "Event: Spotkanie Rodzin Po Bratersku 2025",
+    "generated_at": "2025-11-26T11:57:46.214693"
+  },
+  "nodes": [
+    {
+      "id": "ent-003",
+      "name": "Mieczysław Bielak",
+      "entity_type": "person",
+      "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025"
+    },
+    {
+      "id": "post-001",
+      "name": "Post: Harmonogram Spotkania Rodzin (25.06.2025)",
+      "entity_type": "post",
+      "platform": "facebook",
+      "profile_id": "profile-001",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid0219rwE34d48hfcTuUrccvvxgFizYcByeXwMTjzbrD9dX1ycUz9PvANH2Kw4KAJSN5l",
+      "date_posted": "2025-06-25",
+      "description": "Harmonogram Spotkania Rodzin Po Bratersku już się skrystalizował, choć cały czas rozwija się lista rezerwowych wykładów i atrakcji...",
+      "engagement": {
+        "reactions": 53,
+        "comments": 6,
+        "shares": 33
+      },
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Post ogłaszający wydarzenie z listą prelegentów"
+    },
+    {
+      "id": "ent-006",
+      "name": "Jacek Falkowski",
+      "entity_type": "person",
+      "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025"
+    },
+    {
+      "id": "ent-005",
+      "name": "Katarzyna Tarnawa-Gwóźdź",
+      "entity_type": "person",
+      "description": "Prelegentka na wydarzeniach Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Prelegentka - Spotkanie Rodzin Po Bratersku 2025"
+    },
+    {
+      "id": "evt-001",
+      "name": "Spotkanie Rodzin Po Bratersku 2025",
+      "entity_type": "event",
+      "date_start": "2025-07-04",
+      "date_end": "2025-07-06",
+      "location": "Wzgórze Wdzięczności, Smolnik gm. Komańcza",
+      "description": "Wydarzenie niebiletowane. Tematy: Niezależność zdrowotna, edukacyjna, finansowa, transportowa, łącznościowa, energetyczna. Widzenie pozamysłowe dla dzieci. Prawo stanowione - Prawo naturalne. Networking. Muzyka i zabawa.",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Coroczne spotkanie organizowane przez Braterstwa Ludzi Wolnych"
+    },
+    {
+      "id": "org-001",
+      "name": "Braterstwa Ludzi Wolnych",
+      "entity_type": "organization",
+      "description": "Ruch/organizacja promująca 'niezależność' w różnych aspektach życia (zdrowotna, edukacyjna, finansowa). Organizator wydarzeń typu 'Spotkanie Rodzin Po Bratersku'.",
+      "category": "alternative_movement",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Organizacja z obecnością na FB, organizuje coroczne wydarzenia"
+    },
+    {
+      "id": "ent-002",
+      "name": "Jakub Kuśpit",
+      "entity_type": "person",
+      "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025",
+      "roles": [
+        "influencer"
+      ],
+      "audience": {
+        "approx_followers": 24000
+      },
+      "confidence_notes": "Na podstawie dostarczonych screenów i materiałów medialnych można uznać go także za influencera/publicznego rzecznika; brak potwierdzenia formalnego tytułu"
+    },
+    {
+      "id": "ent-007",
+      "name": "Bogusław Okulski",
+      "entity_type": "person",
+      "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025"
+    },
+    {
+      "id": "ent-004",
+      "name": "Tomasz Kosiński",
+      "entity_type": "person",
+      "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025"
+    }
+  ],
+  "edges": [
+    {
+      "id": "rel-post-event",
+      "source_id": "post-001",
+      "source_name": "Post: Harmonogram Spotkania Rodzin (25.06.2025)",
+      "target_id": "evt-001",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "relationship_type": "ANNOUNCES",
+      "date": "2025-06-25",
+      "confidence": 1.0,
+      "evidence": "Post ogłasza wydarzenie"
+    },
+    {
+      "id": "rel-org-event",
+      "source_id": "org-001",
+      "source_name": "Braterstwa Ludzi Wolnych",
+      "target_id": "evt-001",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "relationship_type": "ORGANIZES",
+      "date": "2025-07-04",
+      "confidence": 1.0,
+      "evidence": "Główny organizator wydarzenia"
+    },
+    {
+      "id": "rel-001",
+      "source_id": "ent-002",
+      "source_name": "Jakub Kuśpit",
+      "target_id": "evt-001",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "relationship_type": "SPEAKER_AT",
+      "date": "2025-07-04",
+      "confidence": 1.0,
+      "evidence": "Post na FB z 25.06.2025 - lista prelegentów"
+    },
+    {
+      "id": "rel-002",
+      "source_id": "ent-003",
+      "source_name": "Mieczysław Bielak",
+      "target_id": "evt-001",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "relationship_type": "SPEAKER_AT",
+      "date": "2025-07-04",
+      "confidence": 1.0,
+      "evidence": "Post na FB z 25.06.2025 - lista prelegentów"
+    },
+    {
+      "id": "rel-003",
+      "source_id": "ent-004",
+      "source_name": "Tomasz Kosiński",
+      "target_id": "evt-001",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "relationship_type": "SPEAKER_AT",
+      "date": "2025-07-04",
+      "confidence": 1.0,
+      "evidence": "Post na FB z 25.06.2025 - lista prelegentów"
+    },
+    {
+      "id": "rel-004",
+      "source_id": "ent-005",
+      "source_name": "Katarzyna Tarnawa-Gwóźdź",
+      "target_id": "evt-001",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "relationship_type": "SPEAKER_AT",
+      "date": "2025-07-04",
+      "confidence": 1.0,
+      "evidence": "Post na FB z 25.06.2025 - lista prelegentów"
+    },
+    {
+      "id": "rel-005",
+      "source_id": "ent-006",
+      "source_name": "Jacek Falkowski",
+      "target_id": "evt-001",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "relationship_type": "SPEAKER_AT",
+      "date": "2025-07-04",
+      "confidence": 1.0,
+      "evidence": "Post na FB z 25.06.2025 - lista prelegentów"
+    },
+    {
+      "id": "rel-006",
+      "source_id": "ent-007",
+      "source_name": "Bogusław Okulski",
+      "target_id": "evt-001",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "relationship_type": "SPEAKER_AT",
+      "date": "2025-07-04",
+      "confidence": 1.0,
+      "evidence": "Post na FB z 25.06.2025 - lista prelegentów"
+    }
+  ]
+}

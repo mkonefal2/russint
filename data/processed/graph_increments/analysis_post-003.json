@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "source": "split_script",
+    "generated_at": "2025-11-26T13:00:42.092905",
+    "description": "Split data for post-003"
+  },
+  "nodes": [
+    {
+      "id": "post-003",
+      "name": "Post: To jest zamach na polskie rodziny",
+      "entity_type": "post",
+      "platform": "facebook",
+      "profile_id": "profile-braterstwa-ludzi-wolnych",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/20240113",
+      "date_posted": "2024-01-13",
+      "description": "Wpis z linkiem do artykułu PL1.TV: 'To jest zamach na polskie rodziny'",
+      "engagement": {
+        "reactions": 33
+      },
+      "country": "PL",
+      "first_seen": "2024-01-13",
+      "notes": "Zrzut ekranu dostarczony przez analityka; wymaga weryfikacji treści artykułu"
+    },
+    {
+      "id": "profile-braterstwa-ludzi-wolnych",
+      "name": "FB: Braterstwa Ludzi Wolnych",
+      "entity_type": "profile",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych",
+      "handle": "BraterstwaLudziWolnych",
+      "parent_org_id": "org-braterstwa-ludzi-wolnych",
+      "description": "Oficjalny profil Facebook organizacji Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Aktywny profil, publikuje informacje o wydarzeniach"
+    },
+    {
+      "id": "website-pl1vod",
+      "name": "PL1.TV",
+      "entity_type": "site",
+      "url": "https://pl1vod.com/",
+      "description": "Platforma VOD / portal PL1 (embedy w serwisie)",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Dodano na podstawie zawartości strony braterstwa.pl i screenu",
+      "other_urls": [
+        "https://pl1.tv/",
+        "https://pl1vod.com/",
+        "https://pl1.tv"
+      ],
+      "example_article": "https://pl1vod.com/video/braterstwa-ludzi-wolnych-jak-zacznie-sie-cyrk-bedziemy-gotowi/",
+      "canonical_id": "website-pl1vod",
+      "merged_with": [
+        "website-pl1tv"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "rel-profile-post-20240113",
+      "source_id": "profile-braterstwa-ludzi-wolnych",
+      "source_name": "FB: Braterstwa Ludzi Wolnych",
+      "target_id": "post-003",
+      "target_name": "Post: To jest zamach na polskie rodziny",
+      "relationship_type": "PUBLISHED",
+      "date": "2024-01-13",
+      "confidence": 0.9,
+      "evidence": "Zrzut ekranu udostępniony przez analityka"
+    },
+    {
+      "id": "rel-post-pl1tv-20240113",
+      "source_id": "post-003",
+      "source_name": "Post: To jest zamach na polskie rodziny",
+      "target_id": "website-pl1vod",
+      "target_name": "PL1.TV",
+      "relationship_type": "LINKS_TO",
+      "date": "2024-01-13",
+      "confidence": 0.8,
+      "evidence": "Post zawiera link/ogłoszenie artykułu PL1.TV (zrzut ekranu)"
+    }
+  ]
+}

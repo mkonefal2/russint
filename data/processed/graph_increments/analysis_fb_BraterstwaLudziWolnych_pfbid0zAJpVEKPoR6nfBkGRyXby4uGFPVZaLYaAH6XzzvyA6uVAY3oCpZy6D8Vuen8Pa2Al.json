@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "source": "copilot_analysis",
+    "generated_at": "2025-11-26T14:20:00",
+    "description": "Analysis of post fb_BraterstwaLudziWolnych_pfbid0zAJpVEKPoR6nfBkGRyXby4uGFPVZaLYaAH6XzzvyA6uVAY3oCpZy6D8Vuen8Pa2Al"
+  },
+  "nodes": [
+    {
+      "id": "fb_BraterstwaLudziWolnych_pfbid0zAJpVEKPoR6nfBkGRyXby4uGFPVZaLYaAH6XzzvyA6uVAY3oCpZy6D8Vuen8Pa2Al",
+      "entity_type": "post",
+      "name": "Post: Braterskie Usługi - Karol Janik Masaż i Kinezjologia",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid0zAJpVEKPoR6nfBkGRyXby4uGFPVZaLYaAH6XzzvyA6uVAY3oCpZy6D8Vuen8Pa2Al",
+      "description": "Post udostępniający wpis Mateusza Jarosiewicza o spotkaniu z Karolem Janikiem (Kinezjologia). Promocja usług w ramach inicjatywy Braterstw.",
+      "date_posted": "2024-04-20",
+      "country": "PL"
+    },
+    {
+      "id": "profile-braterstwa-ludzi-wolnych",
+      "entity_type": "profile",
+      "name": "FB: Braterstwa Ludzi Wolnych",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych"
+    },
+    {
+      "id": "profile-fb-mateusz-jarosiewicz",
+      "entity_type": "profile",
+      "name": "FB: Mateusz Jarosiewicz",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/MattJarosPL",
+      "description": "Profil Mateusza Jarosiewicza, autora udostępnionego posta.",
+      "country": "PL",
+      "first_seen": "2024-04-20"
+    },
+    {
+      "id": "ent-mateusz-jarosiewicz",
+      "entity_type": "person",
+      "name": "Mateusz Jarosiewicz",
+      "description": "Osoba fizyczna, właściciel profilu FB: Mateusz Jarosiewicz.",
+      "country": "PL",
+      "first_seen": "2024-04-20"
+    },
+    {
+      "id": "profile-yt-mateusz-jarosiewicz",
+      "entity_type": "profile",
+      "name": "YT: Mateusz Jarosiewicz",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/@mateuszjarosiewicz",
+      "description": "Kanał YouTube Mateusza Jarosiewicza.",
+      "country": "PL",
+      "first_seen": "2024-04-20"
+    },
+    {
+      "id": "ent-karol-janik",
+      "entity_type": "person",
+      "name": "Karol Janik",
+      "description": "Masażysta, zajmuje się kinezjologią. Promowany w ramach 'Braterskich Usług'.",
+      "country": "PL",
+      "first_seen": "2024-04-20"
+    },
+    {
+      "id": "video-youtube-BmLVdf4Fmjg",
+      "entity_type": "video",
+      "name": "Video: Braterskie Usługi - Karol Janik Masaż i Kinezjologia",
+      "platform": "youtube",
+      "url": "https://youtu.be/BmLVdf4Fmjg?si=a9yT6llBlPuLnFGh",
+      "description": "Materiał wideo promujący usługi Karola Janika."
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "profile-braterstwa-ludzi-wolnych",
+      "target_id": "fb_BraterstwaLudziWolnych_pfbid0zAJpVEKPoR6nfBkGRyXby4uGFPVZaLYaAH6XzzvyA6uVAY3oCpZy6D8Vuen8Pa2Al",
+      "relationship_type": "PUBLISHED",
+      "source_name": "FB: Braterstwa Ludzi Wolnych",
+      "target_name": "Post: Braterskie Usługi - Karol Janik",
+      "date": "2024-04-20",
+      "confidence": 1.0,
+      "evidence": "Post opublikowany na profilu"
+    },
+    {
+      "source_id": "fb_BraterstwaLudziWolnych_pfbid0zAJpVEKPoR6nfBkGRyXby4uGFPVZaLYaAH6XzzvyA6uVAY3oCpZy6D8Vuen8Pa2Al",
+      "target_id": "profile-fb-mateusz-jarosiewicz",
+      "relationship_type": "SHARES_CONTENT_FROM",
+      "source_name": "Post: Braterskie Usługi - Karol Janik",
+      "target_name": "FB: Mateusz Jarosiewicz",
+      "confidence": 1.0,
+      "evidence": "Post jest udostępnieniem wpisu Mateusza Jarosiewicza"
+    },
+    {
+      "source_id": "fb_BraterstwaLudziWolnych_pfbid0zAJpVEKPoR6nfBkGRyXby4uGFPVZaLYaAH6XzzvyA6uVAY3oCpZy6D8Vuen8Pa2Al",
+      "target_id": "ent-karol-janik",
+      "relationship_type": "MENTIONS",
+      "source_name": "Post: Braterskie Usługi - Karol Janik",
+      "target_name": "Karol Janik",
+      "confidence": 1.0,
+      "evidence": "Wymieniony w treści posta i tytule wideo"
+    },
+    {
+      "source_id": "fb_BraterstwaLudziWolnych_pfbid0zAJpVEKPoR6nfBkGRyXby4uGFPVZaLYaAH6XzzvyA6uVAY3oCpZy6D8Vuen8Pa2Al",
+      "target_id": "video-youtube-BmLVdf4Fmjg",
+      "relationship_type": "LINKS_TO",
+      "source_name": "Post: Braterskie Usługi - Karol Janik",
+      "target_name": "Video: Braterskie Usługi - Karol Janik",
+      "confidence": 1.0,
+      "evidence": "Link do YouTube w poście"
+    },
+    {
+      "source_id": "ent-karol-janik",
+      "target_id": "video-youtube-BmLVdf4Fmjg",
+      "relationship_type": "FEATURED_ON",
+      "source_name": "Karol Janik",
+      "target_name": "Video: Braterskie Usługi - Karol Janik",
+      "confidence": 1.0,
+      "evidence": "Główny bohater wideo"
+    },
+    {
+      "source_id": "ent-mateusz-jarosiewicz",
+      "target_id": "profile-fb-mateusz-jarosiewicz",
+      "relationship_type": "HAS_PROFILE",
+      "source_name": "Mateusz Jarosiewicz",
+      "target_name": "FB: Mateusz Jarosiewicz",
+      "confidence": 1.0,
+      "evidence": "Profil osobisty"
+    },
+    {
+      "source_id": "ent-mateusz-jarosiewicz",
+      "target_id": "profile-yt-mateusz-jarosiewicz",
+      "relationship_type": "HAS_PROFILE",
+      "source_name": "Mateusz Jarosiewicz",
+      "target_name": "YT: Mateusz Jarosiewicz",
+      "confidence": 1.0,
+      "evidence": "Kanał YouTube osoby"
+    },
+    {
+      "source_id": "video-youtube-BmLVdf4Fmjg",
+      "target_id": "profile-yt-mateusz-jarosiewicz",
+      "relationship_type": "UPLOADED_BY",
+      "source_name": "Video: Braterskie Usługi - Karol Janik",
+      "target_name": "YT: Mateusz Jarosiewicz",
+      "confidence": 1.0,
+      "evidence": "Wideo znajduje się na tym kanale"
+    },
+    {
+      "source_id": "ent-mateusz-jarosiewicz",
+      "target_id": "video-youtube-BmLVdf4Fmjg",
+      "relationship_type": "FEATURED_ON",
+      "source_name": "Mateusz Jarosiewicz",
+      "target_name": "Video: Braterskie Usługi - Karol Janik",
+      "confidence": 1.0,
+      "evidence": "Widoczny na miniaturze wideo (rozmawia z Karolem)"
+    }
+  ]
+}

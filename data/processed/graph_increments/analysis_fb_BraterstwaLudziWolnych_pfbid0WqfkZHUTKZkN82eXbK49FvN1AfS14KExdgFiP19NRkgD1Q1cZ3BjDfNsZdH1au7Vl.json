@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "source": "copilot_analysis",
+    "generated_at": "2025-11-26T14:40:00",
+    "description": "Analysis of post fb_BraterstwaLudziWolnych_pfbid0WqfkZHUTKZkN82eXbK49FvN1AfS14KExdgFiP19NRkgD1Q1cZ3BjDfNsZdH1au7Vl"
+  },
+  "nodes": [
+    {
+      "id": "fb_BraterstwaLudziWolnych_pfbid0WqfkZHUTKZkN82eXbK49FvN1AfS14KExdgFiP19NRkgD1Q1cZ3BjDfNsZdH1au7Vl",
+      "entity_type": "post",
+      "name": "Post: Metody demoralizacji dzieci i młodzieży - Zdzisława Piasecka",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid0WqfkZHUTKZkN82eXbK49FvN1AfS14KExdgFiP19NRkgD1Q1cZ3BjDfNsZdH1au7Vl",
+      "description": "Nagranie z cotygodniowego wewnętrznego spotkania inicjatywy Braterstwa Ludzi Wolnych. Wykład Zdzisławy Piaseckiej.",
+      "date_posted": "2024-11-30",
+      "country": "PL"
+    },
+    {
+      "id": "profile-braterstwa-ludzi-wolnych",
+      "entity_type": "profile",
+      "name": "FB: Braterstwa Ludzi Wolnych",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych"
+    },
+    {
+      "id": "org-braterstwa-ludzi-wolnych",
+      "entity_type": "organization",
+      "name": "Braterstwa Ludzi Wolnych"
+    },
+    {
+      "id": "ent-zdzislawa-piasecka",
+      "entity_type": "person",
+      "name": "Zdzisława Piasecka",
+      "description": "Prelegentka, wypowiada się na temat edukacji i demoralizacji dzieci.",
+      "country": "PL",
+      "first_seen": "2024-11-30"
+    },
+    {
+      "id": "video-youtube-N2IZIyD73iw",
+      "entity_type": "video",
+      "name": "Video: Metody demoralizacji dzieci i młodzieży na tle zmian w polskiej edukacji",
+      "platform": "youtube",
+      "url": "https://youtu.be/N2IZIyD73iw?si=mQEHI7uBbEp8tg24",
+      "description": "Wykład Zdzisławy Piaseckiej."
+    },
+    {
+      "id": "evt-spotkanie-wewnetrzne-blw-2024-11",
+      "entity_type": "event",
+      "name": "Cotygodniowe spotkanie wewnętrzne Braterstwa Ludzi Wolnych",
+      "description": "Cykliczne spotkanie członków inicjatywy.",
+      "date_start": "2024-11-30"
+    },
+    {
+      "id": "ent-jakub-kuspit",
+      "entity_type": "person",
+      "name": "Jakub Kuśpit"
+    },
+    {
+      "id": "profile-yt-jakub-kuspit",
+      "entity_type": "profile",
+      "name": "YT: Jakub Kuśpit",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/@JakubKuspit",
+      "description": "Kanał YouTube Jakuba Kuśpita."
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "profile-braterstwa-ludzi-wolnych",
+      "target_id": "fb_BraterstwaLudziWolnych_pfbid0WqfkZHUTKZkN82eXbK49FvN1AfS14KExdgFiP19NRkgD1Q1cZ3BjDfNsZdH1au7Vl",
+      "relationship_type": "PUBLISHED",
+      "source_name": "FB: Braterstwa Ludzi Wolnych",
+      "target_name": "Post: Metody demoralizacji dzieci...",
+      "date": "2024-11-30",
+      "confidence": 1.0,
+      "evidence": "Post opublikowany na profilu"
+    },
+    {
+      "source_id": "fb_BraterstwaLudziWolnych_pfbid0WqfkZHUTKZkN82eXbK49FvN1AfS14KExdgFiP19NRkgD1Q1cZ3BjDfNsZdH1au7Vl",
+      "target_id": "video-youtube-N2IZIyD73iw",
+      "relationship_type": "LINKS_TO",
+      "source_name": "Post: Metody demoralizacji dzieci...",
+      "target_name": "Video: Metody demoralizacji...",
+      "confidence": 1.0,
+      "evidence": "Link w poście"
+    },
+    {
+      "source_id": "ent-zdzislawa-piasecka",
+      "target_id": "video-youtube-N2IZIyD73iw",
+      "relationship_type": "FEATURED_ON",
+      "source_name": "Zdzisława Piasecka",
+      "target_name": "Video: Metody demoralizacji...",
+      "confidence": 1.0,
+      "evidence": "Główna prelegentka (tytuł wideo)"
+    },
+    {
+      "source_id": "ent-zdzislawa-piasecka",
+      "target_id": "evt-spotkanie-wewnetrzne-blw-2024-11",
+      "relationship_type": "SPEAKER_AT",
+      "source_name": "Zdzisława Piasecka",
+      "target_name": "Spotkanie wewnętrzne BLW",
+      "confidence": 1.0,
+      "evidence": "Post opisuje nagranie ze spotkania"
+    },
+    {
+      "source_id": "org-braterstwa-ludzi-wolnych",
+      "target_id": "evt-spotkanie-wewnetrzne-blw-2024-11",
+      "relationship_type": "ORGANIZES",
+      "source_name": "Braterstwa Ludzi Wolnych",
+      "target_name": "Spotkanie wewnętrzne BLW",
+      "confidence": 1.0,
+      "evidence": "Spotkanie 'naszej inicjatywy' na profilu organizacji"
+    },
+    {
+      "source_id": "video-youtube-N2IZIyD73iw",
+      "target_id": "evt-spotkanie-wewnetrzne-blw-2024-11",
+      "relationship_type": "RECORDING_OF",
+      "source_name": "Video: Metody demoralizacji...",
+      "target_name": "Spotkanie wewnętrzne BLW",
+      "confidence": 1.0,
+      "evidence": "Treść posta: 'Nagranie z... spotkania'"
+    },
+    {
+      "source_id": "ent-jakub-kuspit",
+      "target_id": "profile-yt-jakub-kuspit",
+      "relationship_type": "HAS_PROFILE",
+      "source_name": "Jakub Kuśpit",
+      "target_name": "YT: Jakub Kuśpit",
+      "confidence": 1.0,
+      "evidence": "Kanał YouTube osoby"
+    },
+    {
+      "source_id": "video-youtube-N2IZIyD73iw",
+      "target_id": "profile-yt-jakub-kuspit",
+      "relationship_type": "UPLOADED_BY",
+      "source_name": "Video: Metody demoralizacji...",
+      "target_name": "YT: Jakub Kuśpit",
+      "confidence": 1.0,
+      "evidence": "Wideo znajduje się na tym kanale"
+    }
+  ]
+}

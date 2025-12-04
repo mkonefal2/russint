@@ -1,0 +1,565 @@
+{
+  "meta": {
+    "source": "split_script",
+    "generated_at": "2025-11-26T13:00:42.097704",
+    "description": "Split data for base_structure",
+    "visual_analysis_report": "data/processed/visual_analysis/2025-11-26_BraterstwaLudziWolnych.md"
+  },
+  "nodes": [
+    {
+      "id": "profile-bronimy-munduru",
+      "name": "FB: Bronimy Munduru - Dla Przyszłych Pokoleń",
+      "entity_type": "profile",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/profile.php?id=100080248801478",
+      "description": "Profil Bronimy Munduru - Dla Przyszłych Pokoleń",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Wymienione jako powiązanie w profilu Jakuba Kuśpita"
+    },
+    {
+      "id": "profile-jarex-fb",
+      "name": "FB: Jarex Technika Estradowa",
+      "entity_type": "profile",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/JarexTechnikaEstradowa/",
+      "description": "Profil Facebook Jarex Technika Estradowa",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Wymienione jako sojusznik na stronie Strumieniownia"
+    },
+    {
+      "id": "org-braterstwa-ludzi-wolnych",
+      "name": "Braterstwa Ludzi Wolnych",
+      "entity_type": "organization",
+      "description": "Ruch/organizacja promująca 'niezależność' w różnych aspektach życia (zdrowotna, edukacyjna, finansowa). Organizator wydarzeń typu 'Spotkanie Rodzin Po Bratersku'.",
+      "category": "alternative_movement",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Organizacja z obecnością na FB, organizuje coroczne wydarzenia"
+    },
+    {
+      "id": "page-youtube-leszekszymowskitv",
+      "name": "YT: Leszek Szymowski (@leszekszymowskitv)",
+      "entity_type": "profile",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/@leszekszymowskitv",
+      "description": "Kanał YouTube '@leszekszymowskitv' — wskazany jako powiązany profil/źródło.",
+      "first_seen": "2025-11-25",
+      "notes": "Kanał dodany na żądanie analizy; właściciel wymaga weryfikacji"
+    },
+    {
+      "id": "ent-jakub-kuspit",
+      "name": "Jakub Kuśpit",
+      "entity_type": "person",
+      "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025",
+      "roles": [
+        "influencer"
+      ],
+      "audience": {
+        "approx_followers": 24000
+      },
+      "confidence_notes": "Na podstawie dostarczonych screenów i materiałów medialnych można uznać go także za influencera/publicznego rzecznika; brak potwierdzenia formalnego tytułu"
+    },
+    {
+      "id": "page-kooperatywa-lbn",
+      "name": "Kooperatywa Lubelska",
+      "entity_type": "site",
+      "url": "https://kooperatywalubelska.com.pl/",
+      "description": "Strona Kooperatywy Lubelskiej",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Wymienione jako sojusznik na stronie Strumieniownia"
+    },
+    {
+      "id": "website-pl1vod",
+      "name": "PL1.TV",
+      "entity_type": "site",
+      "url": "https://pl1vod.com/",
+      "description": "Platforma VOD / portal PL1 (embedy w serwisie)",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Dodano na podstawie zawartości strony braterstwa.pl i screenu",
+      "other_urls": [
+        "https://pl1.tv/",
+        "https://pl1vod.com/",
+        "https://pl1.tv"
+      ],
+      "example_article": "https://pl1vod.com/video/braterstwa-ludzi-wolnych-jak-zacznie-sie-cyrk-bedziemy-gotowi/",
+      "canonical_id": "website-pl1vod",
+      "merged_with": [
+        "website-pl1tv"
+      ]
+    },
+    {
+      "id": "ent-006",
+      "name": "Jacek Falkowski",
+      "entity_type": "person",
+      "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025"
+    },
+    {
+      "id": "ent-003",
+      "name": "Mieczysław Bielak",
+      "entity_type": "person",
+      "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025"
+    },
+    {
+      "id": "evt-001",
+      "name": "Spotkanie Rodzin Po Bratersku 2025",
+      "entity_type": "event",
+      "date_start": "2025-07-04",
+      "date_end": "2025-07-06",
+      "location": "Wzgórze Wdzięczności, Smolnik gm. Komańcza",
+      "description": "Wydarzenie niebiletowane. Tematy: Niezależność zdrowotna, edukacyjna, finansowa, transportowa, łącznościowa, energetyczna. Widzenie pozamysłowe dla dzieci. Prawo stanowione - Prawo naturalne. Networking. Muzyka i zabawa.",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Coroczne spotkanie organizowane przez Braterstwa Ludzi Wolnych"
+    },
+    {
+      "id": "website-001",
+      "name": "braterstwa.pl",
+      "entity_type": "site",
+      "url": "https://braterstwa.pl/",
+      "parent_org_id": "org-braterstwa-ludzi-wolnych",
+      "description": "Oficjalna strona internetowa organizacji Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Główna strona www organizacji"
+    },
+    {
+      "id": "ent-001",
+      "entity_type": "person",
+      "name": "Anna Luiza Stec",
+      "description": "Osoba występująca w materiale wideo; właścicielka kanału KonkretnyKanal.",
+      "country": "PL",
+      "first_seen": "2024-04-14"
+    },
+    {
+      "id": "profile-braterstwa-ludzi-wolnych",
+      "entity_type": "profile",
+      "name": "FB: Braterstwa Ludzi Wolnych",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych",
+      "handle": "BraterstwaLudziWolnych",
+      "parent_org_id": "org-braterstwa-ludzi-wolnych"
+    },
+    {
+      "id": "ent-007",
+      "name": "Bogusław Okulski",
+      "entity_type": "person",
+      "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025"
+    },
+    {
+      "id": "page-siedliskostasin",
+      "name": "Siedlisko Stasin",
+      "entity_type": "site",
+      "url": "https://siedliskostasin.pl/",
+      "description": "Strona Siedlisko Stasin",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Wymienione jako sojusznik na stronie Strumieniownia"
+    },
+    {
+      "id": "ent-leszek-szymowski",
+      "name": "Leszek Szymowski",
+      "entity_type": "person",
+      "description": "Osoba powiązana z kanałem YouTube '@leszekszymowskitv' — wymaga weryfikacji (właściciel/prowadzący).",
+      "first_seen": "2025-11-25",
+      "roles": [
+        "host",
+        "journalist"
+      ],
+      "notes": "Utworzono węzeł osoby na prośbę analityka; proszę zweryfikować publicznymi źródłami"
+    },
+    {
+      "id": "page-youtube-AgxWYYvkfg8",
+      "name": "YouTube: NOMINOWANY NA RUSKIEGO SZPIEGA (video)",
+      "entity_type": "video",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=AgxWYYvkfg8",
+      "description": "Wideo linkowane w poście Braterstwa Ludzi Wolnych (tytuł: 'NOMINOWANY NA RUSKIEGO SZPIEGA').",
+      "first_seen": "2025-11-25",
+      "notes": "Dodano na podstawie pola external_links w pliku posta"
+    },
+    {
+      "id": "page-strumieniownia-site",
+      "name": "Strumieniownia.pl — strona kanału",
+      "entity_type": "site",
+      "url": "https://strumieniownia.pl/",
+      "description": "Strona projektu Strumieniownia (informacje o zespole i kontakt)",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Dodano na podstawie załączonych materiałów"
+    },
+    {
+      "id": "page-youtube-QcY2u58CtiA",
+      "entity_type": "video",
+      "name": "YouTube: QcY2u58CtiA",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=QcY2u58CtiA",
+      "description": "Wideo podlinkowane w poście"
+    },
+    {
+      "id": "profile-braterskie-kruszce",
+      "name": "FB: Braterskie Kruszce",
+      "entity_type": "profile",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/profile.php?id=61574751779293",
+      "description": "Profil Braterskie Kruszce",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Wymienione jako powiązanie w profilu Jakuba Kuśpita"
+    },
+    {
+      "id": "channel-konkretnykanal",
+      "entity_type": "profile",
+      "name": "YT: KonkretnyKanal",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/@KonkretnyKanal",
+      "description": "Kanał YouTube, na którym znajduje się wideo powiązane z postem (użytkownik podał adres kanału)."
+    },
+    {
+      "id": "ent-005",
+      "name": "Katarzyna Tarnawa-Gwóźdź",
+      "entity_type": "person",
+      "description": "Prelegentka na wydarzeniach Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Prelegentka - Spotkanie Rodzin Po Bratersku 2025"
+    },
+    {
+      "id": "page-festiwal-wdziecznosci",
+      "name": "Festiwal Wdzięczności - Bieszczady",
+      "entity_type": "site",
+      "url": "https://festiwalwdziecznosci-bieszczady.pl/",
+      "description": "Strona Festiwalu Wdzięczności (Bieszczady)",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Wymienione jako sojusznik na stronie Strumieniownia"
+    },
+    {
+      "id": "ent-004",
+      "name": "Tomasz Kosiński",
+      "entity_type": "person",
+      "description": "Prelegent na wydarzeniach Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Prelegent - Spotkanie Rodzin Po Bratersku 2025"
+    },
+    {
+      "id": "symbol-orzel-blw",
+      "entity_type": "symbol",
+      "name": "Logo: Orzeł BLW",
+      "description": "Stylizowany orzeł bez korony z tarczą w barwach narodowych."
+    },
+    {
+      "id": "symbol-peace-mir",
+      "entity_type": "symbol",
+      "name": "Grafika: Peace-Pokój-Mir",
+      "description": "Grafika z trójjęzycznym napisem (EN/PL/RU) i hasłem 'Polska Wybiera Pokój'."
+    }
+  ],
+  "edges": [
+    {
+      "id": "rel-org-profile",
+      "source_id": "org-braterstwa-ludzi-wolnych",
+      "source_name": "Braterstwa Ludzi Wolnych",
+      "target_id": "profile-braterstwa-ludzi-wolnych",
+      "target_name": "FB: Braterstwa Ludzi Wolnych",
+      "relationship_type": "HAS_PROFILE",
+      "date": "2025-11-25",
+      "confidence": 1.0,
+      "evidence": "Oficjalny profil organizacji na FB"
+    },
+    {
+      "id": "rel-org-event",
+      "source_id": "org-braterstwa-ludzi-wolnych",
+      "source_name": "Braterstwa Ludzi Wolnych",
+      "target_id": "evt-001",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "relationship_type": "ORGANIZES",
+      "date": "2025-07-04",
+      "confidence": 1.0,
+      "evidence": "Główny organizator wydarzenia"
+    },
+    {
+      "id": "rel-001",
+      "source_id": "ent-jakub-kuspit",
+      "source_name": "Jakub Kuśpit",
+      "target_id": "evt-001",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "relationship_type": "SPEAKER_AT",
+      "date": "2025-07-04",
+      "confidence": 1.0,
+      "evidence": "Post na FB z 25.06.2025 - lista prelegentów"
+    },
+    {
+      "id": "rel-002",
+      "source_id": "ent-003",
+      "source_name": "Mieczysław Bielak",
+      "target_id": "evt-001",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "relationship_type": "SPEAKER_AT",
+      "date": "2025-07-04",
+      "confidence": 1.0,
+      "evidence": "Post na FB z 25.06.2025 - lista prelegentów"
+    },
+    {
+      "id": "rel-003",
+      "source_id": "ent-004",
+      "source_name": "Tomasz Kosiński",
+      "target_id": "evt-001",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "relationship_type": "SPEAKER_AT",
+      "date": "2025-07-04",
+      "confidence": 1.0,
+      "evidence": "Post na FB z 25.06.2025 - lista prelegentów"
+    },
+    {
+      "id": "rel-004",
+      "source_id": "ent-005",
+      "source_name": "Katarzyna Tarnawa-Gwóźdź",
+      "target_id": "evt-001",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "relationship_type": "SPEAKER_AT",
+      "date": "2025-07-04",
+      "confidence": 1.0,
+      "evidence": "Post na FB z 25.06.2025 - lista prelegentów"
+    },
+    {
+      "id": "rel-005",
+      "source_id": "ent-006",
+      "source_name": "Jacek Falkowski",
+      "target_id": "evt-001",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "relationship_type": "SPEAKER_AT",
+      "date": "2025-07-04",
+      "confidence": 1.0,
+      "evidence": "Post na FB z 25.06.2025 - lista prelegentów"
+    },
+    {
+      "id": "rel-006",
+      "source_id": "ent-007",
+      "source_name": "Bogusław Okulski",
+      "target_id": "evt-001",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "relationship_type": "SPEAKER_AT",
+      "date": "2025-07-04",
+      "confidence": 1.0,
+      "evidence": "Post na FB z 25.06.2025 - lista prelegentów"
+    },
+    {
+      "id": "rel-org-website",
+      "source_id": "org-braterstwa-ludzi-wolnych",
+      "source_name": "Braterstwa Ludzi Wolnych",
+      "target_id": "website-001",
+      "target_name": "braterstwa.pl",
+      "relationship_type": "HAS_WEBSITE",
+      "date": "2025-11-25",
+      "confidence": 1.0,
+      "evidence": "Oficjalna strona www organizacji"
+    },
+    {
+      "id": "rel-site-links-festiwal",
+      "source_id": "page-strumieniownia-site",
+      "source_name": "Strumieniownia.pl — strona kanału",
+      "target_id": "page-festiwal-wdziecznosci",
+      "target_name": "Festiwal Wdzięczności - Bieszczady",
+      "relationship_type": "LINKS_TO",
+      "date": "2025-11-25",
+      "confidence": 0.9,
+      "evidence": "screenshot:data/evidence/sites/strumieniownia/strumieniownia_links_sojusznicy.png"
+    },
+    {
+      "id": "rel-site-links-jarex",
+      "source_id": "page-strumieniownia-site",
+      "source_name": "Strumieniownia.pl — strona kanału",
+      "target_id": "profile-jarex-fb",
+      "target_name": "FB: Jarex Technika Estradowa",
+      "relationship_type": "LINKS_TO",
+      "date": "2025-11-25",
+      "confidence": 0.9,
+      "evidence": "screenshot:data/evidence/sites/strumieniownia/strumieniownia_links_sojusznicy.png"
+    },
+    {
+      "id": "rel-site-links-kooperatywa",
+      "source_id": "page-strumieniownia-site",
+      "source_name": "Strumieniownia.pl — strona kanału",
+      "target_id": "page-kooperatywa-lbn",
+      "target_name": "Kooperatywa Lubelska",
+      "relationship_type": "LINKS_TO",
+      "date": "2025-11-25",
+      "confidence": 0.9,
+      "evidence": "screenshot:data/evidence/sites/strumieniownia/strumieniownia_links_sojusznicy.png"
+    },
+    {
+      "id": "rel-site-links-siedlisko",
+      "source_id": "page-strumieniownia-site",
+      "source_name": "Strumieniownia.pl — strona kanału",
+      "target_id": "page-siedliskostasin",
+      "target_name": "Siedlisko Stasin",
+      "relationship_type": "LINKS_TO",
+      "date": "2025-11-25",
+      "confidence": 0.9,
+      "evidence": "screenshot:data/evidence/sites/strumieniownia/strumieniownia_links_sojusznicy.png"
+    },
+    {
+      "id": "rel-site-links-braterstwa",
+      "source_id": "page-strumieniownia-site",
+      "source_name": "Strumieniownia.pl — strona kanału",
+      "target_id": "website-001",
+      "target_name": "braterstwa.pl",
+      "relationship_type": "LINKS_TO",
+      "date": "2025-11-25",
+      "confidence": 0.9,
+      "evidence": "screenshot:data/evidence/strumieniownia/strumieniownia_site_20251125_01.placeholder.txt"
+    },
+    {
+      "id": "rel-jakub-works-braterstwa",
+      "source_id": "ent-jakub-kuspit",
+      "source_name": "Jakub Kuśpit",
+      "target_id": "org-braterstwa-ludzi-wolnych",
+      "target_name": "Braterstwa Ludzi Wolnych",
+      "relationship_type": "WORKS_AT",
+      "date": "2025-11-25",
+      "confidence": 0.9,
+      "evidence": "screenshot:data/evidence/facebook/JakubKuspit/jakub_kuspit_profile_20251125.png"
+    },
+    {
+      "id": "rel-jakub-affiliated-braterskie",
+      "source_id": "ent-jakub-kuspit",
+      "source_name": "Jakub Kuśpit",
+      "target_id": "profile-braterskie-kruszce",
+      "target_name": "FB: Braterskie Kruszce",
+      "relationship_type": "AFFILIATED_WITH",
+      "date": "2025-11-25",
+      "confidence": 0.85,
+      "evidence": "screenshot:data/evidence/facebook/JakubKuspit/jakub_kuspit_profile_20251125.png"
+    },
+    {
+      "id": "rel-jakub-affiliated-bronimy",
+      "source_id": "ent-jakub-kuspit",
+      "source_name": "Jakub Kuśpit",
+      "target_id": "profile-bronimy-munduru",
+      "target_name": "FB: Bronimy Munduru - Dla Przyszłych Pokoleń",
+      "relationship_type": "AFFILIATED_WITH",
+      "date": "2025-11-25",
+      "confidence": 0.85,
+      "evidence": "screenshot:data/evidence/facebook/JakubKuspit/jakub_kuspit_profile_20251125.png"
+    },
+    {
+      "id": "rel-jakub-featured-pl1vod",
+      "source_id": "ent-jakub-kuspit",
+      "source_name": "Jakub Kuśpit",
+      "target_id": "website-pl1vod",
+      "target_name": "PL1.TV",
+      "relationship_type": "FEATURED_ON",
+      "date": "2025-11-25",
+      "confidence": 0.9,
+      "evidence": "screenshot:data/evidence/facebook/JakubKuspit/braterstwa_pl1_20251125.png"
+    },
+    {
+      "id": "rel-video-uploaded-by-channel-AgxWYY",
+      "source_id": "page-youtube-AgxWYYvkfg8",
+      "source_name": "YouTube: NOMINOWANY NA RUSKIEGO SZPIEGA (video)",
+      "target_id": "page-youtube-leszekszymowskitv",
+      "target_name": "YT: Leszek Szymowski (@leszekszymowskitv)",
+      "relationship_type": "UPLOADED_BY",
+      "date": "2024-04-06",
+      "confidence": 0.8,
+      "evidence": "Kanał powiązany przez podany handle: https://www.youtube.com/@leszekszymowskitv (wymaga weryfikacji na stronie wideo)"
+    },
+    {
+      "id": "rel-channel-owned-by-leszek",
+      "source_id": "page-youtube-leszekszymowskitv",
+      "source_name": "YT: Leszek Szymowski (@leszekszymowskitv)",
+      "target_id": "ent-leszek-szymowski",
+      "target_name": "Leszek Szymowski",
+      "relationship_type": "OWNED_BY",
+      "date": "2025-11-25",
+      "confidence": 0.75,
+      "evidence": "Kanał: https://www.youtube.com/@leszekszymowskitv — przypisanie właściciela wymaga potwierdzenia publicznymi źródłami"
+    },
+    {
+      "source_id": "org-braterstwa-ludzi-wolnych",
+      "target_id": "profile-braterstwa-ludzi-wolnych",
+      "relationship_type": "HAS_PROFILE",
+      "source_name": "Braterstwa Ludzi Wolnych",
+      "target_name": "FB: Braterstwa Ludzi Wolnych",
+      "date": "2024-04-14",
+      "confidence": 1.0,
+      "evidence": "Nazwa organizacji i profil Facebook (handle) wskazują na powiązanie",
+      "id": "org-braterstwa-ludzi-wolnych-HAS_PROFILE-profile-braterstwa-ludzi-wolnych"
+    },
+    {
+      "source_id": "page-youtube-QcY2u58CtiA",
+      "target_id": "channel-konkretnykanal",
+      "relationship_type": "UPLOADED_BY",
+      "source_name": "YouTube: QcY2u58CtiA",
+      "target_name": "YT: KonkretnyKanal",
+      "confidence": 1.0,
+      "evidence": "Kanał podany przez użytkownika: https://www.youtube.com/@KonkretnyKanal",
+      "id": "page-youtube-QcY2u58CtiA-UPLOADED_BY-channel-konkretnykanal"
+    },
+    {
+      "source_id": "ent-001",
+      "target_id": "channel-konkretnykanal",
+      "relationship_type": "HAS_PROFILE",
+      "source_name": "Anna Luiza Stec",
+      "target_name": "YT: KonkretnyKanal",
+      "confidence": 1.0,
+      "evidence": "Właścicielka kanału"
+    },
+    {
+      "source_id": "ent-001",
+      "target_id": "page-youtube-QcY2u58CtiA",
+      "relationship_type": "FEATURED_ON",
+      "source_name": "Anna Luiza Stec",
+      "target_name": "YouTube: QcY2u58CtiA",
+      "confidence": 0.95,
+      "evidence": "Osoba występuje w materiale wideo (screenshot potwierdza obecność).",
+      "id": "ent-001-FEATURED_ON-page-youtube-QcY2u58CtiA"
+    },
+    {
+      "id": "rel-jakub-affiliated-braterstwa",
+      "source_id": "ent-jakub-kuspit",
+      "source_name": "Jakub Kuśpit",
+      "target_id": "profile-braterstwa-ludzi-wolnych",
+      "target_name": "FB: Braterstwa Ludzi Wolnych",
+      "relationship_type": "AFFILIATED_WITH",
+      "date": "2025-11-25",
+      "confidence": 0.9,
+      "evidence": "Reposty i obecność na liście prelegentów na wydarzeniach Braterstwa Ludzi Wolnych oraz udostępnienia — wskazuje na powiązanie (screenshoty i posty w zbiorze)."
+    },
+    {
+      "source_id": "org-braterstwa-ludzi-wolnych",
+      "target_id": "symbol-orzel-blw",
+      "relationship_type": "USES_SYMBOL",
+      "source_name": "Braterstwa Ludzi Wolnych",
+      "target_name": "Logo: Orzeł BLW",
+      "confidence": 1.0,
+      "evidence": "Oficjalne logo organizacji"
+    },
+    {
+      "source_id": "org-braterstwa-ludzi-wolnych",
+      "target_id": "symbol-peace-mir",
+      "relationship_type": "USES_SYMBOL",
+      "source_name": "Braterstwa Ludzi Wolnych",
+      "target_name": "Grafika: Peace-Pokój-Mir",
+      "confidence": 1.0,
+      "evidence": "Grafika promocyjna używana przez organizację"
+    }
+  ]
+}

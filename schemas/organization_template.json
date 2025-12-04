@@ -1,0 +1,105 @@
+{
+  "_instructions": "Ten szablon służy do dokumentowania organizacji zaangażowanych w dezinformację. Wypełnij wszystkie pola na podstawie dostępnych informacji. Jeśli pole nie ma danych, użyj null lub pustej tablicy [].",
+  
+  "id": "",
+  "entity_type": "organization",
+  "name": "",
+  "aliases": [],
+  "description": "",
+  "country_of_origin": "",
+  "legal_status": "",
+  "registration_number": "",
+  "headquarters_address": "",
+  "status": "active",
+  "risk_level": "",
+  
+  "leadership": [
+    {
+      "role": "",
+      "name": "",
+      "person_id": null
+    }
+  ],
+  
+  "key_members": [],
+  
+  "online_presence": [
+    {
+      "platform": "",
+      "url": "",
+      "handle": "",
+      "status": "active",
+      "followers_count": null,
+      "archive_url": "",
+      "last_checked": ""
+    }
+  ],
+  
+  "contact_info": {
+    "email": "",
+    "phone": "",
+    "website": ""
+  },
+  
+  "narratives": [],
+  
+  "tags": [],
+  
+  "funding_sources": [
+    {
+      "source_name": "",
+      "source_id": null,
+      "type": "",
+      "amount": null,
+      "currency": "",
+      "date": "",
+      "evidence": ""
+    }
+  ],
+  
+  "connections": [
+    {
+      "entity_id": "",
+      "entity_name": "",
+      "relationship_type": "",
+      "description": "",
+      "confidence_level": "",
+      "date_established": ""
+    }
+  ],
+  
+  "activities": [
+    {
+      "date": "",
+      "type": "",
+      "description": "",
+      "impact": "",
+      "evidence_id": ""
+    }
+  ],
+  
+  "evidence": [
+    {
+      "id": "",
+      "type": "",
+      "url": "",
+      "archive_url": "",
+      "path": "",
+      "title": "",
+      "description": "",
+      "date": "",
+      "source": "",
+      "tags": []
+    }
+  ],
+  
+  "metadata": {
+    "created_at": "",
+    "updated_at": "",
+    "created_by": "",
+    "source": "",
+    "confidence_level": "",
+    "verification_status": "",
+    "notes": ""
+  }
+}

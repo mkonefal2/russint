@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "source": "seed_migration",
+    "description": "Organization: Braterstwa Ludzi Wolnych",
+    "generated_at": "2025-11-26T11:57:46.214693"
+  },
+  "nodes": [
+    {
+      "id": "website-001",
+      "name": "braterstwa.pl",
+      "entity_type": "page",
+      "url": "https://braterstwa.pl/",
+      "parent_org_id": "org-001",
+      "description": "Oficjalna strona internetowa organizacji Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Główna strona www organizacji"
+    },
+    {
+      "id": "profile-001",
+      "name": "FB: Braterstwa Ludzi Wolnych",
+      "entity_type": "profile",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych",
+      "handle": "BraterstwaLudziWolnych",
+      "parent_org_id": "org-001",
+      "description": "Oficjalny profil Facebook organizacji Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Aktywny profil, publikuje informacje o wydarzeniach"
+    },
+    {
+      "id": "org-001",
+      "name": "Braterstwa Ludzi Wolnych",
+      "entity_type": "organization",
+      "description": "Ruch/organizacja promująca 'niezależność' w różnych aspektach życia (zdrowotna, edukacyjna, finansowa). Organizator wydarzeń typu 'Spotkanie Rodzin Po Bratersku'.",
+      "category": "alternative_movement",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Organizacja z obecnością na FB, organizuje coroczne wydarzenia"
+    }
+  ],
+  "edges": [
+    {
+      "id": "rel-org-profile",
+      "source_id": "org-001",
+      "source_name": "Braterstwa Ludzi Wolnych",
+      "target_id": "profile-001",
+      "target_name": "FB: Braterstwa Ludzi Wolnych",
+      "relationship_type": "HAS_PROFILE",
+      "date": "2025-11-25",
+      "confidence": 1.0,
+      "evidence": "Oficjalny profil organizacji na FB"
+    },
+    {
+      "id": "rel-org-website",
+      "source_id": "org-001",
+      "source_name": "Braterstwa Ludzi Wolnych",
+      "target_id": "website-001",
+      "target_name": "braterstwa.pl",
+      "relationship_type": "HAS_WEBSITE",
+      "date": "2025-11-25",
+      "confidence": 1.0,
+      "evidence": "Oficjalna strona www organizacji"
+    }
+  ]
+}

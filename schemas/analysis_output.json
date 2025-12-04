@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "description": "Wynik analizy OSINT posta z mediów społecznościowych",
+  "properties": {
+    "meta": {
+      "post_id": "string (unikalne ID z pliku źródłowego)",
+      "analysis_timestamp": "datetime",
+      "analyst_model": "string"
+    },
+    "content_analysis": {
+      "summary": "string (zwięzłe streszczenie tematu posta w 1-2 zdaniach)",
+      "language": "string (kod języka, np. pl, ru, en)",
+      "sentiment": "string (positive, negative, neutral, inflammatory)",
+      "narratives": [
+        "string (zidentyfikowane narracje, np. 'anti-west', 'pro-russia', 'conspiracy', 'sovereign-citizen')"
+      ],
+      "keywords": ["string"]
+    },
+    "entities": [
+      {
+        "name": "string (znormalizowana nazwa)",
+        "type": "string (PERSON, ORGANIZATION, LOCATION, EVENT, PRODUCT)",
+        "context": "string (w jakim kontekście występuje)",
+        "sentiment_towards": "string (positive, negative, neutral)"
+      }
+    ],
+    "relations": [
+      {
+        "source": "string (post_id lub nazwa encji)",
+        "target": "string (nazwa encji lub URL)",
+        "type": "string (MENTIONS, PROMOTES, ATTACKS, SHARES_LINK, ORGANIZES_EVENT, AFFILIATED_WITH)",
+        "evidence": "string (fragment tekstu potwierdzający relację)"
+      }
+    ],
+    "visual_analysis": {
+      "ocr_text": "string (tekst odczytany ze zrzutu ekranu)",
+      "symbols_detected": ["string (np. flagi, logotypy, symbole religijne/polityczne)"],
+      "faces_identified": ["string (jeśli rozpoznano znane osoby)"],
+      "image_type": "string (photo, meme, screenshot, infographic, poster)"
+    },
+    "threat_assessment": {
+      "disinformation_score": "integer (0-10)",
+      "call_to_action": "boolean (czy post nawołuje do działania?)",
+      "violence_incitement": "boolean",
+      "manipulation_techniques": ["string (np. fear-mongering, whataboutism, fake-expert)"]
+    }
+  }
+}

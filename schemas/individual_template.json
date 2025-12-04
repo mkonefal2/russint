@@ -1,0 +1,136 @@
+{
+  "_instructions": "Ten szablon służy do dokumentowania osób publicznych zaangażowanych w dezinformację. Wypełnij wszystkie pola na podstawie dostępnych informacji. Jeśli pole nie ma danych, użyj null lub pustej tablicy [].",
+  
+  "id": "",
+  "entity_type": "individual",
+  "full_name": "",
+  "aliases": [],
+  "date_of_birth": "",
+  "place_of_birth": "",
+  "nationality": [],
+  "current_residence": "",
+  "occupation": [],
+  "education": [],
+  "languages": [],
+  "status": "active",
+  "risk_level": "",
+  
+  "biography": "",
+  
+  "online_presence": [
+    {
+      "platform": "",
+      "url": "",
+      "handle": "",
+      "status": "active",
+      "followers_count": null,
+      "archive_url": "",
+      "verified": false,
+      "last_checked": ""
+    }
+  ],
+  
+  "contact_info": {
+    "email": [],
+    "phone": [],
+    "website": ""
+  },
+  
+  "affiliations": [
+    {
+      "organization_id": "",
+      "organization_name": "",
+      "role": "",
+      "start_date": "",
+      "end_date": "",
+      "status": "current"
+    }
+  ],
+  
+  "narratives": [],
+  
+  "tags": [],
+  
+  "connections": [
+    {
+      "entity_id": "",
+      "entity_name": "",
+      "entity_type": "",
+      "relationship_type": "",
+      "description": "",
+      "confidence_level": "",
+      "date_established": ""
+    }
+  ],
+  
+  "activities": [
+    {
+      "date": "",
+      "type": "",
+      "description": "",
+      "platform": "",
+      "reach": null,
+      "impact": "",
+      "evidence_id": ""
+    }
+  ],
+  
+  "media_appearances": [
+    {
+      "date": "",
+      "outlet": "",
+      "type": "",
+      "title": "",
+      "url": "",
+      "archive_url": "",
+      "description": ""
+    }
+  ],
+  
+  "income_sources": [
+    {
+      "source_name": "",
+      "source_id": null,
+      "type": "",
+      "description": "",
+      "date": "",
+      "evidence": ""
+    }
+  ],
+  
+  "legal_issues": [
+    {
+      "date": "",
+      "type": "",
+      "description": "",
+      "status": "",
+      "outcome": "",
+      "evidence": ""
+    }
+  ],
+  
+  "evidence": [
+    {
+      "id": "",
+      "type": "",
+      "url": "",
+      "archive_url": "",
+      "path": "",
+      "title": "",
+      "description": "",
+      "date": "",
+      "source": "",
+      "tags": []
+    }
+  ],
+  
+  "metadata": {
+    "created_at": "",
+    "updated_at": "",
+    "created_by": "",
+    "source": "",
+    "confidence_level": "",
+    "verification_status": "",
+    "notes": ""
+  }
+}

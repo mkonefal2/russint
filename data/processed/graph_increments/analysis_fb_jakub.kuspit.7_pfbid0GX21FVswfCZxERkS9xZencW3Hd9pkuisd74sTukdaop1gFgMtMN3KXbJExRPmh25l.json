@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "source_file": "fb_jakub.kuspit.7_pfbid0GX21FVswfCZxERkS9xZencW3Hd9pkuisd74sTukdaop1gFgMtMN3KXbJExRPmh25l.json",
+    "analyzed_at": "2025-11-27T13:20:00"
+  },
+  "nodes": [
+    {
+      "id": "fb_jakub.kuspit.7_pfbid0GX21FVswfCZxERkS9xZencW3Hd9pkuisd74sTukdaop1gFgMtMN3KXbJExRPmh25l",
+      "entity_type": "post",
+      "name": "Post: Kalendarz trasy Jakuba Kuśpita (30.11.2025 - 01.02.2026)",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/jakub.kuspit.7/posts/pfbid0GX21FVswfCZxERkS9xZencW3Hd9pkuisd74sTukdaop1gFgMtMN3KXbJExRPmh25l",
+      "description": "Ogłoszenie trasy spotkań otwartych Jakuba Kuśpita po Polsce (Warszawa, Krosno, Rawa Mazowiecka, Elbląg, Szczecin, Kraków).",
+      "date_posted": "2025-11-26",
+      "screenshot": "data/evidence/facebook/jakub.kuspit.7/fb_jakub.kuspit.7_pfbid0GX21FVswfCZxERkS9xZencW3Hd9pkuisd74sTukdaop1gFgMtMN3KXbJExRPmh25l.png"
+    },
+    {
+      "id": "profile-fb-jakub-kuspit-7",
+      "entity_type": "profile",
+      "name": "FB: Jakub Kuśpit",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/jakub.kuspit.7",
+      "handle": "jakub.kuspit.7"
+    },
+    {
+      "id": "ent-jakub-kuspit",
+      "entity_type": "person",
+      "name": "Jakub Kuśpit",
+      "description": "Porucznik rezerwy, działacz Braterstwa Ludzi Wolnych, organizator spotkań."
+    },
+    {
+      "id": "org-braterstwa-ludzi-wolnych",
+      "entity_type": "organization",
+      "name": "Braterstwa Ludzi Wolnych",
+      "description": "Organizacja społeczna organizująca spotkania lokalne."
+    },
+    {
+      "id": "evt-trasa-jakuba-kuspita-2025-2026",
+      "entity_type": "event",
+      "name": "Trasa spotkań otwartych Jakuba Kuśpita (2025-2026)",
+      "date_start": "2025-11-30",
+      "date_end": "2026-02-01",
+      "location": "Polska (wiele miast)",
+      "description": "Cykl spotkań otwartych Jakuba Kuśpita w różnych miastach Polski.",
+      "notes": "Harmonogram trasy:\n- 30.11.2025: Warszawa (Warszawa Bemowo, ul. Księdza Bronisława Markiewicza 3) - Inicjacja społeczności lokalnej oraz zapisy do BLW.\n- 14.12.2025: Krosno\n- 20.12.2025: Rawa Mazowiecka\n- 18.01.2026: Elbląg\n- 24.01.2026: Szczecin\n- 31.01.2026 - 01.02.2026: Kraków"
+    },
+    {
+      "id": "page-ideowo-blw-mazowieckie",
+      "name": "Ideowo: BLW Mazowieckie",
+      "url": "https://ideowo.com/blw-mazowieckie",
+      "entity_type": "site"
+    },
+    {
+      "id": "page-buycoffee-jakubkuspit",
+      "name": "BuyCoffee: Jakub Kuśpit",
+      "url": "https://buycoffee.to/jakubkuspit",
+      "entity_type": "site"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "profile-fb-jakub-kuspit-7",
+      "target_id": "fb_jakub.kuspit.7_pfbid0GX21FVswfCZxERkS9xZencW3Hd9pkuisd74sTukdaop1gFgMtMN3KXbJExRPmh25l",
+      "relationship_type": "PUBLISHED",
+      "date": "2025-11-26"
+    },
+    {
+      "source_id": "ent-jakub-kuspit",
+      "target_id": "profile-fb-jakub-kuspit-7",
+      "relationship_type": "HAS_PROFILE"
+    },
+    {
+      "source_id": "ent-jakub-kuspit",
+      "target_id": "org-braterstwa-ludzi-wolnych",
+      "relationship_type": "MEMBER_OF",
+      "evidence": "Post promuje zapisy do BLW, autor jest prelegentem"
+    },
+    {
+      "source_id": "fb_jakub.kuspit.7_pfbid0GX21FVswfCZxERkS9xZencW3Hd9pkuisd74sTukdaop1gFgMtMN3KXbJExRPmh25l",
+      "target_id": "evt-trasa-jakuba-kuspita-2025-2026",
+      "relationship_type": "ANNOUNCES"
+    },
+    {
+      "source_id": "org-braterstwa-ludzi-wolnych",
+      "target_id": "evt-trasa-jakuba-kuspita-2025-2026",
+      "relationship_type": "ORGANIZES"
+    },
+    {
+      "source_id": "ent-jakub-kuspit",
+      "target_id": "evt-trasa-jakuba-kuspita-2025-2026",
+      "relationship_type": "SPEAKER_AT"
+    },
+    {
+      "source_id": "fb_jakub.kuspit.7_pfbid0GX21FVswfCZxERkS9xZencW3Hd9pkuisd74sTukdaop1gFgMtMN3KXbJExRPmh25l",
+      "target_id": "page-ideowo-blw-mazowieckie",
+      "relationship_type": "LINKS_TO"
+    },
+    {
+      "source_id": "fb_jakub.kuspit.7_pfbid0GX21FVswfCZxERkS9xZencW3Hd9pkuisd74sTukdaop1gFgMtMN3KXbJExRPmh25l",
+      "target_id": "page-buycoffee-jakubkuspit",
+      "relationship_type": "LINKS_TO"
+    }
+  ]
+}

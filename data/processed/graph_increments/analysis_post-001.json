@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "source": "split_script",
+    "generated_at": "2025-11-26T13:00:42.071203",
+    "description": "Split data for post-001"
+  },
+  "nodes": [
+    {
+      "id": "evt-001",
+      "name": "Spotkanie Rodzin Po Bratersku 2025",
+      "entity_type": "event",
+      "date_start": "2025-07-04",
+      "date_end": "2025-07-06",
+      "location": "Wzgórze Wdzięczności, Smolnik gm. Komańcza",
+      "description": "Wydarzenie niebiletowane. Tematy: Niezależność zdrowotna, edukacyjna, finansowa, transportowa, łącznościowa, energetyczna. Widzenie pozamysłowe dla dzieci. Prawo stanowione - Prawo naturalne. Networking. Muzyka i zabawa.",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Coroczne spotkanie organizowane przez Braterstwa Ludzi Wolnych"
+    },
+    {
+      "id": "profile-braterstwa-ludzi-wolnych",
+      "name": "FB: Braterstwa Ludzi Wolnych",
+      "entity_type": "profile",
+      "platform": "facebook",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych",
+      "handle": "BraterstwaLudziWolnych",
+      "parent_org_id": "org-braterstwa-ludzi-wolnych",
+      "description": "Oficjalny profil Facebook organizacji Braterstwa Ludzi Wolnych",
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Aktywny profil, publikuje informacje o wydarzeniach"
+    },
+    {
+      "id": "post-001",
+      "name": "Post: Harmonogram Spotkania Rodzin (25.06.2025)",
+      "entity_type": "post",
+      "platform": "facebook",
+      "profile_id": "profile-braterstwa-ludzi-wolnych",
+      "url": "https://www.facebook.com/BraterstwaLudziWolnych/posts/pfbid0219rwE34d48hfcTuUrccvvxgFizYcByeXwMTjzbrD9dX1ycUz9PvANH2Kw4KAJSN5l",
+      "date_posted": "2025-06-25",
+      "description": "Harmonogram Spotkania Rodzin Po Bratersku już się skrystalizował, choć cały czas rozwija się lista rezerwowych wykładów i atrakcji...",
+      "engagement": {
+        "reactions": 53,
+        "comments": 6,
+        "shares": 33
+      },
+      "country": "PL",
+      "first_seen": "2025-11-25",
+      "notes": "Post ogłaszający wydarzenie z listą prelegentów"
+    }
+  ],
+  "edges": [
+    {
+      "id": "rel-profile-post",
+      "source_id": "profile-braterstwa-ludzi-wolnych",
+      "source_name": "FB: Braterstwa Ludzi Wolnych",
+      "target_id": "post-001",
+      "target_name": "Post: Harmonogram Spotkania Rodzin (25.06.2025)",
+      "relationship_type": "PUBLISHED",
+      "date": "2025-06-25",
+      "confidence": 1.0,
+      "evidence": "Post opublikowany na profilu FB"
+    },
+    {
+      "id": "rel-post-event",
+      "source_id": "post-001",
+      "source_name": "Post: Harmonogram Spotkania Rodzin (25.06.2025)",
+      "target_id": "evt-001",
+      "target_name": "Spotkanie Rodzin Po Bratersku 2025",
+      "relationship_type": "ANNOUNCES",
+      "date": "2025-06-25",
+      "confidence": 1.0,
+      "evidence": "Post ogłasza wydarzenie"
+    }
+  ]
+}

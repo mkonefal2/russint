@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUSSINT Kinetic Graph</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//unpkg.com/force-graph"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="graph-container"></div>
+        <div id="details-container">
+            <div id="resize-handle"></div>
+            <div class="details-header">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <button id="toggle-details-btn" onclick="toggleDetailsPanel()" title="Toggle Panel">▼</button>
+                    <h2 id="details-title">Select a node</h2>
+                </div>
+                <div class="details-controls">
+                    <button id="edit-btn" onclick="toggleEditMode()" style="display:none;">✎ Edit</button>
+                    <button id="save-btn" onclick="saveChanges()" style="display:none;">💾 Save</button>
+                    <button onclick="resetZoom()">Reset Zoom</button>
+                    <button onclick="clearSelection()">Clear Selection</button>
+                </div>
+            </div>
+            <div class="details-content">
+                <div class="details-table-wrapper">
+                    <table id="details-table">
+                        <thead>
+                            <tr><th style="width: 150px;">Property</th><th>Value</th></tr>
+                        </thead>
+                        <tbody id="details-body">
+                            <tr><td colspan="2" style="text-align:center; color:#555; padding: 20px;">Click on a node to view details</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="details-gallery" id="details-gallery">
+                    <div style="color: #555; font-size: 0.8rem;">No evidence selected</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

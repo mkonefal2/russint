@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "source": "screenshot_analysis",
+    "generated_at": "2025-11-26T16:00:00",
+    "description": "Analysis of Red Pill News channel content from screenshot",
+    "visual_analysis_report": "data/processed/visual_analysis/2025-11-26_RedPillNews_Rumble.md"
+  },
+  "nodes": [
+    {
+      "id": "video-rumble-co-sie-naprawde-dzialo",
+      "entity_type": "video",
+      "name": "Video: Co sie NAPRAWDĘ działo i przede wszystkim DLACZEGO... 16.06.2025",
+      "platform": "rumble",
+      "date_posted": "2025-06-16",
+      "description": "Materiał omawiający wydarzenia z 16 czerwca 2025. Miniatura sugeruje kontekst wojenny/geopolityczny (Trump, Netanjahu)."
+    },
+    {
+      "id": "video-rumble-wybory-2025",
+      "entity_type": "video",
+      "name": "Video: WYBORY 2025",
+      "platform": "rumble",
+      "date_posted": "2025-06-01",
+      "description": "Materiał dotyczący wyborów prezydenckich w Polsce 2025. Na miniaturze Rafał Trzaskowski."
+    },
+    {
+      "id": "video-rumble-w-tych-szalenstwach-jest-metoda",
+      "entity_type": "video",
+      "name": "Video: W tych szaleństwach JEST metoda (Seria)",
+      "platform": "rumble",
+      "date_posted": "2025-06-01",
+      "description": "Seria materiałów o 'Wielkim Resecie', wojnie z Iranem i pokoju na Ukrainie. Promuje teorie spiskowe RV/GCR."
+    },
+    {
+      "id": "ent-rafal-trzaskowski",
+      "entity_type": "person",
+      "name": "Rafał Trzaskowski",
+      "description": "Polityk, prezydent Warszawy. Widoczny na miniaturze wideo o wyborach 2025.",
+      "country": "PL"
+    },
+    {
+      "id": "ent-donald-trump",
+      "entity_type": "person",
+      "name": "Donald Trump",
+      "description": "Były prezydent USA. Częsty bohater materiałów Red Pill News.",
+      "country": "US"
+    },
+    {
+      "id": "ent-benjamin-netanjahu",
+      "entity_type": "person",
+      "name": "Benjamin Netanjahu",
+      "description": "Premier Izraela. Widoczny na miniaturach w kontekście wojny.",
+      "country": "IL"
+    },
+    {
+      "id": "ent-vladimir-putin",
+      "entity_type": "person",
+      "name": "Władimir Putin",
+      "description": "Prezydent Rosji. Przedstawiany w materiałach geopolitycznych.",
+      "country": "RU"
+    },
+    {
+      "id": "ent-xi-jinping",
+      "entity_type": "person",
+      "name": "Xi Jinping",
+      "description": "Przewodniczący ChRL. Widoczny na miniaturach serii o 'Wielkim Resecie'.",
+      "country": "CN"
+    },
+    {
+      "id": "narrative-great-reset",
+      "entity_type": "narrative",
+      "name": "Narracja: Wielki Reset (Great Reset)",
+      "description": "Teoria spiskowa o globalnym planie przebudowy społeczeństwa i gospodarki przez elity."
+    },
+    {
+      "id": "narrative-rv-gcr",
+      "entity_type": "narrative",
+      "name": "Narracja: RV/GCR (Global Currency Reset)",
+      "description": "Teoria spiskowa o globalnym resetowaniu walut i powrocie do standardu złota/nowego systemu finansowego."
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "profile-rumble-red-pill-news",
+      "target_id": "video-rumble-co-sie-naprawde-dzialo",
+      "relationship_type": "UPLOADED",
+      "source_name": "Rumble: Red Pill News",
+      "target_name": "Video: Co sie NAPRAWDĘ działo...",
+      "confidence": 1.0,
+      "evidence": "Widoczne na liście filmów kanału"
+    },
+    {
+      "source_id": "profile-rumble-red-pill-news",
+      "target_id": "video-rumble-wybory-2025",
+      "relationship_type": "UPLOADED",
+      "source_name": "Rumble: Red Pill News",
+      "target_name": "Video: WYBORY 2025",
+      "confidence": 1.0,
+      "evidence": "Widoczne na liście filmów kanału"
+    },
+    {
+      "source_id": "profile-rumble-red-pill-news",
+      "target_id": "video-rumble-w-tych-szalenstwach-jest-metoda",
+      "relationship_type": "UPLOADED",
+      "source_name": "Rumble: Red Pill News",
+      "target_name": "Video: W tych szaleństwach JEST metoda...",
+      "confidence": 1.0,
+      "evidence": "Widoczne na liście filmów kanału"
+    },
+    {
+      "source_id": "video-rumble-wybory-2025",
+      "target_id": "ent-rafal-trzaskowski",
+      "relationship_type": "FEATURED_ON",
+      "source_name": "Video: WYBORY 2025",
+      "target_name": "Rafał Trzaskowski",
+      "confidence": 1.0,
+      "evidence": "Wizerunek na miniaturze"
+    },
+    {
+      "source_id": "video-rumble-co-sie-naprawde-dzialo",
+      "target_id": "ent-donald-trump",
+      "relationship_type": "FEATURED_ON",
+      "source_name": "Video: Co sie NAPRAWDĘ działo...",
+      "target_name": "Donald Trump",
+      "confidence": 1.0,
+      "evidence": "Wizerunek na miniaturze"
+    },
+    {
+      "source_id": "video-rumble-co-sie-naprawde-dzialo",
+      "target_id": "ent-benjamin-netanjahu",
+      "relationship_type": "FEATURED_ON",
+      "source_name": "Video: Co sie NAPRAWDĘ działo...",
+      "target_name": "Benjamin Netanjahu",
+      "confidence": 1.0,
+      "evidence": "Wizerunek na miniaturze"
+    },
+    {
+      "source_id": "video-rumble-w-tych-szalenstwach-jest-metoda",
+      "target_id": "ent-vladimir-putin",
+      "relationship_type": "FEATURED_ON",
+      "source_name": "Video: W tych szaleństwach...",
+      "target_name": "Władimir Putin",
+      "confidence": 1.0,
+      "evidence": "Wizerunek na miniaturze"
+    },
+    {
+      "source_id": "video-rumble-w-tych-szalenstwach-jest-metoda",
+      "target_id": "ent-xi-jinping",
+      "relationship_type": "FEATURED_ON",
+      "source_name": "Video: W tych szaleństwach...",
+      "target_name": "Xi Jinping",
+      "confidence": 1.0,
+      "evidence": "Wizerunek na miniaturze"
+    },
+    {
+      "source_id": "video-rumble-w-tych-szalenstwach-jest-metoda",
+      "target_id": "narrative-great-reset",
+      "relationship_type": "PROMOTES",
+      "source_name": "Video: W tych szaleństwach...",
+      "target_name": "Narracja: Wielki Reset",
+      "confidence": 1.0,
+      "evidence": "Napis na miniaturze: RESET WIELKIEGO RESETU"
+    },
+    {
+      "source_id": "video-rumble-w-tych-szalenstwach-jest-metoda",
+      "target_id": "narrative-rv-gcr",
+      "relationship_type": "PROMOTES",
+      "source_name": "Video: W tych szaleństwach...",
+      "target_name": "Narracja: RV/GCR",
+      "confidence": 1.0,
+      "evidence": "Napis na miniaturze: RV/GCR?"
+    }
+  ]
+}
