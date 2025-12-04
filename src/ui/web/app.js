@@ -176,7 +176,7 @@ async function init() {
                     ctx.globalAlpha = 1;
                 }
                 
-                const primaryGroups = ['Organization', 'Profile', 'Person', 'Site', 'Event'];
+                const primaryGroups = ['Organization', 'Profile', 'Person', 'Site', 'Event', 'Channel'];
                 const isPrimary = primaryGroups.includes(node.group);
                 const isSelected = node === selectedNode;
                 const isHovered = node === hoveredNode;
