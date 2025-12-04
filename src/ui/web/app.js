@@ -326,9 +326,8 @@ async function init() {
                         alert("Error showing details: " + e.message);
                     }
                     
-                    // Center
-                    Graph.centerAt(node.x, node.y, 1000);
-                    Graph.zoom(6, 2000);
+                    // Fit view to highlighted nodes (clicked node + neighbors)
+                    Graph.zoomToFit(1000, 100, n => highlightNodes.has(n));
                 }
             })
             .onBackgroundClick(() => {
