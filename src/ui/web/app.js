@@ -577,36 +577,83 @@ function updateDetails(node) {
             // Remove leading slash if present
             if (src.startsWith('/')) src = src.substring(1);
             
-            // Logic to construct correct URL for server
-            // Streamlit serves 'static' folder at /app/static/
-            // We have a junction static/data -> data
-            // So /app/static/data/evidence/... should map to data/evidence/...
-            
+            // Try multiple possible static URL prefixes to be robust across
+            // deployments (Streamlit Cloud, local with /app prefix, etc.).
+            // We'll attempt each candidate in order and move to the next on error.
+            const candidates = [];
+            // common relative/absolute forms the app has used
             if (src.startsWith('data/')) {
-                 src = '/app/static/' + src;
+                candidates.push('/app/static/' + src);
+                candidates.push('/static/' + src);
+                candidates.push('/' + src);
+                candidates.push('/static/data/' + src.replace(/^data\//, ''));
+                candidates.push('/src/ui/static/' + src);
+                // Try raw GitHub as a last resort (public repo)
+                try {
+                    const ghBase = 'https://raw.githubusercontent.com/mkonefal2/russint/main/';
+                    const ghPath = src.replace(/^\//, '');
+                    candidates.push(ghBase + ghPath);
+                } catch (e) {
+                    // ignore
+                }
             } else {
-                 src = '/app/static/data/' + src;
+                // other forms (already include data/ prefix sometimes)
+                candidates.push('/app/static/data/' + src);
+                candidates.push('/static/data/' + src);
+                candidates.push('/' + src);
+                candidates.push('/app/static/' + src);
+                // try GitHub raw for non-standard src
+                try {
+                    const ghBase = 'https://raw.githubusercontent.com/mkonefal2/russint/main/';
+                    candidates.push(ghBase + src.replace(/^\//, ''));
+                } catch (e) {}
             }
-            
-            console.log("Loading image:", src);
-            img.src = src;
+
+            // Remove duplicates and normalize
+            const seen = new Set();
+            const urls = candidates.map(u => u.replace(/\\/g, '/')).filter(u => {
+                if (seen.has(u)) return false; seen.add(u); return true;
+            });
+
+            let attempt = 0;
+            const tryNext = () => {
+                if (attempt >= urls.length) {
+                    // all attempts failed, keep last src for error message
+                    img.dataset.tried = JSON.stringify(urls);
+                    return;
+                }
+                const u = urls[attempt++];
+                console.log('Trying image URL:', u);
+                img.src = u;
+            };
+
             img.className = 'gallery-img';
             img.style.marginBottom = '10px';
-            img.onclick = () => window.open(src, '_blank');
+            img.onclick = () => window.open(img.src, '_blank');
             img.onload = () => {
                 loadedAny = true;
             };
             img.onerror = () => {
-                console.warn("Failed to load image:", src);
+                // try next candidate URL, or show the failing URL list when exhausted
+                if (attempt < urls.length) {
+                    tryNext();
+                    return;
+                }
+
+                console.warn('Failed to load image (all candidates):', urls);
                 img.style.display = 'none';
                 const err = document.createElement('div');
-                err.innerHTML = `❌ Image not found:<br><a href="${src}" target="_blank" style="color:#ff6b6b;word-break:break-all;">${src}</a>`;
+                const last = urls.length ? urls[urls.length - 1] : img.src;
+                err.innerHTML = `❌ Image not found:<br><a href="${last}" target="_blank" style="color:#ff6b6b;word-break:break-all;">${last}</a>`;
                 err.style.color = '#ff6b6b';
                 err.style.fontSize = '0.7rem';
                 err.style.padding = '5px';
                 err.style.border = '1px dashed #ff6b6b';
                 wrapper.appendChild(err);
             };
+
+            // start attempts
+            tryNext();
             
             const wrapper = document.createElement('div');
             wrapper.style.marginBottom = '10px';
