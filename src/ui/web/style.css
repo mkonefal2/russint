@@ -58,7 +58,15 @@ body {
     left: 0;
     width: 100%;
     overflow: hidden; /* Ensure content doesn't spill out */
-    pointer-events: auto; /* Re-enable clicks for panel */
+    pointer-events: none; /* CRITICAL: Let clicks pass through the container itself */
+}
+
+/* Re-enable pointer events for the interactive parts of the panel */
+#resize-handle, 
+.details-header, 
+.details-content,
+#toggle-details-btn {
+    pointer-events: auto;
 }
 
 #resize-handle {

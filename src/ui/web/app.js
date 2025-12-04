@@ -337,6 +337,12 @@ async function init() {
                 highlightLinks.clear();
             });
         
+        // Debug mouse events
+        document.addEventListener('mousemove', (e) => {
+            // Optional: Uncomment to debug mouse position vs graph
+            // showStatusBanner(`Mouse: ${e.clientX}, ${e.clientY}`, 'info');
+        });
+
         // Configure forces after graph is created for better spacing
         Graph.d3Force('charge').strength(-200);
         Graph.d3Force('link').distance(100);
