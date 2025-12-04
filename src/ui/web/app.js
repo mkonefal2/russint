@@ -590,12 +590,16 @@ function updateDetails(node) {
                 candidates.push('/src/ui/static/' + src);
                 // Try raw GitHub as a last resort (public repo)
                 try {
-                        const ghBase = 'https://raw.githubusercontent.com/mkonefal2/russint/main/';
+                        const ghUser = 'mkonefal2';
+                        const ghRepo = 'russint';
                         const ghPath = src.replace(/^\//, '');
-                        // Try raw path as `data/...` (if repo contains data/ at root)
-                        candidates.push(ghBase + ghPath);
-                        // Also try the repo's `src/ui/static/` copy where we mirror static assets
-                        candidates.push(ghBase + 'src/ui/static/' + ghPath);
+                        // Try multiple raw URL shapes: branch name and refs/heads/<branch>
+                        const ghBranches = ['main', 'refs/heads/main'];
+                        ghBranches.forEach(b => {
+                            candidates.push(`https://raw.githubusercontent.com/${ghUser}/${ghRepo}/${b}/${ghPath}`);
+                            // also try mirrored location under src/ui/static
+                            candidates.push(`https://raw.githubusercontent.com/${ghUser}/${ghRepo}/${b}/src/ui/static/${ghPath}`);
+                        });
                 } catch (e) {
                     // ignore
                 }
@@ -608,9 +612,14 @@ function updateDetails(node) {
                 // try GitHub raw for non-standard src
                 try {
                     const ghBase = 'https://raw.githubusercontent.com/mkonefal2/russint/main/';
-                    candidates.push(ghBase + src.replace(/^\//, ''));
-                    // Also try raw path under `src/ui/static/` which is where we keep the served copy
-                    candidates.push(ghBase + 'src/ui/static/' + src.replace(/^\//, ''));
+                    const ghUser = 'mkonefal2';
+                    const ghRepo = 'russint';
+                    const ghPath2 = src.replace(/^\//, '');
+                    const ghBranches2 = ['main', 'refs/heads/main'];
+                    ghBranches2.forEach(b => {
+                        candidates.push(`https://raw.githubusercontent.com/${ghUser}/${ghRepo}/${b}/${ghPath2}`);
+                        candidates.push(`https://raw.githubusercontent.com/${ghUser}/${ghRepo}/${b}/src/ui/static/${ghPath2}`);
+                    });
                 } catch (e) {}
             }
 
