@@ -479,9 +479,13 @@ function updateDetails(node) {
     if (!node) return;
 
     // Show controls
-    editBtn.style.display = 'inline-block';
-    saveBtn.style.display = isEditing ? 'inline-block' : 'none';
-    editBtn.innerText = isEditing ? 'Cancel' : '✎ Edit';
+    if (editBtn) {
+        editBtn.style.display = 'inline-block';
+        editBtn.innerText = isEditing ? 'Cancel' : '✎ Edit';
+    }
+    if (saveBtn) {
+        saveBtn.style.display = isEditing ? 'inline-block' : 'none';
+    }
 
     title.innerText = `${node.group}: ${node.name}`;
     title.style.color = colors[node.group] || colors['default'];

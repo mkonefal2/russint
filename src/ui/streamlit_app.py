@@ -214,8 +214,7 @@ def prepare_html(css, js, graph_data):
                         <h2 id="details-title">Select a node</h2>
                     </div>
                     <div class="details-controls">
-                        <button id="edit-btn" onclick="toggleEditMode()" style="display:none;">✎ Edit</button>
-                        <button id="save-btn" onclick="saveChanges()" style="display:none;">💾 Save</button>
+                        <!-- Editing removed for Streamlit -->
                         <button onclick="resetZoom()">Reset Zoom</button>
                         <button onclick="clearSelection()">Clear Selection</button>
                     </div>
