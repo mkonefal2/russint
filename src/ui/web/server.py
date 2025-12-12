@@ -28,6 +28,16 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def do_POST(self):
         if self.path == '/api/update_node':
             self.handle_update_node()
+        elif self.path == '/api/create_node':
+            self.handle_create_node()
+        elif self.path == '/api/create_edge':
+            self.handle_create_edge()
+        elif self.path == '/api/delete_node':
+            self.handle_delete_node()
+        elif self.path == '/api/delete_edge':
+            self.handle_delete_edge()
+        elif self.path == '/api/find_node':
+            self.handle_find_node()
         else:
             self.send_error(404, "Not Found")
 
@@ -53,6 +63,95 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.wfile.write(json.dumps({"status": "success"}).encode('utf-8'))
         except Exception as e:
             print(f"Error updating node: {e}")
+            self.send_error(500, str(e))
+
+    def handle_create_node(self):
+        try:
+            content_length = int(self.headers['Content-Length'])
+            post_data = self.rfile.read(content_length)
+            data = json.loads(post_data.decode('utf-8'))
+            
+            create_node_in_db(data)
+            
+            self.send_response(200)
+            self.send_header('Content-type', 'application/json')
+            self.send_header('Access-Control-Allow-Origin', '*')
+            self.end_headers()
+            self.wfile.write(json.dumps({"status": "success"}).encode('utf-8'))
+        except Exception as e:
+            print(f"Error creating node: {e}")
+            self.send_error(500, str(e))
+
+    def handle_create_edge(self):
+        try:
+            content_length = int(self.headers['Content-Length'])
+            post_data = self.rfile.read(content_length)
+            data = json.loads(post_data.decode('utf-8'))
+            
+            create_edge_in_db(data)
+            
+            self.send_response(200)
+            self.send_header('Content-type', 'application/json')
+            self.send_header('Access-Control-Allow-Origin', '*')
+            self.end_headers()
+            self.wfile.write(json.dumps({"status": "success"}).encode('utf-8'))
+        except Exception as e:
+            print(f"Error creating edge: {e}")
+            self.send_error(500, str(e))
+
+    def handle_delete_node(self):
+        try:
+            content_length = int(self.headers['Content-Length'])
+            post_data = self.rfile.read(content_length)
+            data = json.loads(post_data.decode('utf-8'))
+            
+            delete_node_in_db(data.get('id'))
+            
+            self.send_response(200)
+            self.send_header('Content-type', 'application/json')
+            self.send_header('Access-Control-Allow-Origin', '*')
+            self.end_headers()
+            self.wfile.write(json.dumps({"status": "success"}).encode('utf-8'))
+        except Exception as e:
+            print(f"Error deleting node: {e}")
+            self.send_error(500, str(e))
+
+    def handle_delete_edge(self):
+        try:
+            content_length = int(self.headers['Content-Length'])
+            post_data = self.rfile.read(content_length)
+            data = json.loads(post_data.decode('utf-8'))
+            
+            delete_edge_in_db(data)
+            
+            self.send_response(200)
+            self.send_header('Content-type', 'application/json')
+            self.send_header('Access-Control-Allow-Origin', '*')
+            self.end_headers()
+            self.wfile.write(json.dumps({"status": "success"}).encode('utf-8'))
+        except Exception as e:
+            print(f"Error deleting edge: {e}")
+            self.send_error(500, str(e))
+
+    def handle_find_node(self):
+        try:
+            content_length = int(self.headers['Content-Length'])
+            post_data = self.rfile.read(content_length)
+            data = json.loads(post_data.decode('utf-8'))
+            node_id = data.get('id')
+            if not node_id:
+                self.send_error(400, 'Missing id')
+                return
+
+            node = find_node_in_db(node_id)
+
+            self.send_response(200)
+            self.send_header('Content-type', 'application/json')
+            self.send_header('Access-Control-Allow-Origin', '*')
+            self.end_headers()
+            self.wfile.write(json.dumps({ 'node': node }).encode('utf-8'))
+        except Exception as e:
+            print(f"Error finding node: {e}")
             self.send_error(500, str(e))
 
     def handle_api_graph(self):
@@ -96,61 +195,75 @@ def get_driver():
         return None
     return GraphDatabase.driver(uri, auth=(user, password))
 
-def get_graph_data(limit=500):
+def get_graph_data(limit=10000):
     driver = get_driver()
     if not driver:
         return {"nodes": [], "links": []}
-    
-    query = """
-    MATCH (n)-[r]->(m)
-    RETURN n, r, m
-    LIMIT $limit
-    """
-    
+
     nodes = {}
     links = []
-    
+
+    def process_node(node):
+        nid = node.element_id if hasattr(node, 'element_id') else str(node.id)
+        # prefer explicit 'id' property if present
+        try:
+            if 'id' in node:
+                nid = node['id']
+        except Exception:
+            pass
+        props = dict(node)
+        return nid, {
+            "id": nid,
+            "name": node.get("name", node.get("title", "Unknown")),
+            "group": list(node.labels)[0] if node.labels else "Unknown",
+            "properties": props
+        }
+
     with driver.session() as session:
-        result = session.run(query, limit=limit)
+        # 1) Fetch standalone nodes (limit applied)
+        node_query = """
+        MATCH (n)
+        RETURN n
+        LIMIT $limit
+        """
+        try:
+            results = session.run(node_query, limit=limit)
+            for rec in results:
+                n = rec['n']
+                nid, nobj = process_node(n)
+                if nid not in nodes:
+                    nodes[nid] = nobj
+        except Exception as e:
+            # fallback: ignore node-only query failures
+            print(f"Warning fetching nodes: {e}")
+
+        # 2) Fetch relationships and ensure connected nodes are present
+        rel_query = """
+        MATCH (s)-[r]->(t)
+        RETURN s, r, t
+        LIMIT $limit
+        """
+        result = session.run(rel_query, limit=limit)
         for record in result:
-            n = record["n"]
-            m = record["m"]
-            r = record["r"]
-            
-            def process_node(node):
-                nid = node.element_id if hasattr(node, 'element_id') else str(node.id)
-                if 'id' in node: nid = node['id']
-                props = dict(node)
-                
-                # Normalize screenshot path for web
-                if 'screenshot' in props:
-                    # Ensure it starts with data/ if it's relative
-                    # If it's like "evidence/..." we might need to prepend "data/"
-                    # But usually in this project it seems to be relative to project root or data root?
-                    # Instructions said: "screenshot - ścieżka względna do pliku screenshotu (np. data/evidence/facebook/...)"
-                    # So it should be fine.
-                    pass
+            s = record['s']
+            t = record['t']
+            r = record['r']
 
-                return nid, {
-                    "id": nid,
-                    "name": node.get("name", node.get("title", "Unknown")),
-                    "group": list(node.labels)[0] if node.labels else "Unknown",
-                    "properties": props
-                }
+            src_id, src_node = process_node(s)
+            tgt_id, tgt_node = process_node(t)
 
-            src_id, src_node = process_node(n)
-            tgt_id, tgt_node = process_node(m)
-            
-            if src_id not in nodes: nodes[src_id] = src_node
-            if tgt_id not in nodes: nodes[tgt_id] = tgt_node
-            
+            if src_id not in nodes:
+                nodes[src_id] = src_node
+            if tgt_id not in nodes:
+                nodes[tgt_id] = tgt_node
+
             links.append({
                 "source": src_id,
                 "target": tgt_id,
                 "type": r.type,
                 "properties": dict(r)
             })
-            
+
     driver.close()
     return {"nodes": list(nodes.values()), "links": links}
 
@@ -168,13 +281,129 @@ def update_node_properties(node_id, properties):
     with driver.session() as session:
         session.run(query, id=node_id, props=properties)
 
+def create_node_in_db(data):
+    driver = get_driver()
+    if not driver:
+        raise Exception("Database connection failed")
+    
+    # data: {id, group, properties}
+    # group is the Label
+    label = data.get('group', 'Entity')
+    # Sanitize label to avoid injection (basic check)
+    if not label.isalnum():
+        label = "Entity"
+        
+    props = data.get('properties', {})
+    node_id = data.get('id')
+    if node_id:
+        props['id'] = node_id
+    
+    # Dynamic label in Cypher requires APOC or string formatting (risky if not sanitized)
+    # Using string formatting with sanitized label
+    query = f"""
+    MERGE (n:{label} {{id: $id}})
+    SET n += $props
+    RETURN n
+    """
+    
+    with driver.session() as session:
+        session.run(query, id=node_id, props=props)
+
+def create_edge_in_db(data):
+    driver = get_driver()
+    if not driver:
+        raise Exception("Database connection failed")
+        
+    source_id = data.get('source')
+    target_id = data.get('target')
+    rel_type = data.get('type', 'RELATED_TO')
+    props = data.get('properties', {})
+    
+    # Sanitize rel_type
+    if not rel_type.replace('_', '').isalnum():
+        rel_type = "RELATED_TO"
+        
+    query = f"""
+    MATCH (s {{id: $source_id}})
+    MATCH (t {{id: $target_id}})
+    MERGE (s)-[r:{rel_type}]->(t)
+    SET r += $props
+    RETURN r
+    """
+    
+    with driver.session() as session:
+        session.run(query, source_id=source_id, target_id=target_id, props=props)
+
+def delete_node_in_db(node_id):
+    driver = get_driver()
+    if not driver:
+        raise Exception("Database connection failed")
+        
+    query = """
+    MATCH (n {id: $id})
+    DETACH DELETE n
+    """
+    
+    with driver.session() as session:
+        session.run(query, id=node_id)
+
+def delete_edge_in_db(data):
+    driver = get_driver()
+    if not driver:
+        raise Exception("Database connection failed")
+        
+    source_id = data.get('source')
+    target_id = data.get('target')
+    rel_type = data.get('type')
+    
+    # Sanitize rel_type
+    if not rel_type.replace('_', '').isalnum():
+        # If invalid type, maybe try to delete any relationship?
+        # For safety, let's require a valid type or fail.
+        raise Exception("Invalid relationship type")
+
+    query = f"""
+    MATCH (s {{id: $source_id}})-[r:{rel_type}]->(t {{id: $target_id}})
+    DELETE r
+    """
+    
+    with driver.session() as session:
+        session.run(query, source_id=source_id, target_id=target_id)
+
+def find_node_in_db(node_id):
+    driver = get_driver()
+    if not driver:
+        raise Exception("Database connection failed")
+
+    query = """
+    MATCH (n {id: $id})
+    RETURN n
+    LIMIT 1
+    """
+    with driver.session() as session:
+        result = session.run(query, id=node_id)
+        for record in result:
+            node = record['n']
+            props = dict(node)
+            nid = props.get('id', node.element_id if hasattr(node, 'element_id') else str(node.id))
+            return {
+                'id': nid,
+                'name': node.get('name', nid),
+                'group': list(node.labels)[0] if node.labels else 'Unknown',
+                'properties': props
+            }
+    return None
+
+# ThreadingTCPServer for handling multiple concurrent requests
+class ThreadedTCPServer(socketserver.ThreadingMixIn, socketserver.TCPServer):
+    allow_reuse_address = True
+    daemon_threads = True
+
 if __name__ == "__main__":
     try:
         os.chdir(WEB_DIR)
         print(f"Starting server at http://localhost:{PORT}")
-        # Allow reuse address to avoid "Address already in use" errors
-        socketserver.TCPServer.allow_reuse_address = True
-        with socketserver.TCPServer(("", PORT), Handler) as httpd:
+        with ThreadedTCPServer(("", PORT), Handler) as httpd:
             try:
                 httpd.serve_forever()
             except KeyboardInterrupt:

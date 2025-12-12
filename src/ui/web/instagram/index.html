@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <aside id="sidebar">
+        <div class="sidebar-header">
+            <h1><i class="fas fa-share-alt"></i> SM Manager</h1>
+        </div>
+        
+        <!-- Main View Toggle -->
+        <div class="sidebar-section">
+            <div class="view-toggle">
+                <button class="view-toggle-btn active" data-view="posts">
+                    <i class="fas fa-images"></i> Posty
+                </button>
+                <button class="view-toggle-btn" data-view="entities">
+                    <i class="fas fa-database"></i> Encje
+                </button>
+                <button class="view-toggle-btn" data-view="graph">
+                    <i class="fas fa-project-diagram"></i> Graf
+                </button>
+            </div>
+        </div>
+
+        <!-- POSTS SIDEBAR CONTENT -->
+        <div id="sidebar-posts-content">
+            <div class="sidebar-section">
+                <label for="profile-select">Profil</label>
+                <select id="profile-select">
+                    <option value="">Ładowanie...</option>
+                </select>
+            </div>
+
+            <!-- Content Type Tabs (Posts/Stories) -->
+            <div class="sidebar-section">
+                <label>Typ treści</label>
+                <div class="content-type-tabs">
+                    <button class="content-type-btn active" data-type="all">
+                        <i class="fas fa-th"></i> Wszystko
+                    </button>
+                    <button class="content-type-btn" data-type="post">
+                        <i class="fas fa-image"></i> Posty
+                    </button>
+                    <button class="content-type-btn" data-type="story">
+                        <i class="fas fa-circle"></i> Stories
+                    </button>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <label for="search-input">Szukaj</label>
+                <input type="text" id="search-input" placeholder="ID lub tekst...">
+            </div>
+
+            <div class="sidebar-section">
+                <label for="sort-select">Sortowanie</label>
+                <select id="sort-select">
+                    <option value="newest">Najnowsze</option>
+                    <option value="oldest">Najstarsze</option>
+                    <option value="id">Po ID</option>
+                </select>
+            </div>
+
+            <div class="sidebar-section stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="post-count">0</span>
+                    <span class="stat-label">Postów</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="media-count">0</span>
+                    <span class="stat-label">Mediów</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ENTITIES SIDEBAR CONTENT -->
+        <div id="sidebar-entities-content" style="display: none;">
+            <div class="sidebar-section">
+                <label for="entity-type-select">Typ encji</label>
+                <select id="entity-type-select">
+                    <option value="">Wszystkie typy</option>
+                </select>
+            </div>
+
+            <div class="sidebar-section">
+                <label for="entity-search-input">Szukaj</label>
+                <input type="text" id="entity-search-input" placeholder="Nazwa, ID...">
+            </div>
+
+            <div class="sidebar-section stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="entity-count">0</span>
+                    <span class="stat-label">Encji</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="edge-count">0</span>
+                    <span class="stat-label">Relacji</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-footer">
+            <button id="add-post-btn" class="btn btn-primary">
+                <i class="fas fa-plus"></i> Nowy wpis
+            </button>
+            <button id="add-entity-btn" class="btn btn-primary" style="display: none;">
+                <i class="fas fa-plus"></i> Nowa encja
+            </button>
+            <button id="back-to-gallery-btn" class="btn btn-secondary" style="display: none;">
+                <i class="fas fa-arrow-left"></i> Wróć
+            </button>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
+        <!-- GALLERY VIEW (Posts) -->
+        <div id="gallery-view">
+            <div class="view-header">
+                <h2>Galeria Postów</h2>
+            </div>
+            <div id="gallery-grid" class="gallery-grid">
+                <!-- Posts will be loaded here -->
+            </div>
+        </div>
+
+        <!-- ENTITIES VIEW -->
+        <div id="entities-view" style="display: none;">
+            <div class="view-header">
+                <h2><i class="fas fa-database"></i> Encje w Neo4j</h2>
+                <div class="header-actions">
+                    <button id="add-relationship-btn" class="btn btn-secondary">
+                        <i class="fas fa-link"></i> Nowa relacja
+                    </button>
+                    <button id="btn-sync-neo4j" class="btn btn-primary">
+                        <i class="fas fa-sync"></i> Sync Neo4j
+                    </button>
+                </div>
+            </div>
+            <div id="entities-grid" class="entities-grid">
+                <!-- Entities will be loaded here -->
+            </div>
+        </div>
+
+        <!-- GRAPH VIEW (iframe) -->
+        <div id="graph-view" style="display: none; position: relative;">
+            <div class="view-header">
+                <h2><i class="fas fa-project-diagram"></i> Wizualizacja Grafu (Neo4j)</h2>
+                <div class="header-actions">
+                    <div class="search-group" style="margin-right: 10px;">
+                        <input type="text" id="graph-search-input" placeholder="Szukaj w grafie..." style="padding: 8px 12px; border-radius: 6px; border: 1px solid #2d3748; background: #1a202c; color: #e2e8f0; width: 250px;">
+                        <button id="search-graph-btn" class="btn btn-secondary" onclick="searchInGraph()">
+                            <i class="fas fa-search"></i> Szukaj
+                        </button>
+                        <button id="clear-search-btn" class="btn btn-secondary" onclick="clearGraphSearch()" style="display: none;">
+                            <i class="fas fa-times"></i> Wyczyść
+                        </button>
+                    </div>
+                    <button id="refresh-graph-btn" class="btn btn-secondary" onclick="refreshGraph()">
+                        <i class="fas fa-sync-alt"></i> Odśwież graf
+                    </button>
+                    <button id="open-graph-external-btn" class="btn btn-link" onclick="window.open('http://localhost:8082/', '_blank')">
+                        <i class="fas fa-external-link-alt"></i> Otwórz w nowej karcie
+                    </button>
+                </div>
+            </div>
+            <div id="graph-search-results" style="display: none; padding: 10px; background: #1a202c; border-bottom: 1px solid #2d3748;">
+                <div id="search-results-list"></div>
+            </div>
+            <iframe id="graph-iframe" src="" style="width: 100%; height: calc(100vh - 60px); border: none; background: #0a0e14;"></iframe>
+        </div>
+
+        <!-- ENTITY DETAIL VIEW -->
+        <div id="entity-detail-view" style="display: none;">
+            <div class="view-header">
+                <h2 id="entity-detail-title">Edycja Encji</h2>
+                <div class="header-actions">
+                    <button id="save-entity-btn" class="btn btn-primary">
+                        <i class="fas fa-save"></i> Zapisz
+                    </button>
+                </div>
+            </div>
+            <div class="entity-detail-layout">
+                <div class="entity-info-panel">
+                    <form id="entity-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="entity-id">
+                                    <i class="fas fa-fingerprint"></i> ID
+                                </label>
+                                <input type="text" id="entity-id" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="entity-type">
+                                    <i class="fas fa-tag"></i> Typ
+                                </label>
+                                <select id="entity-type" disabled>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="entity-name">
+                                <i class="fas fa-heading"></i> Nazwa
+                            </label>
+                            <input type="text" id="entity-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="entity-description">
+                                <i class="fas fa-align-left"></i> Opis
+                            </label>
+                            <textarea id="entity-description" rows="3"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="entity-country">
+                                    <i class="fas fa-globe"></i> Kraj
+                                </label>
+                                <input type="text" id="entity-country" value="PL">
+                            </div>
+                            <div class="form-group">
+                                <label for="entity-first-seen">
+                                    <i class="fas fa-calendar"></i> Pierwsze obserwowanie
+                                </label>
+                                <input type="date" id="entity-first-seen">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="entity-notes">
+                                <i class="fas fa-sticky-note"></i> Notatki
+                            </label>
+                            <textarea id="entity-notes" rows="2"></textarea>
+                        </div>
+                        
+                        <!-- Dynamic fields based on entity type -->
+                        <div id="entity-dynamic-fields"></div>
+                        
+                        <details class="advanced-section">
+                            <summary><i class="fas fa-code"></i> Raw JSON</summary>
+                            <div class="form-group">
+                                <textarea id="entity-raw-json" rows="10"></textarea>
+                            </div>
+                        </details>
+                    </form>
+                </div>
+                
+                <div class="entity-relations-panel">
+                    <h3><i class="fas fa-link"></i> Relacje</h3>
+                    <div id="entity-relations-list" class="relations-list">
+                        <!-- Relations will be loaded here -->
+                    </div>
+                    <button id="add-relation-to-entity-btn" class="btn btn-secondary btn-small">
+                        <i class="fas fa-plus"></i> Dodaj relację
+                    </button>
+                </div>
+            </div>
+            
+            <div class="danger-zone">
+                <h4><i class="fas fa-exclamation-triangle"></i> Strefa niebezpieczna</h4>
+                <button id="delete-entity-btn" class="btn btn-danger">
+                    <i class="fas fa-trash"></i> Usuń encję
+                </button>
+            </div>
+        </div>
+
+        <!-- DETAIL VIEW (Posts) -->
+        <div id="detail-view" style="display: none;">
+            <div class="view-header">
+                <h2 id="detail-title">Edycja Posta</h2>
+                <div class="header-actions">
+                    <button id="save-post-btn" class="btn btn-primary">
+                        <i class="fas fa-save"></i> Zapisz
+                    </button>
+                </div>
+            </div>
+
+            <div class="detail-layout">
+                <!-- LEFT: Media Panel -->
+                <div class="media-panel">
+                    <div class="panel-tabs">
+                        <button class="tab-btn active" data-tab="screenshots">
+                            <i class="fas fa-camera"></i> Screenshots
+                        </button>
+                        <button class="tab-btn" data-tab="carousel">
+                            <i class="fas fa-images"></i> Karuzela
+                        </button>
+                        <button class="tab-btn" data-tab="upload">
+                            <i class="fas fa-upload"></i> Upload
+                        </button>
+                    </div>
+
+                    <div class="tab-content active" id="tab-screenshots">
+                        <div id="screenshots-grid" class="media-grid">
+                            <!-- Screenshots -->
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="tab-carousel">
+                        <div id="carousel-grid" class="media-grid">
+                            <!-- Carousel images -->
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="tab-upload">
+                        <div class="upload-area" id="upload-area">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Przeciągnij pliki tutaj lub kliknij</p>
+                            <input type="file" id="file-input" accept="image/*" multiple hidden>
+                        </div>
+                        <div id="upload-preview" class="upload-preview"></div>
+                        <button id="upload-btn" class="btn btn-primary" style="display: none;">
+                            <i class="fas fa-upload"></i> Wyślij pliki
+                        </button>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Metadata Form -->
+                <div class="metadata-panel">
+                    <form id="metadata-form">
+                        <div class="form-group">
+                            <label for="field-url">
+                                <i class="fas fa-link"></i> URL Posta
+                            </label>
+                            <div class="input-with-action">
+                                <input type="url" id="field-url" placeholder="https://instagram.com/p/...">
+                                <a href="#" id="open-url-btn" target="_blank" class="btn btn-icon" title="Otwórz">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="field-caption">
+                                <i class="fas fa-comment"></i> Treść (Caption)
+                            </label>
+                            <textarea id="field-caption" rows="6" placeholder="Treść posta..."></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="field-date">
+                                    <i class="fas fa-calendar"></i> Data publikacji
+                                </label>
+                                <input type="text" id="field-date" placeholder="YYYY-MM-DD">
+                            </div>
+                            <div class="form-group">
+                                <label for="field-scraped">
+                                    <i class="fas fa-clock"></i> Zescrapowano
+                                </label>
+                                <input type="text" id="field-scraped" disabled>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="field-handle">
+                                <i class="fas fa-user"></i> Handle
+                            </label>
+                            <input type="text" id="field-handle" disabled>
+                        </div>
+
+                        <!-- Advanced: Raw JSON -->
+                        <details class="advanced-section">
+                            <summary><i class="fas fa-code"></i> Zaawansowane (Raw JSON)</summary>
+                            <div class="form-group">
+                                <textarea id="field-raw-json" rows="12"></textarea>
+                            </div>
+                        </details>
+                    </form>
+
+                    <!-- Add to Graph -->
+                    <div class="graph-zone">
+                        <h4><i class="fas fa-project-diagram"></i> Graf wiedzy</h4>
+                        <p class="hint">Dodaj ten post jako encję do bazy Neo4j</p>
+                        <button id="btn-add-to-neo4j" class="btn btn-graph">
+                            <i class="fas fa-plus-circle"></i> Dodaj do Neo4j
+                        </button>
+                    </div>
+
+                    <!-- Danger Zone -->
+                    <div class="danger-zone">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Strefa niebezpieczna</h4>
+                        <button id="delete-post-btn" class="btn btn-danger">
+                            <i class="fas fa-trash"></i> Usuń cały post
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- TOAST CONTAINER -->
+    <div id="toast-container"></div>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox" style="display: none;">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <img id="lightbox-img" src="" alt="Preview">
+    </div>
+
+    <!-- CONFIRM MODAL -->
+    <div id="confirm-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h3 id="confirm-title">Potwierdź</h3>
+            <p id="confirm-message">Czy na pewno chcesz to zrobić?</p>
+            <div class="modal-actions">
+                <button id="confirm-cancel" class="btn btn-secondary">Anuluj</button>
+                <button id="confirm-ok" class="btn btn-danger">Potwierdź</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CREATE POST MODAL -->
+    <div id="create-post-modal" class="modal" style="display: none;">
+        <div class="modal-content modal-large">
+            <h3><i class="fas fa-plus-circle"></i> Nowy wpis / Scraper</h3>
+            
+            <!-- Modal Tabs -->
+            <div class="modal-tabs">
+                <button class="modal-tab-btn active" data-modal-tab="manual">
+                    <i class="fas fa-edit"></i> Ręczny wpis
+                </button>
+                <button class="modal-tab-btn" data-modal-tab="scrape">
+                    <i class="fab fa-instagram"></i> Scrapuj IG
+                </button>
+                <button class="modal-tab-btn" data-modal-tab="profile">
+                    <i class="fas fa-user-plus"></i> Nowy profil
+                </button>
+            </div>
+
+            <!-- Tab: Manual Entry -->
+            <div class="modal-tab-content active" id="modal-tab-manual">
+                <form id="create-post-form">
+                    <div class="form-group">
+                        <label for="new-post-profile">Profil</label>
+                        <select id="new-post-profile" required>
+                            <option value="">Wybierz profil...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-post-url">URL posta</label>
+                        <input type="url" id="new-post-url" placeholder="https://facebook.com/... lub https://instagram.com/...">
+                    </div>
+                    <div class="form-group">
+                        <label for="new-post-caption">Treść / Caption</label>
+                        <textarea id="new-post-caption" rows="4" placeholder="Treść posta..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-post-date">Data publikacji</label>
+                        <input type="date" id="new-post-date">
+                    </div>
+                    <p class="hint">ID zostanie wygenerowane automatycznie. Screenshoty możesz dodać po utworzeniu wpisu.</p>
+                    <div class="modal-actions">
+                        <button type="button" id="create-post-cancel" class="btn btn-secondary">Anuluj</button>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-check"></i> Utwórz
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Tab: Scrape Instagram -->
+            <div class="modal-tab-content" id="modal-tab-scrape">
+                <form id="scrape-form">
+                    <div class="form-group">
+                        <label for="scrape-url">
+                            <i class="fas fa-link"></i> URL posta Instagram
+                        </label>
+                        <input type="url" id="scrape-url" placeholder="https://instagram.com/p/ABC123/ lub /reel/..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="scrape-handle">
+                            <i class="fab fa-instagram"></i> Nazwa profilu (handle)
+                        </label>
+                        <div class="input-with-prefix">
+                            <span class="input-prefix">@</span>
+                            <input type="text" id="scrape-handle" placeholder="nazwa_profilu" required>
+                        </div>
+                        <small class="field-hint">Profil zostanie automatycznie utworzony jeśli nie istnieje</small>
+                    </div>
+                    <div class="info-box info-box-success">
+                        <i class="fas fa-magic"></i>
+                        <div>
+                            <strong>Automatyczne wykrywanie slajdów:</strong>
+                            <ul>
+                                <li>Scraper automatycznie wykrywa liczbę slajdów w karuzeli</li>
+                                <li>Pobiera screenshot każdego slajdu osobno</li>
+                                <li>Profil tworzony automatycznie jeśli nie istnieje</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="hint">⚠️ Jeśli wymagane logowanie - zaloguj się w otwartej przeglądarce Chrome i wciśnij ENTER w konsoli serwera.</p>
+                    <div class="modal-actions">
+                        <button type="button" class="btn btn-secondary" onclick="closeCreatePostModal()">Anuluj</button>
+                        <button type="submit" class="btn btn-primary btn-instagram">
+                            <i class="fab fa-instagram"></i> Scrapuj post
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Tab: New Profile -->
+            <div class="modal-tab-content" id="modal-tab-profile">
+                <form id="new-profile-form">
+                    <div class="form-group">
+                        <label for="profile-platform">Platforma</label>
+                        <select id="profile-platform" required>
+                            <option value="instagram">📷 Instagram</option>
+                            <option value="facebook">📘 Facebook</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="profile-handle">
+                            <i class="fas fa-at"></i> Nazwa profilu (handle)
+                        </label>
+                        <input type="text" id="profile-handle" placeholder="np. wyzdrowiej_ze_mna" required pattern="[\w.]+">
+                        <small class="field-hint">Tylko litery, cyfry, podkreślniki i kropki</small>
+                    </div>
+                    <p class="hint">Utworzy pustą strukturę folderów dla nowego profilu.</p>
+                    <div class="modal-actions">
+                        <button type="button" class="btn btn-secondary" onclick="closeCreatePostModal()">Anuluj</button>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-folder-plus"></i> Utwórz profil
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- CREATE ENTITY MODAL -->
+    <div id="create-entity-modal" class="modal" style="display: none;">
+        <div class="modal-content modal-large">
+            <h3><i class="fas fa-plus-circle"></i> Nowa encja</h3>
+            <form id="create-entity-form">
+                <div class="form-row">
+                    <div class="form-group" style="flex: 1;">
+                        <label for="new-entity-type">
+                            <i class="fas fa-tag"></i> Typ encji *
+                        </label>
+                        <select id="new-entity-type" required>
+                            <option value="">Wybierz typ...</option>
+                            <option value="person">👤 Osoba</option>
+                            <option value="organization">🏢 Organizacja</option>
+                            <option value="profile">📱 Profil (social media)</option>
+                            <option value="event">📅 Wydarzenie</option>
+                            <option value="page">🌐 Strona WWW</option>
+                            <option value="group">👥 Grupa</option>
+                            <option value="channel">📺 Kanał</option>
+                            <option value="symbol">🚩 Symbol</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="new-entity-name">
+                        <i class="fas fa-heading"></i> Nazwa *
+                    </label>
+                    <input type="text" id="new-entity-name" required placeholder="Np. Jan Kowalski, Organizacja XYZ...">
+                </div>
+                <div class="form-group">
+                    <label for="new-entity-description">
+                        <i class="fas fa-align-left"></i> Opis
+                    </label>
+                    <textarea id="new-entity-description" rows="3" placeholder="Krótki opis encji..."></textarea>
+                </div>
+                
+                <!-- Dynamic fields container -->
+                <div id="new-entity-dynamic-fields"></div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="new-entity-country">
+                            <i class="fas fa-globe"></i> Kraj
+                        </label>
+                        <input type="text" id="new-entity-country" value="PL" placeholder="PL, RU, DE...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="new-entity-notes">
+                        <i class="fas fa-sticky-note"></i> Notatki
+                    </label>
+                    <textarea id="new-entity-notes" rows="2" placeholder="Dodatkowe informacje..."></textarea>
+                </div>
+                <p class="hint">ID zostanie wygenerowane automatycznie na podstawie typu i nazwy.</p>
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeCreateEntityModal()">Anuluj</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-check"></i> Utwórz encję
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ADD POST TO GRAPH MODAL -->
+    <div id="add-post-to-graph-modal" class="modal" style="display: none;">
+        <div class="modal-content modal-large">
+            <h3><i class="fas fa-project-diagram"></i> Dodaj post do grafu</h3>
+            
+            <div class="post-preview-box" id="post-preview-box">
+                <div class="post-preview-title">
+                    <i class="fas fa-file-alt"></i>
+                    <span id="modal-post-name">Post</span>
+                </div>
+                <div class="post-preview-meta">
+                    <span id="modal-post-platform"></span>
+                    <span id="modal-post-date"></span>
+                </div>
+            </div>
+            
+            <div class="add-options">
+                <div class="option-card" id="option-no-relation">
+                    <div class="option-icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="option-content">
+                        <h4>Dodaj bez relacji</h4>
+                        <p>Dodaj post jako samodzielną encję bez połączenia z innymi</p>
+                    </div>
+                    <input type="radio" name="add-option" value="no-relation" checked>
+                </div>
+                
+                <div class="option-card" id="option-with-relation">
+                    <div class="option-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <div class="option-content">
+                        <h4>Dodaj z relacją</h4>
+                        <p>Połącz post z istniejącą encją (np. profil PUBLISHED post)</p>
+                    </div>
+                    <input type="radio" name="add-option" value="with-relation">
+                </div>
+            </div>
+            
+            <div id="relation-config" class="relation-config" style="display: none;">
+                <div class="form-group">
+                    <label for="post-rel-type">
+                        <i class="fas fa-exchange-alt"></i> Typ relacji
+                    </label>
+                    <select id="post-rel-type">
+                        <option value="PUBLISHED">PUBLISHED (profil opublikował post)</option>
+                        <option value="MENTIONS">MENTIONS (post wspomina)</option>
+                        <option value="ANNOUNCES">ANNOUNCES (post ogłasza wydarzenie)</option>
+                        <option value="PROMOTES">PROMOTES (post promuje)</option>
+                        <option value="ATTACKS">ATTACKS (post atakuje)</option>
+                        <option value="LINKS_TO">LINKS_TO (post linkuje do)</option>
+                        <option value="REPOSTS">REPOSTS (post udostępnia)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="post-rel-direction">
+                        <i class="fas fa-arrows-alt-h"></i> Kierunek
+                    </label>
+                    <select id="post-rel-direction">
+                        <option value="from-entity">Encja → Post (np. profil PUBLISHED post)</option>
+                        <option value="to-entity">Post → Encja (np. post MENTIONS osobę)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="post-rel-entity">
+                        <i class="fas fa-cube"></i> Wybierz encję
+                    </label>
+                    <select id="post-rel-entity">
+                        <option value="">Wybierz encję...</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="post-rel-evidence">
+                        <i class="fas fa-file-alt"></i> Dowód / Notatka
+                    </label>
+                    <input type="text" id="post-rel-evidence" placeholder="Np. widoczne na screenshocie">
+                </div>
+            </div>
+            
+            <div class="modal-actions">
+                <button type="button" class="btn btn-secondary" onclick="closeAddPostToGraphModal()">Anuluj</button>
+                <button type="button" class="btn btn-primary" onclick="confirmAddPostToGraph()">
+                    <i class="fas fa-check"></i> Dodaj do grafu
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CREATE RELATIONSHIP MODAL -->
+    <div id="create-relationship-modal" class="modal" style="display: none;">
+        <div class="modal-content modal-large">
+            <h3><i class="fas fa-link"></i> Nowa relacja</h3>
+            <form id="create-relationship-form">
+                <div class="form-group">
+                    <label for="rel-source">
+                        <i class="fas fa-arrow-right"></i> Źródło (source)
+                    </label>
+                    <select id="rel-source" required>
+                        <option value="">Wybierz encję źródłową...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="rel-type">
+                        <i class="fas fa-exchange-alt"></i> Typ relacji
+                    </label>
+                    <select id="rel-type" required>
+                        <option value="">Wybierz typ relacji...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="rel-target">
+                        <i class="fas fa-arrow-left"></i> Cel (target)
+                    </label>
+                    <select id="rel-target" required>
+                        <option value="">Wybierz encję docelową...</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="rel-date">
+                            <i class="fas fa-calendar"></i> Data
+                        </label>
+                        <input type="date" id="rel-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="rel-confidence">
+                            <i class="fas fa-percentage"></i> Pewność (0-1)
+                        </label>
+                        <input type="number" id="rel-confidence" min="0" max="1" step="0.1" value="1.0">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="rel-evidence">
+                        <i class="fas fa-file-alt"></i> Dowód / Źródło
+                    </label>
+                    <textarea id="rel-evidence" rows="2" placeholder="Np. Screenshot z FB, artykuł..."></textarea>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeCreateRelationshipModal()">Anuluj</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-check"></i> Utwórz relację
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js?v=1.3"></script>
+</body>
+</html>

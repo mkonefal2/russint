@@ -121,8 +121,10 @@ async function init() {
             })
             .linkCanvasObjectMode(() => 'after')
             .linkCanvasObject((link, ctx) => {
-                if (link === hoveredLink) {
-                    const label = link.type;
+                // Show label for hovered link OR when link is highlighted in focus mode
+                const isHighlightedLink = (highlightLinks.size > 0 && highlightLinks.has(link));
+                if (link === hoveredLink || isHighlightedLink) {
+                    const label = link.type || '';
                     const start = link.source;
                     const end = link.target;
                     const textPos = Object.assign({}, ...['x', 'y'].map(c => ({
@@ -151,13 +153,22 @@ async function init() {
                     
                     ctx.rotate(textAngle);
 
-                    ctx.fillStyle = 'rgba(0, 0, 0, 0.8)';
-                    ctx.fillRect(-bckgDimensions[0] / 2, -bckgDimensions[1] / 2, ...bckgDimensions);
-
-                    ctx.textAlign = 'center';
-                    ctx.textBaseline = 'middle';
-                    ctx.fillStyle = '#fff';
-                    ctx.fillText(label, 0, 0);
+                    // Stronger background and text color when highlighted
+                    if (isHighlightedLink) {
+                        ctx.fillStyle = 'rgba(88,166,255,0.95)';
+                        ctx.fillRect(-bckgDimensions[0] / 2, -bckgDimensions[1] / 2, ...bckgDimensions);
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'middle';
+                        ctx.fillStyle = '#06233a';
+                        ctx.fillText(label, 0, 0);
+                    } else {
+                        ctx.fillStyle = 'rgba(0, 0, 0, 0.8)';
+                        ctx.fillRect(-bckgDimensions[0] / 2, -bckgDimensions[1] / 2, ...bckgDimensions);
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'middle';
+                        ctx.fillStyle = '#fff';
+                        ctx.fillText(label, 0, 0);
+                    }
                     
                     ctx.restore();
                 }
@@ -286,6 +297,10 @@ async function init() {
                 }
             })
             .onNodeClick(node => {
+                if (isAddingEdgeMode) {
+                    handleEdgeTargetSelection(node);
+                    return;
+                }
                 console.log("Clicked node:", node);
                 if (node) {
                     // Visual feedback for debugging
@@ -535,6 +550,11 @@ function updateDetails(node) {
     if (saveBtn) {
         saveBtn.style.display = isEditing ? 'inline-block' : 'none';
     }
+    // Show delete button when a node is selected
+    const deleteBtn = document.getElementById('delete-btn');
+    if (deleteBtn) {
+        deleteBtn.style.display = 'inline-block';
+    }
 
     title.innerText = `${node.group}: ${node.name}`;
     title.style.color = colors[node.group] || colors['default'];
@@ -765,6 +785,16 @@ function clearSelection() {
     document.getElementById('details-title').style.color = '#58a6ff';
     document.getElementById('details-body').innerHTML = '<tr><td colspan="2" style="text-align:center; color:#555; padding: 20px;">Click on a node to view details</td></tr>';
     document.getElementById('details-gallery').innerHTML = '<div style="color: #555; font-size: 0.8rem;">No evidence selected</div>';
+    
+    // Hide buttons
+    const editBtn = document.getElementById('edit-btn');
+    const saveBtn = document.getElementById('save-btn');
+    const deleteBtn = document.getElementById('delete-btn');
+    if (editBtn) editBtn.style.display = 'none';
+    if (saveBtn) saveBtn.style.display = 'none';
+    if (deleteBtn) deleteBtn.style.display = 'none';
+    
+    isEditing = false;
 }
 
 function resetZoom() {
@@ -825,3 +855,288 @@ function toggleDetailsPanel() {
 window.toggleDetailsPanel = toggleDetailsPanel;
 
 init();
+
+
+// --- Editing Features ---
+
+let isAddingEdgeMode = false;
+let edgeSource = null;
+
+function startAddNode() {
+    const modalTitle = document.getElementById('modal-title');
+    const modalBody = document.getElementById('modal-body');
+    const confirmBtn = document.getElementById('modal-confirm-btn');
+    
+    modalTitle.innerText = 'Add New Node';
+    modalBody.innerHTML = `
+        <label>Name:</label>
+        <input type="text" id="node-name" placeholder="Entity Name">
+        
+        <label>Type:</label>
+        <select id="node-type">
+            <option value="Person">Person</option>
+            <option value="Organization">Organization</option>
+            <option value="Event">Event</option>
+            <option value="Post">Post</option>
+            <option value="Profile">Profile</option>
+            <option value="Site">Site</option>
+            <option value="Entity">Other</option>
+        </select>
+        
+        <label>ID (Optional):</label>
+        <input type="text" id="node-id" placeholder="Auto-generated if empty">
+    `;
+    
+    confirmBtn.onclick = submitAddNode;
+    document.getElementById('modal-overlay').style.display = 'flex';
+}
+
+async function submitAddNode() {
+    const name = document.getElementById('node-name').value;
+    const type = document.getElementById('node-type').value;
+    let id = document.getElementById('node-id').value;
+    
+    if (!name) {
+        alert('Name is required');
+        return;
+    }
+    
+    if (!id) {
+        // Simple ID generation
+        id = type.toLowerCase() + '-' + name.toLowerCase().replace(/[^a-z0-9]/g, '-');
+        // Add random suffix to ensure uniqueness
+        id += '-' + Math.floor(Math.random() * 1000);
+    }
+    
+    const data = {
+        id: id,
+        group: type,
+        properties: {
+            name: name,
+            created_via: 'web-ui'
+        }
+    };
+    
+    try {
+        const res = await fetch('/api/create_node', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(data)
+        });
+        
+        if (res.ok) {
+            closeModal();
+            // Refresh graph
+            window.location.reload(); // Simplest way to refresh for now
+        } else {
+            alert('Error creating node');
+        }
+    } catch (e) {
+        console.error(e);
+        alert('Error creating node: ' + e);
+    }
+}
+
+function startAddEdge() {
+    if (!selectedNode) {
+        alert('Please select the source node first.');
+        return;
+    }
+    
+    isAddingEdgeMode = true;
+    edgeSource = selectedNode;
+    
+    // Show visual feedback
+    const detailsTitle = document.getElementById('details-title');
+    detailsTitle.innerText = `Select Target Node to connect from '${selectedNode.name}'`;
+    detailsTitle.style.color = '#58a6ff';
+}
+
+function handleEdgeTargetSelection(targetNode) {
+    if (!isAddingEdgeMode || !edgeSource) return;
+    
+    if (targetNode.id === edgeSource.id) {
+        alert('Cannot connect node to itself');
+        return;
+    }
+    
+    // Open modal for edge details
+    const modalTitle = document.getElementById('modal-title');
+    const modalBody = document.getElementById('modal-body');
+    const confirmBtn = document.getElementById('modal-confirm-btn');
+    
+    modalTitle.innerText = 'Add Edge';
+    modalBody.innerHTML = `
+        <div style="margin-bottom: 10px; font-size: 0.9em; color: #8b949e;">
+            From: <b>${edgeSource.name}</b><br>
+            To: <b>${targetNode.name}</b>
+        </div>
+        
+        <label>Relationship Type:</label>
+        <select id="edge-type">
+            <option value="RELATED_TO">RELATED_TO</option>
+            <option value="MEMBER_OF">MEMBER_OF</option>
+            <option value="PUBLISHED">PUBLISHED</option>
+            <option value="MENTIONS">MENTIONS</option>
+            <option value="ORGANIZES">ORGANIZES</option>
+            <option value="PARTICIPATED_IN">PARTICIPATED_IN</option>
+            <option value="HAS_PROFILE">HAS_PROFILE</option>
+        </select>
+    `;
+    
+    confirmBtn.onclick = () => submitAddEdge(targetNode);
+    document.getElementById('modal-overlay').style.display = 'flex';
+}
+
+async function submitAddEdge(targetNode) {
+    const type = document.getElementById('edge-type').value;
+    
+    const data = {
+        source: edgeSource.id,
+        target: targetNode.id,
+        type: type,
+        properties: {
+            created_via: 'web-ui'
+        }
+    };
+    
+    try {
+        const res = await fetch('/api/create_edge', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(data)
+        });
+        
+        if (res.ok) {
+            closeModal();
+            isAddingEdgeMode = false;
+            edgeSource = null;
+            window.location.reload();
+        } else {
+            alert('Error creating edge');
+        }
+    } catch (e) {
+        console.error(e);
+        alert('Error creating edge: ' + e);
+    }
+}
+
+function closeModal() {
+    document.getElementById('modal-overlay').style.display = 'none';
+    // Reset edge mode if cancelled
+    if (isAddingEdgeMode && !document.getElementById('modal-body').innerHTML.includes('From:')) {
+        // Only reset if we were not in the middle of edge creation modal
+        // Actually, if we cancel the modal, we probably want to cancel the edge creation too?
+        // Or just the modal? Let's cancel mode too.
+        isAddingEdgeMode = false;
+        edgeSource = null;
+        const detailsTitle = document.getElementById('details-title');
+        detailsTitle.innerText = 'Select a node';
+        detailsTitle.style.color = 'var(--text-main)';
+    }
+}
+
+function confirmModal() {
+    // This is overridden by specific functions
+}
+
+async function deleteSelected() {
+    if (!selectedNode) return;
+    
+    if (!confirm(`Are you sure you want to delete node '${selectedNode.name}'? This will also delete all connected edges.`)) {
+        return;
+    }
+    
+    try {
+        const res = await fetch('/api/delete_node', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({id: selectedNode.id})
+        });
+        
+        if (res.ok) {
+            selectedNode = null;
+            window.location.reload();
+        } else {
+            alert('Error deleting node');
+        }
+    } catch (e) {
+        console.error(e);
+        alert('Error deleting node: ' + e);
+    }
+}
+
+// Listen for messages from parent (SM Manager)
+window.addEventListener('message', (event) => {
+    if (event.data.type === 'highlightNode') {
+        const nodeId = event.data.nodeId;
+        highlightNodeById(nodeId);
+    } else if (event.data.type === 'focusNode') {
+        const nodeId = event.data.nodeId;
+        focusNodeById(nodeId);
+    } else if (event.data.type === 'clearHighlight') {
+        clearHighlight();
+    }
+});
+
+function focusNodeById(nodeId) {
+    if (!Graph) return;
+    
+    const node = Graph.graphData().nodes.find(n => n.id === nodeId);
+    if (!node) {
+        console.warn('Node not found:', nodeId);
+        return;
+    }
+    
+    // Focus camera on node without isolating it
+    Graph.centerAt(node.x, node.y, 1000);
+    Graph.zoom(2.5, 1000);
+    
+    // Select node (show details)
+    selectedNode = node;
+    updateDetails(node);
+}
+
+function highlightNodeById(nodeId) {
+    if (!Graph) return;
+    
+    const node = Graph.graphData().nodes.find(n => n.id === nodeId);
+    if (!node) {
+        console.warn('Node not found:', nodeId);
+        return;
+    }
+    
+    // Clear previous highlights
+    highlightNodes.clear();
+    highlightLinks.clear();
+    
+    // Highlight the node
+    highlightNodes.add(node);
+    
+    // Highlight connected edges
+    Graph.graphData().links.forEach(link => {
+        if (link.source.id === nodeId || link.target.id === nodeId) {
+            highlightLinks.add(link);
+        }
+    });
+    
+    // Focus camera on node
+    Graph.centerAt(node.x, node.y, 1000);
+    Graph.zoom(2.5, 1000);
+    
+    // Select node
+    selectedNode = node;
+    
+    // Trigger re-render
+    Graph.nodeColor(Graph.nodeColor());
+}
+
+function clearHighlight() {
+    highlightNodes.clear();
+    highlightLinks.clear();
+    selectedNode = null;
+    
+    if (Graph) {
+        Graph.nodeColor(Graph.nodeColor());
+    }
+}
